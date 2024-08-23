@@ -1,0 +1,542 @@
+  /********************************************/
+  /********************Font********************/
+  /********************************************/
+
+  @font-face {
+    font-family: 'ChamBold';
+    src: url('../assets/flag/fonts/PSLxChamnarnBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'legendpower';
+    src: url('../assets/flag/fonts/legendpower.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'compacta';
+    src: url('../assets/flag/fonts/compacta_mt_bold.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'matura';
+    src: url('../assets/flag/fonts/magic power.otf') format('opentype');
+  }
+
+  /********************************************/
+  /********************************************/
+  /********************************************/
+
+
+
+
+
+
+
+  /********************************************/
+  /*******************media********************/
+  /********************************************/
+
+  @media (max-width: 650px) {
+    #main {
+      width: 640px;
+      justify-content: center;
+    }
+
+  }
+
+  /********************************************/
+  /********************************************/
+  /********************************************/
+
+
+
+
+
+
+
+  /********************************************/
+  /********************************************/
+  /********************************************/
+  .pv {
+    flex-direction: column;
+  }
+ #main{
+  justify-content:center;
+ }
+  .main_ {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .img_ {
+    overflow: hidden;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 20px;
+    width: 450px;
+    height: 629px;
+    background-color: #eee;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+  }
+
+  #chaos,
+  #hundred {
+    min-width: 450px;
+    max-width: 450px;
+    min-height: 629px;
+    max-height: 629px;
+    user-select: none;
+    pointer-events: none;
+    border-radius: 20px;
+  }
+
+  .chaoscheckcss,
+  .hundemoncheckcss {
+    width: 25px;
+    height: 25px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  .imh {
+
+    width: .1;
+    height: .1;
+  }
+
+  .in {
+    overflow: hidden;
+    width: 450px;
+    height: 629px;
+  }
+
+  #worlds {
+    position: absolute;
+    height: 629px;
+    min-width: 450px;
+    border-radius: 20px;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .dpim {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 629px;
+    width: 450px;
+    user-select: none;
+    pointer-events: none;
+
+  }
+
+  .absolute {
+    position: absolute;
+    pointer-events: none;
+  }
+
+  #legendnameinput,
+  #legendattinput,
+  #dangernameinput,
+  #dangerattinput {
+    width: 17.3rem;
+  }
+
+  .z0 {
+    z-index: 0;
+  }
+
+  .z1 {
+    z-index: 1;
+  }
+
+  .z2 {
+    z-index: 2;
+  }
+
+  .z3 {
+    z-index: 3;
+  }
+
+  .z4 {
+    z-index: 4;
+  }
+  .z7{
+    z-index: 7;
+  }
+  .z8{
+    z-index: 8;
+  }
+  .btn{
+    height: 50px;
+    width: 80px;
+  }
+  #teb{
+    width: 520px;
+    height: 200px;
+  }
+.textbox_{
+  pointer-events: none;
+}
+
+  .nub,.se_{
+    height: 429px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+  }
+  .nub,.se{
+    width: 100%;
+    font-family: 'ChamBold', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  align-self: flex-end;
+  line-height: 20px;
+  user-select: none;
+    pointer-events: none;
+  }
+  .nub{
+    position: absolute;
+    width: 450px;
+  }
+  .se{
+    width: 100%;
+  }
+  #addline{
+    width: 496px;
+    white-space: nowrap;
+
+  }
+  .image-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+#se {
+    white-space: pre-wrap;
+    word-break: break-word;
+    white-space: nowrap;
+  }
+  #se p {
+    white-space: pre-wrap; 
+}
+.textbox{
+  width: 450px;
+  height: 629px;
+
+}
+  /********************************************/
+  /********************************************/
+  /********************************************/
+
+
+
+
+
+
+  /********************************************/
+  /******************Keywords******************/
+  /********************************************/
+  .Iskill{
+    height:20px;
+    width: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    vertical-align:bottom;
+    transform: translate(0, -2px) scaleX(1.2);
+    margin-right: 5px;
+    top:0; 
+    left:0;
+  }
+  .nctext{
+    height:10px;
+    width: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    vertical-align:bottom;
+    transform: translate(0, -2px);
+    margin-right: 5px;
+    top:0; 
+    left:0;
+    }
+
+
+
+  /********************************************/
+  /********************************************/
+  /********************************************/
+  .effect-legend{
+    transform: translate(0, -114px) scaleX(0.8);
+  }
+  .effect-dungeon {
+    transform: translate(30px, -134px) scaleX(0.8);
+  }
+  .effect-darkness{
+    transform: translate(0px, -110px) scaleX(0.8);
+  }
+  .effect-danger{
+    transform: translate(10px, -120px) scaleX(0.8);
+  }
+
+
+
+
+  /********************************************/
+  /********************Danger******************/
+  /********************************************/
+  #Mdangerpower,#Mdangerpowercopy,#Mdangercri,#Mdangercricopy,#Mdangerdef,#Mdangerdefcopy
+  {
+    font-family: 'compacta', sans-serif;
+  }
+
+  .Mdangerpower,.Mdangerpowercopy {
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 30px;
+    transform: translate(-198px, -45px) rotate(-90deg);
+    color: #de2222;
+    white-space: nowrap;
+    text-align: start;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    z-index: 8;
+  }
+  .Mdangerdef,.Mdangerdefcopy {
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 35px;
+    transform: translate(-205px, -201px) rotate(-90deg);
+    color: #00b3eb;
+    white-space: nowrap;
+    text-align: start;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    z-index: 8;
+  }
+  .Mdangercri,.Mdangercricopy{
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 42px;
+    transform: translate(-210px, -43px) rotate(-90deg);
+    color: #ffffff;
+    white-space: nowrap;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 0.5px;
+    z-index: 8;
+  }
+
+  #Mdangerpowercopy,#Mdangercricopy,#Mdangerdefcopy {
+    color: #000000;
+    -webkit-text-stroke: 6px #000;
+    z-index: 7;
+  }
+  .dangeratt {
+    transform: translate(-104px, 223px);
+    font-family: 'ChamBold', sans-serif;
+    font-style: italic;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 13pt;
+  }
+  .dangername,.dangernamecopy {
+    transform: translate(60px, 274px);
+    font-family: 'ChamBold', sans-serif;
+    font-style: italic;
+    color: #c41916;
+    font-size: 20pt;
+  }
+  #dangernamecopy{
+    color: #000000;
+    -webkit-text-stroke: 3px #000;
+    z-index: 3;
+  }
+  /********************************************/
+  /********************************************/
+  /********************************************/
+
+
+
+
+
+
+
+
+
+  /********************************************/
+  /********************Legend******************/
+  /********************************************/
+  #Mlegendpower,#Mlegendpowercopy,#Mlegenddef,#Mlegenddefcopy,#Mlegendcri,#Mlegendcricopy 
+  {
+    font-family: 'legendpower', sans-serif;
+  }
+
+  .Mlegendpower,.Mlegendpowercopy {
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 35px;
+    transform: translate(-192.5px, 80px) rotate(-90deg);
+    color: #de2222;
+    white-space: nowrap;
+    text-align: end;
+    font-style: italic;
+    letter-spacing: -1px;
+    z-index: 8;
+  }
+
+  .Mlegenddef,
+  .Mlegenddefcopy {
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 35px;
+    transform: translate(-192.5px, -180px) rotate(-90deg);
+    color: #00b3eb;
+    white-space: nowrap;
+    text-align: start;
+    font-style: italic;
+    letter-spacing: -1px;
+    z-index: 8;
+  }
+
+  .Mlegendcri,
+  .Mlegendcricopy {
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 42px;
+    transform: translate(-201.5px, -50px) rotate(-90deg);
+    color: #ffffff;
+    white-space: nowrap;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: -1px;
+    z-index: 8;
+
+  }
+
+  #Mlegendpowercopy,
+  #Mlegenddefcopy,
+  #Mlegendcricopy {
+    color: #000000;
+    -webkit-text-stroke: 6px #000;
+    z-index: 7;
+  }
+
+  #legendname {
+    z-index: 4;
+  }
+
+  #legendnamecopy {
+    color: #e5c86a;
+    -webkit-text-stroke: 2px #e5c86a;
+    transform: translate(0, 274px) scaleX(1);
+    font-family: 'ChamBold', sans-serif;
+    font-style: italic;
+    font-size: 17pt;
+    z-index: 3;
+  }
+
+  .legendname {
+    transform: translate(0, 274px) scaleX(1);
+    font-family: 'ChamBold', sans-serif;
+    font-style: italic;
+    font-size: 17pt;
+  }
+
+  .legendatt {
+    transform: translate(-124px, 224px);
+    font-family: 'ChamBold', sans-serif;
+    font-style: italic;
+    text-align: center;
+    font-size: 13pt;
+    white-space: nowrap;
+  }
+
+  .legendW {
+    transform: translate(-89px, 245.5px);
+    font-family: 'ChamBold', sans-serif;
+    font-style: italic;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 13pt;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  /********************************************/
+  /*****************Dungron********************/
+  /********************************************/
+
+  
+  #Mdungeonpowercopy,#Mdungeondefcopy {
+    color: #000000;
+    -webkit-text-stroke: 4px #000;
+    z-index: 7;
+  }
+  
+  #Mdungeonpower, #Mdungeonpowercopy, #Mdungeoncri, #Mdungeoncricopy, #Mdungeondef, #Mdungeondefcopy
+  {
+    font-family: 'matura', sans-serif;
+  }
+
+
+  .Mdungeonpower,.Mdungeonpowercopy  {
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 35px;
+    transform: translate(-186.5px, 63px) scaleY(0.8) rotate(-90deg);
+    color: #de2222;
+    white-space: nowrap;
+    text-align: end;
+    letter-spacing: 0.5px;
+    z-index: 8;
+  }
+  .Mdungeondef,
+  .Mdungeondefcopy
+  {
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 35px;
+    transform: translate(-186.5px, -166.15px) scaleY(0.8) rotate(-90deg);
+    color: #00b3eb;
+    white-space: nowrap;
+    text-align: start;
+    letter-spacing: 0.5px;
+    z-index: 8;
+  }

@@ -1,0 +1,14 @@
+[
+    {
+      "href": "/",
+      "text": "Home"
+    },
+    {
+      "href": "/world.html",
+      "text": "Cards"
+    },
+    {
+      "href": "#banlist",
+      "text": "Banlist"
+    }
+  ]

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://www.thaibuddyfight.com/wp-content/uploads/2022/06/Thai-Buddyfight-Fav-Icon.png"sizes="192x192">
+    <script src="./main_css.js"></script>
+    <style>.img-logo {width: 100px;}@media (max-width: 768px) {.nav-links {display: none;}}#navbar-menu.active {display: block;}.tobig:hover{transform: scale(0.97); transition: 0.3s;}.tobig{transition: 0.3s;}</style>
+    <link rel="stylesheet" href="main.css">
+    <title>เวิลด์ - Fake Buddyfight</title>
+    <script src="./world.js" async></script>
+    <script src="./nav.js" async></script>
+</head>
+<body class="bg-slate-900">
+    <div>
+        <nav class="flex items-center justify-between flex-wrap bg-slate-950 p-3 lg:flex">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <span class="font-semibold text-xl tracking-tight"><img class="img-logo" src="./assets/fakebf.png"
+                        alt=""></span>
+            </div>
+            <div class="block lg:hidden">
+                <button id="hamburger-menu-button"
+                    class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="navbar-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+                <div id="nav_bar" class="text-sm lg:flex-grow">
+                </div>
+                <hr class="lg:hidden mt-4 mb-4">
+                <div>
+                    <a href="https://discord.gg/eyTqcyRD82"><img class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white lg:mt-0" src="./assets/discord-icon-svgrepo-com.svg" alt="" width="50px"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="World_Section" class="flex flex-wrap p-3 justify-center"></div>
+
+    <script>const hamburgerMenuButton = document.getElementById('hamburger-menu-button');const navbarMenu = document.getElementById('navbar-menu');hamburgerMenuButton.addEventListener('click', () => {navbarMenu.classList.toggle('active');});</script>
+
+</body>
+</html>

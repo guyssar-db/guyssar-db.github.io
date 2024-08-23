@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale Control</title>
+    <style>
+        body {
+            height: 2000px; /* สร้างความยาวของหน้าเพื่อให้มีการเลื่อน */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            transition: transform 0.2s ease;
+            font-size: 24px;
+            color: #fff;
+            white-space: nowrap;
+            
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: #000;
+        }
+
+        .controls {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .controls button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="text">Resize me with buttons!</p>
+    </div>
+    
+    <div class="controls">
+        <button id="decreaseButton">-</button>
+        <button id="increaseButton">+</button>
+    </div>
+
+    <script>
+        var scale = 1;
+        var scaleStep = 0.1; // จำนวนที่เพิ่มหรือลดในแต่ละครั้ง
+
+        function updateScale() {
+            document.getElementById('text').style.transform = 'scaleX(' + scale + ')';
+        }
+
+        document.getElementById('increaseButton').addEventListener('click', function() {
+            scale += scaleStep;
+            updateScale();
+        });
+
+        document.getElementById('decreaseButton').addEventListener('click', function() {
+            scale = Math.max(scale - scaleStep, 0.1); // จำกัดไม่ให้ scale ต่ำกว่า 0.1
+            updateScale();
+        });
+    </script>
+</body>
+</html>

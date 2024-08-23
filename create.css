@@ -1,0 +1,315 @@
+@font-face {
+    font-family: 'PSLxChamnarnBold';
+    src: url('./assets/flag/fonts/PSLxChamnarnBold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'legendpower';
+    src: url('./assets/flag/fonts/legendpower.ttf') format('truetype');
+}
+.font-legend{
+    font-family: 'legendpower';
+}
+body {
+    user-select: none;
+}
+
+img {
+    pointer-events: none;
+}
+.user-none{
+    user-select: none;
+    pointer-events: none;
+
+}
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+img{
+    width: 100%;
+}
+.img-logo {
+    width: 100px;
+}
+.discord{
+    width: 50px;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+}
+
+#navbar-menu.active {
+    display: block;
+}
+
+.img_ {
+
+    position: absolute;
+    max-width: 450px;
+    height: 629px;
+    border-radius: 20px;
+}
+
+.pv {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 450px;
+    height: 629px;
+
+}
+
+.worlds {
+    border-radius: 20px;
+    min-width: 450px;
+    min-height: 629px;
+    user-select: none;
+}
+
+.imh {
+    width: .1px;
+    height: .1px;
+  }
+
+.none {
+    display: none;
+}
+
+.z-1 {
+    z-index: -1;
+}
+
+.z0 {
+    z-index: 0;
+}
+
+.z1 {
+    z-index: 1;
+
+}
+
+.z2 {
+    z-index: 2;
+}
+.z3{
+    z-index: 3;
+}
+.z8 {
+    z-index: 8;
+}
+
+.bg-legend {
+    background-color: rgb(153, 153, 2);
+}
+
+#img-import {
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* กรอบที่สามารถเลื่อนภาพได้ */
+#image-container {
+    overflow: hidden;
+    position: relative;
+    max-width: 450px;
+    height: 629px;
+    cursor: grab;
+    /* แสดง cursor ที่แสดงว่าคุณสามารถลากภาพได้ */
+    user-select: none;
+
+}
+
+#dpim {
+
+
+    transition: transform 0.2s ease;
+    transform-origin: 0 0;
+    pointer-events: auto;
+    user-select: none;
+
+}
+
+
+.notof {
+    position: absolute;
+    bottom: 2px;
+    left: 145px;
+    font-weight: bold;
+    font-size: 8pt;
+    font-family: 'PSLxChamnarnBold', sans-serif;
+    z-index: 3;
+    
+}
+.nfs1{
+    color: #000000;
+    -webkit-text-stroke: 1px #fff;
+    z-index: 2;
+
+}
+.font-cham {
+    font-family: 'PSLxChamnarnBold', sans-serif;
+}
+
+.cardname {
+    top: 35.53rem;
+    font-size:19pt ;
+    font-style: italic;
+}
+.imh_bg{
+    min-width: 450px;
+    min-height: 629px;
+}
+#lmn1{
+    color: #e5c86a;
+    -webkit-text-stroke: 2px #e5c86a;
+}
+.mainar{
+    min-width: 450px;
+    max-width: 450px;
+}
+.nameinput{
+    width: 290px;
+}
+.wlegend{
+    top: 34.2rem;
+    font-size:14.5pt ;
+    left: -88px;
+    font-style: italic;
+}
+#worlds,#atk,#def,#cri{
+    bottom: 0;
+    position: absolute;
+    pointer-events: none;
+}
+#names{
+    top: 0;
+    pointer-events: none;
+}
+.controls {
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.controls button {
+    text-align: center;
+    height: 30px;
+    width: 50px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.attlegend{
+    top: 33.1rem;
+    font-size:12.5pt ;
+    left: -124px;
+    font-style: italic;
+}
+.powerlegendcss{
+  position: absolute;
+  height: 32px;
+  width: 200px;
+  font-size: 30px;
+  transform: translate(-65.75px, -247.5px) rotate(271deg);
+  color: #fa492a;
+  white-space: nowrap;
+  text-align: end;
+  font-style: italic;
+
+  z-index: 8;
+  
+}
+.deflegendcss{
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 30px;
+    transform: translate(-63px, -514.5px) rotate(271deg);
+    color: #00b3eb;
+    white-space: nowrap;
+    text-align: start;
+    font-style: italic;
+  
+    z-index: 8;
+    
+  }
+#power1,#legenddef1,#legendcri1{
+    color: #000000;
+  -webkit-text-stroke: 5px #000;
+  z-index: 7;
+}
+#legenddef1{
+    transform: translate(-63px, -514.5px) rotate(271deg);
+}
+.powerinput{
+    width: 120px;
+}
+.crilegendcss{
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 47px;
+    transform: translate(-80px, -380.5px) rotate(271deg);
+    color: #ffffff;
+    white-space: nowrap;
+    text-align: center;
+    font-style: italic;
+  
+    z-index: 8;
+    
+  }
+.legendEffectcss{
+    position: relative;
+    text-align: start;
+    top: 31.1rem;
+    left: 3.1rem;
+}
+#skill_legend{
+    line-height: 1.32;
+    white-space: pre-wrap;
+}
+#nctext{
+    transform: translate(0,5.4px);
+    width: 10px;
+    height: 10px;
+}
+/* สไตล์สำหรับ span ที่ใช้แสดงภาพ */
+.flex-container {
+    display: flex;
+    align-items: center; /* จัดแนวแนวตั้งให้ตรงกลาง */
+}
+
+.flex-container img {
+    margin-right: 8px; /* ระยะห่างระหว่างภาพกับข้อความ */
+}
+
+/* สไตล์สำหรับข้อความที่ถูกแทนที่ด้วย span และ img */
+.line-container {
+    display: flex;
+    flex-wrap: wrap; /* ให้เนื้อหาต่อเนื่องในบรรทัดใหม่ */
+}
+
+.line-container span {
+    display: inline-flex;
+    align-items: center;
+}
+.margin-skill{
+    margin-bottom: -4px;
+}
+#skill{
+    transform: translate(0, 0.99rem);
+}

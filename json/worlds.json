@@ -1,0 +1,83 @@
+[
+    {
+      "num": 1,
+      "world": "./assets/world/dragon.webp",
+      "url": "/world/dragon"
+    },
+    {
+      "num": 2,
+      "world": "./assets/world/magic.webp",
+      "url": "/world/magic"
+    },
+    {
+        "num": 3,
+        "world": "./assets/world/ancient.webp",
+        "url": "/world/ancient"
+      },
+      {
+        "num": 4,
+        "world": "./assets/world/katana.webp",
+        "url": "/world/katana"
+      },
+      {
+        "num":5 ,
+        "world": "./assets/world/star.webp",
+        "url": "/world/stardragon"
+      },
+      {
+        "num":6 ,
+        "world": "./assets/world/hero.webp",
+        "url": "/world/hero"
+      },
+      {
+        "num":7 ,
+        "world": "./assets/world/danger.webp",
+        "url": "/world/danger"
+      },
+      {
+        "num":8 ,
+        "world": "./assets/world/dungeon.webp",
+        "url": "/world/dungeon"
+      },
+      {
+        "num":9 ,
+        "world": "./assets/world/darkness.webp",
+        "url": "/world/darknessdragon"
+      },
+      {
+        "num":10 ,
+        "world": "./assets/world/lg.png",
+        "url": "/world/legend"
+      },
+      {
+        "num":11 ,
+        "world": "./assets/world/lost.png",
+        "url": "/world/lostworld"
+      },
+      {
+        "num":12 ,
+        "world": "./assets/world/hunred.webp",
+        "url": "/world/hunreddemon"
+      },
+      {
+        "num":13 ,
+        "world": "./assets/world/heaven.webp",
+        "url": "/world/heaven"
+      },
+      {
+        "num":14 ,
+        "world": "./assets/world/hell.webp",
+        "url": "/world/executioner"
+      }
+      ,
+      {
+        "num":15 ,
+        "world": "./assets/world/thunder.webp",
+        "url": "/world/thunder"
+      },
+      {
+        "num":16 ,
+        "world": "./assets/world/chaos.png",
+        "url": "/world/chaos"
+      }
+  ]

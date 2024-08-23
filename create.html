@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="TH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/fakebf.png" sizes="192x192">
+    <script src="./main_css.js"></script>
+    <script>document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        }); document.addEventListener('contextmenu', function (e) {
+            e.preventDefault(); document.querySelectorAll('img').forEach(img => {
+                img.addEventListener('dragstart', e => e.preventDefault());
+            });
+        }, false);</script>
+    <link rel="stylesheet" href="./create.css">
+    <title>หน้าแรก - Fake Buddyfight</title>
+    <script src="./nav.js" async></script>
+    <script src="./text_c.js" async></script>
+</head>
+
+<body class="bg-slate-900">
+    <div>
+        <nav class="flex items-center justify-between flex-wrap bg-slate-950 p-3 lg:flex">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <span class="font-semibold text-xl tracking-tight"><img class="img-logo" src="./assets/fakebf.png"
+                        alt=""></span>
+            </div>
+            <div class="block lg:hidden">
+                <button id="hamburger-menu-button"
+                    class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="navbar-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+                <div id="nav_bar" class="text-sm lg:flex-grow">
+                </div>
+                <hr class="lg:hidden mt-4 mb-4">
+                <div>
+                    <a href="https://discord.gg/eyTqcyRD82">
+                        <img class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white lg:mt-0 discord"
+                            src="./assets/discord-icon-svgrepo-com.svg" alt="" width="50px" height="50px">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <p class="text-red-600 text-center bg-red-100">ยังไม่รองรับมือถือ</p>
+
+    <div class="flex flex-wrap p-5 justify-center">
+        <div id="pv" class="pv">
+            <div id="img_" class="img_">
+
+                <p id="nfs" class="absolute z8 font-bold notof">This custom card. Not official. Not for sale.</p>
+                <p id="nfs1" class="absolute z8 font-bold notof nfs1">This custom card. Not official. Not for sale.</p>
+
+
+                <div id="skill" class="absolute z3 border">
+                    
+                </div>
+                
+                <div id="atk_def_cri" class="">
+                    <div id="atk" class="absolute z2">
+                        <div class="text-from-back">
+                            <p id="power" class=" font-legend powerlegendcss  ">2000</p>
+                            <p id="power1" class="font-legend powerlegendcss  ">2000</p>
+                        </div>
+                    </div>
+                    <div id="cri" class="absolute z2">
+                        <p id="legendcri" class=" font-legend crilegendcss  ">11</p>
+                        <p id="legendcri1" class="font-legend crilegendcss ">11</p>
+                    </div>
+                    <div id="def" class="absolute z2">
+                        <p id="legenddef" class=" font-legend deflegendcss  ">2000</p>
+                        <p id="legenddef1" class="font-legend deflegendcss ">2000</p>
+                    </div>
+                </div>
+                <div id="names" class="text-center absolute">
+                    <p id="lmn" class="absolute z3 font-cham font-bold cardname mainar">ชื่อการ์ด</p>
+                    <p id="lmn1" class="absolute z2 font-cham font-bold cardname mainar">ชื่อการ์ด</p>
+                    <p id="wlg" class="absolute z2 font-cham font-bold wlegend mainar">เลเจนด์เวิลด์</p>
+                    <p id="att" class="absolute z2 font-cham font-bold attlegend mainar">เผ่าการ์ด</p>
+                </div>
+                <div id="skill_bg" class="absolute z2 user-none">
+                    <img id="legend_bg" class="user-none z2" src="./assets/flag/worlds/bg_skill/legend_1line.png" alt="">
+                </div>
+
+                <div id="worlds" class="absolute z1">
+                    <img id="frame" class="worlds  none " src="" alt=""
+                        width="500" height="699">
+                </div>
+
+                <div id="image-container" class="imh z0">
+                    <img id="dpim" src="" class="absolute">
+                </div>
+
+            </div>
+            <div class="in_bg">
+                <div class="imh_bg">
+                    <img src="./bg.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="p-3 justify-center">
+            <input type="file" id="file-input" style="display: none;">
+            <button id="img-import"
+                class="px-4 py-2 leading-none border rounded text-white rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white hover:text-black">Import
+                BG</button>
+            <button id="exp"
+                class="px-4 py-2 leading-none border rounded text-white rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white hover:text-black">Export</button>
+
+            <div class="flex">
+                <p class="text-white mr-2">Monster World :</p>
+                <select class="text-center" id="world-selector">
+                    <option value="">None</option>
+                    <option value="maw">Ancient Monster</option>
+                    <option value="mcs">Chaos Monster</option>
+                    <option value="mdr">Danger Monster</option>
+                    <option value="mdn">Dungeon Monster</option>
+                    <option value="mdg">Dragon Monster</option>
+                    <option value="mgr_c">Generic Monster (Classic)</option>
+                    <option value="mhw">Hero Monster</option>
+                    <option value="mhm">Hundred Demons Monster</option>
+                    <option value="mlw" class="bg-legend">Legend Monster</option>
+                    <option value="mls">LostWorld Monster</option>
+                    <option value="mmw">Magic Monster</option>
+                    <option value="mst_c">StarDragon Monster (Classic)</option>
+                    <option value="mst">StarDragon Monster</option>
+                </select>
+            </div>
+            <div class="block">
+                <p class="text-white mr-2 font-bold">Size</p>
+                <select class="text-center" id="image-selector-Legend">
+                    <option value="">None</option>
+                    <option value="s0" class="bg-legend">[Size0]</option>
+                    <option value="s1" class="bg-legend">[Size1]</option>
+                    <option value="s2" class="bg-legend">[Size2]</option>
+                    <option value="s3" class="bg-legend">[Size3]</option>
+                </select>
+            </div>
+
+            <!-- Legend World -->
+            <div class="p-3 border m-4">
+                <p class="text-white font-bold">Legend World</p>
+                <div class="border border-red-600 mt-4">
+
+                    <div class="flex flex-wrap m-2">
+                        <div class="flex flex-wrap ">
+                            <div class="block">
+    
+                                <div class="block">
+                                    <p class="text-white mr-2 font-bold">Power</p>
+                                    <input type="text" id="power_legend" placeholder="Power"
+                                        class="text-center p-2 powerinput" oninput="powerlegend()">
+                                </div>
+                                <div class="block">
+                                    <p class="text-white mr-2 font-bold">critical</p>
+                                    <input type="text" id="cri_legend" placeholder="Critical"
+                                        class="text-center p-2 powerinput" oninput="crilegend()">
+                                </div>
+                                <div class="block">
+                                    <p class="text-white mr-2 font-bold">Defence</p>
+                                    <input type="text" id="def_legend" placeholder="Defence"
+                                        class="text-center p-2 powerinput" oninput="deflegend()">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    
+
+                        <div class="m-2">
+                            <div class="block justify-center mt-3">
+                                <div class="flex mb-2">
+                                    <p class="text-white mr-2 font-bold">Card Name</p>
+                                    <div class="controls ml-3">
+                                        <button id="decreaseBTNname" class="border font-bold font-bold bg-red-200">-</button>
+                                        <button id="increaseBTNname" class="border font-bold font-bold bg-green-200">+</button>
+                                    </div>
+                                </div>
+                                <input type="text" id="name_legend" placeholder="Card Name" class="text-center p-2 nameinput"
+                                    oninput="namelegend()">
+                            </div>
+                            <div class="block justify-center mt-3">
+                                <div class="flex mb-2">
+                                    <p class="text-white mr-2 font-bold">Attribute</p>
+                                    <div class="controls ml-3">
+                                        <button id="decreaseBTNAttribute" class="border font-bold font-bold bg-red-200">-</button>
+                                        <button id="increaseBTNnameAttribute" class="border font-bold font-bold bg-green-200">+</button>
+                                    </div>
+                                </div>
+                                <input type="text" id="attribute_legend" placeholder="Attribute"
+                                    class="text-center p-2 nameinput" oninput="Attributelegend()">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Legend World -->
+
+            </div>
+
+            <div class="flex flex-wrap justify-center mt-3">
+                <div class="flex mb-2">
+                    <p class="text-white mr-2 font-bold">Effect</p>
+                    <div>
+                        <div class="controls m-3">
+                            <button id="decreaseBTNEffect" class="border font-bold font-bold bg-red-200">-</button>
+                            <button id="legendEffectU" class="border font-bold font-bold bg-blue-300">Up</button>
+                            <button id="increaseBTNnameEffect" class="border font-bold font-bold bg-green-200">+</button>
+                        </div>
+                        <div class="controls">
+                            <button id="legendEffectL" class="border font-bold font-bold bg-blue-300">Left</button>
+                            <button id="legendEffectD" class="border font-bold font-bold bg-blue-300">Down</button>
+                            <button id="legendEffectR" class="border font-bold font-bold bg-blue-300">Right</button>
+                        </div>
+                    </div>
+                </div>
+                <textarea id="effect_legend" placeholder="Effect"
+                    class=" p-2 nameinput" oninput="Effectlegend()"></textarea>
+            </div>
+
+        </div>
+
+
+
+
+
+        <script src="./js/worlds_qr.js"></script>
+        <script src="./js/power.js"></script>
+        <script src="./js/cri.js"></script>
+        <script src="./js/def.js"></script>
+        <script src="./js/export.js"></script>
+        <script src="./js/import.js"></script>
+        <script src="./js/drag.js"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+        <script>const hamburgerMenuButton = document.getElementById('hamburger-menu-button'); const navbarMenu = document.getElementById('navbar-menu'); hamburgerMenuButton.addEventListener('click', () => { navbarMenu.classList.toggle('active'); });</script>
+</body>
+
+</html>

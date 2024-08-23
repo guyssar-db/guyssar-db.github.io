@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="TH">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/fakebf.png"sizes="192x192">
+    <script src="../main_css.js"></script>
+    <style> .img-logo {width: 100px;}@media(max-width: 450px){body{width:max-content}}@media (max-width: 768px) {.nav-links {display: none;}}#navbar-menu.active {display: block;}.w-100{width:auto;}</style>
+    <title>Monster - Fake Buddyfight</title>
+    <link rel="stylesheet" href="./monster.css">
+    <script async>fetch('../json/navigation.json') 
+        .then(response => response.json())
+        .then(data => {
+          const nav = document.getElementById('nav_bar'); 
+      
+      
+          for (const item of data) {
+            const link = document.createElement('a');
+            link.href = item.href;
+            link.classList.add('block', 'mt-4', 'lg:inline-block', 'lg:mt-0', 'text-white', 'hover:text-white', 'mr-4');
+            link.textContent = item.text; 
+      
+            nav.appendChild(link);
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching navigation data:', error);
+        });</script>
+</head>
+
+<body class="bg-slate-900">
+<!---------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------NAV----------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------->
+    
+        <nav class="flex items-center justify-between flex-wrap bg-slate-950 p-3 lg:flex w-100">
+            <div class="flex items-center flex-shrink-0 text-white mr-6">
+                <span class="font-semibold text-xl tracking-tight"><img class="img-logo" src="../assets/fakebf.png"
+                        alt=""></span>
+            </div>
+            <div class="block lg:hidden">
+                <button id="hamburger-menu-button"
+                    class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
+                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <title>Menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                    </svg>
+                </button>
+            </div>
+            <div id="navbar-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
+                <div id="nav_bar" class="text-sm lg:flex-grow">
+                </div>
+                <hr class="lg:hidden mt-4 mb-4">
+                <div>
+                    <a href="https://discord.gg/eyTqcyRD82"><img class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white lg:mt-0" src="../assets/discord-icon-svgrepo-com.svg" alt="" width="50px"></a>
+                </div>
+            </div>
+        </nav>
+    
+<!---------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------------Previwe--------------------------------------------------->
+<p class="text-red-600 text-center bg-red-100">การย่อขยายภาพยังไม่รองรับในมือถือ</p>
+
+<!---------------------------------------------------------------------------------------------------------------->
+<div id="main" class="flex flex-wrap p-5">
+    <div id="pv" class="pv">
+        <div id="img_" class="img_">
+
+            <div id="nub" class="nub z8">
+                <div id="se_" class="se_">
+                    <p id="se" class="se effect-darkness"></p>
+                </div>
+            </div>
+            <div id="textbox" class="textbox_ z1 absolute">
+                <div class="textbox">
+                    <img id="mdu-textbox" src="" alt="">
+                </div>
+            </div>
+            <!----------------------------Dungeon--------------------------------->
+            <p id="Mdungeonpower" class="absolute Mdungeonpower">3000</p>
+            <p id="Mdungeonpowercopy" class="absolute Mdungeonpowercopy ">3000</p>
+            <p id="Mdungeondef" class="absolute Mdungeondef">1000</p>
+            <p id="Mdungeondefcopy" class="absolute Mdungeondefcopy ">1000</p>
+
+            <!----------------------------Danger--------------------------------->
+                <p id="Mdangerpower" class="absolute Mdangerpower none">5000</p>
+                <p id="Mdangerpowercopy" class="absolute Mdangerpowercopy none">5000</p>
+                <p id="Mdangerdef" class="absolute Mdangerdef none">5000</p>
+                <p id="Mdangerdefcopy" class="absolute Mdangerdefcopy none">5000</p>
+                <p id="Mdangercri" class="absolute Mdangercri none">2</p>
+                <p id="Mdangercricopy" class="absolute Mdangercricopy none">2</p>
+                <p id="dangeratt" class="absolute dangeratt z3 none">เ---ผี่าอู---า</p>
+                <p id="dangername" class="absolute dangername z4 none">ชื่อู</p>
+                <p id="dangernamecopy" class="absolute dangernamecopy z4 none">ชื่อู</p>
+
+            <!----------------------------legendText--------------------------------->
+                <p id="Mlegendpower" class="absolute Mlegendpower none ">5000</p>
+                <p id="Mlegendpowercopy" class="absolute Mlegendpowercopy none">5000</p>
+                <p id="Mlegenddef" class="absolute Mlegenddef none">5000</p>
+                <p id="Mlegenddefcopy" class="absolute Mlegenddefcopy none">5000</p>
+                <p id="Mlegendcri" class="absolute Mlegendcri none">2</p>
+                <p id="Mlegendcricopy" class="absolute Mlegendcricopy none">2</p>
+                <p id="legendname" class="absolute legendname z4 none">ชื่อู</p>
+                <p id="legendnamecopy" class="absolute legendnamecopy z3 none">ชื่อู</p>
+                <p id="legendatt" class="absolute legendatt z3 none">เผี่าอูา</p>
+                <p id="legendW" class="absolute legendW z3 none">เลเจนด์เวิลด์</p>
+            <!----------------------------Worlds--------------------------------->
+            <img id="chaos" class="absolute z2 none" src="./assets/chaos.png" alt="">
+            <img id="hundred" class="absolute z2 none" src="./assets/hundred.png" alt="">
+            <img id="worlds" class="z1" src="" alt="" >
+            <!----------------------------BG--------------------------------->
+            <div id="in" class="in">
+                <div id="imh" class="imh">
+                    <img id="dpim" src="">
+                </div>
+            </div>
+        </div>
+    </div>
+<!---------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------->
+    <div class="p-6">
+        <!------------------------------------------------------------->
+        <div class="block mb-2">
+            <input type="file" id="file-input" style="display: none;">
+            <button id="img-import"class="px-4 py-2 leading-none border rounded bg-blue-600 text-white rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white hover:text-black">ImportBG</button>
+            <button id="exp" class="px-4 py-2 leading-none border rounded bg-red-400 text-white rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white hover:text-black">Export</button>
+        </div>
+        <!------------------------------------------------------------->
+        <!------------------------------------------------------------->
+        <!------------------------------------------------------------->
+        <div class="flex flex-wrap">
+            <div>
+                <div class="m-3">
+                    <p class="text-white font-bold">Worlds</p>
+                    <select class="text-center" id="world-selector">
+                        <option value="">None</option>
+                        <option value="maw">[0-3] Ancient Monster</option>
+                        <option value="mcs">Chaos Monster</option>
+                        <option value="mdr">[0-3] Danger Monster</option>
+                        <option value="mdn">[0-3] Darkness Monster</option>
+                        <option value="mdu"> Dungeon Monster</option>
+                        <option value="mdg">Dragon Monster</option>
+                        <option value="mgr_c">[0-3] Generic Monster (Classic)</option>
+                        <option value="mhw">[0-3] Hero Monster</option>
+                        <option value="mhm">Hundred Demons Monster</option>
+                        <option value="mlw">[0-3] Legend Monster</option>
+                        <option value="mls">LostWorld Monster</option>
+                        <option value="mmw">[0-3] Magic Monster</option>
+                        <option value="mst_c">[0-3] StarDragon Monster (Classic)</option>
+                        <option value="mst">[0-3] StarDragon Monster</option>
+                    </select>
+                </div>
+            </div>
+            <!------------------------------------------------------------->
+            <div class="flex">
+                <!------------------------------------------------------------->
+                <div class="m-3">
+                    <p class="text-white font-bold">Size</p>
+                    <select class="text-center" id="size-selector">
+                        <option value="s0" class="bg-legend">[Size0]</option>
+                        <option value="s1" class="bg-legend">[Size1]</option>
+                        <option value="s2" class="bg-legend">[Size2]</option>
+                        <option value="s3" class="bg-legend">[Size3]</option>
+                    </select>
+                </div>
+                <!------------------------------------------------------------->
+                <div class="m-3 justify-center items-center text-center">
+                    <label class="text-white" for="chaoscheck">Chaos</label><br>
+                    <input type="checkbox" class="chaoscheckcss" id="chaoscheck" name="chaoscheck" value="chaoscheck">
+                </div>
+                <!------------------------------------------------------------->
+                <div class="m-3 justify-center items-center text-center">
+                    <label class="text-white" for="hundemoncheck">Hundred Demon</label><br>
+                    <input type="checkbox" class="hundemoncheckcss" id="hundemoncheck" name="hundemoncheck" value="hundemoncheck">
+                </div>
+                <!------------------------------------------------------------->
+            </div>
+        </div>
+        <!------------------------------------------------------------->
+        <!----------------------------Legend--------------------------->
+        <!------------------------------------------------------------->
+        <div id="div-legend" class="none">
+            <p class="text-center text-white font-bold bg-yellow-600 border">Legend</p>
+            <div class="border p-3">
+                <div class="flex gap-3">
+                    <div class="basis-1/2">
+                        <p class="text-white font-bold">Card Name</p>
+                        <input type="text" name="legendnameinput" id="legendnameinput" oninput="namelegend()">
+                    </div>
+                    <div class="basis-1/2">
+                        <p class="text-white font-bold">Attibute</p>
+                        <input type="text" name="legendattinput" id="legendattinput" oninput="attlegend()">
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <div>
+                        <p class="text-white font-bold">Power</p>
+                        <input type="text" name="legendpowerinput" id="legendpowerinput" oninput="atklegend()">
+                    </div>
+                    <div>
+                        <p class="text-white font-bold">Critical</p>
+                        <input type="text" name="legendcriinput" id="legendcriinput" oninput="crilegend()">
+                    </div>
+                    <div>
+                        <p class="text-white font-bold">Defence</p>
+                        <input type="text" name="legenddefinput" id="legenddefinput" oninput="deflegend()">
+                    </div>
+                </div>
+                <!------------------------------------------------------------->
+                <div class="mt-5 flex gap-3 justify-around">
+                    <div>
+                        <p class="text-white font-bold">Attibute ScaleX</p>
+                        <div class="flex gap-1">
+                            <button id="legenddecreaseBTNAttribute" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
+                            <button id="legendincreaseBTNAttribute" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-white font-bold">Name ScaleX</p>
+                        <div class="flex gap-1">
+                            <button id="legenddecreaseBTNName" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
+                            <button id="legendincreaseBTNname" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------->
+            </div>
+        </div>
+        <!------------------------------------------------------------->
+        <!----------------------------Danger--------------------------->
+        <!------------------------------------------------------------->
+        <div id="div-danger" class="none">
+            <p class="text-center text-white font-bold bg-red-600 border">Danger</p>
+            <div class="border p-3">
+                <div class="flex gap-3 justify-around">
+                    <div class="basis-1/2">
+                        <p class="text-white font-bold">Card Name</p>
+                        <input type="text" name="dangernameinput" id="dangernameinput" oninput="namedanger()">
+                    </div>
+                    <div class="basis-1/2">
+                        <p class="text-white font-bold">Attibute</p>
+                        <input type="text" name="dangerattinput" id="dangerattinput" oninput="attdanger()">
+                    </div>
+                </div>
+                <div class="flex gap-3 justify-around">
+                    <div>
+                        <p class="text-white font-bold">Power</p>
+                        <input type="text" name="dangerpowerinput" id="dangerpowerinput" oninput="atkdanger()">
+                    </div>
+                    <div>
+                        <p class="text-white font-bold">Critical</p>
+                        <input type="text" name="dangercriinput" id="dangercriinput" oninput="cridanger()">
+                    </div>
+                    <div>
+                        <p class="text-white font-bold">Defence</p>
+                        <input type="text" name="dangerdefinput" id="dangerdefinput" oninput="defdanger()">
+                    </div>
+                </div>
+                <!------------------------------------------------------------->
+                <div class="mt-5 flex gap-3 justify-around">
+                    <div>
+                        <p class="text-white font-bold">Attibute ScaleX</p>
+                        <div class="flex gap-1">
+                            <button id="decreaseBTNAttribute" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
+                            <button id="increaseBTNnameAttribute" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-white font-bold">Name ScaleX</p>
+                        <div class="flex gap-1">
+                            <button id="decreaseBTNName" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
+                            <button id="increaseBTNnameAttribute" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------->
+            </div>
+        </div>
+        <!------------------------------------------------------------->
+        <!------------------------------------------------------------->
+        <div class="mt-5">
+            <div class="flex gap-3 flex-wrap">
+                <div>
+                    <p class="text-white font-bold">Effect Move</p>
+                    <div class="">
+                        <div class="flex gap-1 mt-1">
+
+                            <button id="BTNEffectUp" class="border btn font-bold font-bold bg-blue-300">Up</button>
+                            <button id="BTNEffectDown" class="border btn font-bold font-bold bg-blue-300">Down</button>
+
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <p class="text-white font-bold">Effect Color</p>
+                        <select class="text-center" id="color-selector">
+                            <option value="textblack" class="bg-legend">Black</option>
+                            <option value="textwhite" class="bg-legend">White</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <p class="text-white font-bold">Effect</p>
+                    <textarea type="text" name="teb" id="teb"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+
+<!---------------------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------SCRIPT------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------------------->
+    <script src="./export_monster.js"></script>
+    <script src="./worlds_select.js"></script>
+    <script src="./change.js"></script>
+    <script src="./effect.js"></script>
+    <script src="./import_bg.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script>const hamburgerMenuButton = document.getElementById('hamburger-menu-button');const navbarMenu = document.getElementById('navbar-menu');hamburgerMenuButton.addEventListener('click', () => {navbarMenu.classList.toggle('active');});</script>
+</body>
+           
+</html>
