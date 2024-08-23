@@ -1,7 +1,7 @@
-fetch('./legend/legend.json') 
+fetch('./darknessdragon/darknessdragon.json') 
   .then(response => response.json())
   .then(data => {
-    const LegendSection = document.getElementById('Legend_World');
+    const LegendSection = document.getElementById('darknessdragon_World');
 
     
     for (const item of data) {
