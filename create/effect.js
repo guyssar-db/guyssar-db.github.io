@@ -14,6 +14,7 @@ document.getElementById('teb').addEventListener('input', function() {
     inputText = inputText.replace(/4attack/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Quadruple Attack.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/6attack/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Hextuple Attack.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/counter/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Counter.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/cattack/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Counter Attack.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/move/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Move.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/soulguard/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Soulguard.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/penetrate/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Penetrate.png" alt="Image" class="Iskill"></span>');
@@ -32,6 +33,7 @@ document.getElementById('teb').addEventListener('input', function() {
     inputText = inputText.replace(/ovk/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overkill.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/ovh/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overthrow.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/weaponlink/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Weaponry Link.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/ambush/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Ambush.png" alt="Image" class="Iskill"></span>');
 
 
     let lines = inputText.split('\n');
