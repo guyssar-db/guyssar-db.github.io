@@ -10,7 +10,7 @@ document.getElementById('teb').addEventListener('input', function() {
     inputText = inputText.replace(/castcost/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Cast Cost.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/equipcost/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Equip Cost.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/2attack/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Double Attack.png" alt="Image" class="Iskill"></span>');
-    inputText = inputText.replace(/3attack/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/triple Attack.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/3attack/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Triple Attack.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/4attack/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Quadruple Attack.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/6attack/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Hextuple Attack.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/counter/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Counter.png" alt="Image" class="Iskill"></span>');
