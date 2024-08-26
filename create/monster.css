@@ -4,23 +4,23 @@
 
   @font-face {
     font-family: 'ChamBold';
-    src: url('../assets/flag/fonts/PSLxChamnarnBold.ttf') format('truetype');
+    src: url('../assets/flag/590438/PSLxChamnarnBold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
   }
 
   @font-face {
     font-family: 'legendpower';
-    src: url('../assets/flag/fonts/legendpower.ttf') format('truetype');
+    src: url('../assets/flag/590438/legendpower.ttf') format('truetype');
   }
 
   @font-face {
     font-family: 'compacta';
-    src: url('../assets/flag/fonts/compacta_mt_bold.ttf') format('truetype');
+    src: url('../assets/flag/590438/compacta_mt_bold.ttf') format('truetype');
   }
   @font-face {
     font-family: 'matura';
-    src: url('../assets/flag/fonts/magic power.otf') format('opentype');
+    src: url('../assets/flag/590438/magic power.otf') format('opentype');
   }
 
   /********************************************/

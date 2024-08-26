@@ -82,7 +82,38 @@ function div_img() {
             element.style.transform = `translate(${currentX - 17}px, ${matrix.m42}px) rotate(-90deg)`;
         }
     }
-
+    function gungeonmoveLeft(element) {
+        if (element) {
+            var style = window.getComputedStyle(element);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            var currentX = matrix.m41;
+            element.style.transform = `translate(${currentX - 20}px, ${matrix.m42}px) rotate(-90deg)`;
+        }
+    }
+    function gungeonmoveCriLeft(element) {
+        if (element) {
+            var style = window.getComputedStyle(element);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            var currentX = matrix.m41;
+            element.style.transform = `translate(${currentX - 25}px, ${matrix.m42}px) rotate(-90deg)`;
+        }
+    }
+    function gungeonmovedown(element) {
+        if (element) {
+            var style = window.getComputedStyle(element);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            var currentY = matrix.m42;
+            element.style.transform = `translate(${matrix.m41}px, ${currentY +10}px) rotate(-90deg)`;
+        }
+    }
+    function gungeonmoveUp(element) {
+        if (element) {
+            var style = window.getComputedStyle(element);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            var currentY = matrix.m42;
+            element.style.transform = `translate(${matrix.m41}px, ${currentY -10}px) rotate(-90deg)`;
+        }
+    }
     // ================================== Legend ================================== //
     moveUp(legendname);
     moveUp(legendnamecopy);
@@ -108,12 +139,19 @@ function div_img() {
     moveUp(dungeonname);
     moveUp(dungeonnamecopy);
     moveUp2(dungeonatt);
-    dangermoveLeft(dungeonPower);
-    dangermoveLeft(dungeonPowercopy);
-    dangermoveLeft(dungeonDef);
-    dangermoveLeft(dungeonDefcopy);
-    dangermoveLeft(dungeonCri);
-    dangermoveLeft(dungeonCricopy);
+
+    gungeonmoveLeft(dungeonPower);
+    gungeonmoveLeft(dungeonPowercopy);
+    gungeonmovedown(dungeonPower);
+    gungeonmovedown(dungeonPowercopy);
+
+    gungeonmoveUp(dungeonDef);
+    gungeonmoveUp(dungeonDefcopy);
+    gungeonmoveLeft(dungeonDef);
+    gungeonmoveLeft(dungeonDefcopy);
+
+    gungeonmoveCriLeft(dungeonCri);
+    gungeonmoveCriLeft(dungeonCricopy);
 
 
     moveUp2(Se_);
@@ -155,8 +193,8 @@ function div_img() {
         if (legendCri) legendCri.style.transform = '';
         if (legendCricopy) legendCricopy.style.transform = '';
         // ================================== Legend ================================== //
-        if (dangername) dangername.style.transform = '';
         if (Se_) Se_.style.transform = '';
+        if (dangername) dangername.style.transform = '';
         if (dangernamecopy) dangernamecopy.style.transform = '';
         if (dangeratt) dangeratt.style.transform = '';
         if (dangerPower) dangerPower.style.transform = '';
@@ -165,6 +203,16 @@ function div_img() {
         if (dangerDefcopy) dangerDefcopy.style.transform = '';
         if (dangerCri) dangerCri.style.transform = '';
         if (dangerCricopy) dangerCricopy.style.transform = '';
+        
+        if (dungeonname) dungeonname.style.transform = '';
+        if (dungeonnamecopy) dungeonnamecopy.style.transform = '';
+        if (dungeonatt) dungeonatt.style.transform = '';
+        if (dungeonPower) dungeonPower.style.transform = '';
+        if (dungeonPowercopy) dungeonPowercopy.style.transform = '';
+        if (dungeonDef) dungeonDef.style.transform = '';
+        if (dungeonDefcopy) dungeonDefcopy.style.transform = '';
+        if (dungeonCri) dungeonCri.style.transform = '';
+        if (dungeonCricopy) dungeonCricopy.style.transform = '';
         document.querySelectorAll('.Iskill').forEach(function(element) {
             element.style.width = '';
         });
