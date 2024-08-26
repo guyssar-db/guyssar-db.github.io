@@ -59,8 +59,8 @@
         </nav>
     
 <!---------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------Previwe--------------------------------------------------->
-<p class="text-red-600 text-center bg-red-100">การย่อขยายภาพยังไม่รองรับในมือถือ</p>
+<!------------------------------------------------------Previwe---------------------------------------
+<p class="text-red-600 text-center bg-red-100">การย่อขยายภาพยังไม่รองรับในมือถือ</p>------------>
 
 <!---------------------------------------------------------------------------------------------------------------->
 <div id="main" class="flex flex-wrap p-5">
@@ -78,15 +78,15 @@
                 </div>
             </div>
             <!----------------------------Dungeon--------------------------------->
-            <p id="Mdungeonpower" class="absolute Mdungeonpower">3000</p>
-            <p id="Mdungeonpowercopy" class="absolute Mdungeonpowercopy ">3000</p>
-            <p id="Mdungeondef" class="absolute Mdungeondef">1000</p>
-            <p id="Mdungeondefcopy" class="absolute Mdungeondefcopy ">1000</p>
-            <p id="Mdungeoncri" class="absolute Mdungeoncri">1</p>
-            <p id="Mdungeoncricopy" class="absolute Mdungeoncricopy">1</p>
-            <p id="dungeonatt" class="absolute dungeonatt z3">เ---ผี่าอู---า</p>
-            <p id="dungeonname" class="absolute dungeonname z4">ชื่อู</p>
-            <p id="dungeonnamecopy" class="absolute dungeonnamecopy z3 ">ชื่อู</p>
+            <p id="Mdungeonpower" class="absolute Mdungeonpower none">3000</p>
+            <p id="Mdungeonpowercopy" class="absolute Mdungeonpowercopy none ">3000</p>
+            <p id="Mdungeondef" class="absolute Mdungeondef none">1000</p>
+            <p id="Mdungeondefcopy" class="absolute Mdungeondefcopy none ">1000</p>
+            <p id="Mdungeoncri" class="absolute Mdungeoncri none">1</p>
+            <p id="Mdungeoncricopy" class="absolute Mdungeoncricopy none">1</p>
+            <p id="dungeonatt" class="absolute dungeonatt z3 none">เ---ผี่าอู---า</p>
+            <p id="dungeonname" class="absolute dungeonname z4 none">ชื่อู</p>
+            <p id="dungeonnamecopy" class="absolute dungeonnamecopy z3  none">ชื่อู</p>
             <!----------------------------Danger--------------------------------->
                 <p id="Mdangerpower" class="absolute Mdangerpower none">5000</p>
                 <p id="Mdangerpowercopy" class="absolute Mdangerpowercopy none">5000</p>
@@ -260,6 +260,55 @@
                     <div>
                         <p class="text-white font-bold">Defence</p>
                         <input type="text" name="dangerdefinput" id="dangerdefinput" oninput="defdanger()">
+                    </div>
+                </div>
+                <!------------------------------------------------------------->
+                <div class="mt-5 flex gap-3 justify-around">
+                    <div>
+                        <p class="text-white font-bold">Attibute ScaleX</p>
+                        <div class="flex gap-1">
+                            <button id="decreaseBTNAttribute" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
+                            <button id="increaseBTNnameAttribute" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-white font-bold">Name ScaleX</p>
+                        <div class="flex gap-1">
+                            <button id="decreaseBTNName" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
+                            <button id="increaseBTNnameAttribute" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
+                        </div>
+                    </div>
+                </div>
+                <!------------------------------------------------------------->
+            </div>
+        </div>
+        <!------------------------------------------------------------->
+        <!------------------------------------------------------------->
+        <div id="div-dungeon" class="none">
+            <p class="text-center font-bold bg-gray-200 border">Dungeon</p>
+            <div class="border p-3">
+                <div class="flex gap-3 justify-around">
+                    <div class="basis-1/2">
+                        <p class="text-white font-bold">Card Name</p>
+                        <input type="text" name="dungeonnameinput" id="dungeonnameinput" oninput="namedungeon()">
+                    </div>
+                    <div class="basis-1/2">
+                        <p class="text-white font-bold">Attibute</p>
+                        <input type="text" name="dungeonattinput" id="dungeonattinput" oninput="attdungeon()">
+                    </div>
+                </div>
+                <div class="flex gap-3 justify-around">
+                    <div>
+                        <p class="text-white font-bold">Power</p>
+                        <input type="text" name="dungeonpowerinput" id="dungeonpowerinput" oninput="atkdungeon()">
+                    </div>
+                    <div>
+                        <p class="text-white font-bold">Critical</p>
+                        <input type="text" name="dungeoncriinput" id="dungeoncriinput" oninput="cridungeon()">
+                    </div>
+                    <div>
+                        <p class="text-white font-bold">Defence</p>
+                        <input type="text" name="dungeoninput" id="dungeoninput" oninput="defdungeon()">
                     </div>
                 </div>
                 <!------------------------------------------------------------->

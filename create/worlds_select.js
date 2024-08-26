@@ -56,6 +56,17 @@ document.getElementById('hundemoncheck').addEventListener('change', function() {
     document.getElementById('dangernamecopy').classList.add('none');
     document.getElementById('div-danger').classList.add('none');
 
+    document.getElementById('Mdungeonpower').classList.add('none');
+    document.getElementById('Mdungeonpowercopy').classList.add('none');
+    document.getElementById('Mdungeondef').classList.add('none');
+    document.getElementById('Mdungeondefcopy').classList.add('none');
+    document.getElementById('Mdungeoncri').classList.add('none');
+    document.getElementById('Mdungeoncricopy').classList.add('none');
+    document.getElementById('dungeonatt').classList.add('none');
+    document.getElementById('dungeonname').classList.add('none');
+    document.getElementById('dungeonnamecopy').classList.add('none');
+    document.getElementById('div-dungeon').classList.add('none');
+
 
     if (this.value === 'mlw') {
         document.getElementById('Mlegendpower').classList.remove('none');
@@ -80,6 +91,17 @@ document.getElementById('hundemoncheck').addEventListener('change', function() {
         document.getElementById('dangername').classList.remove('none');
         document.getElementById('dangernamecopy').classList.remove('none');
         document.getElementById('div-danger').classList.remove('none');
+    }else if (this.value === 'mdu') {
+        document.getElementById('Mdungeonpower').classList.remove('none');
+        document.getElementById('Mdungeonpowercopy').classList.remove('none');
+        document.getElementById('Mdungeondef').classList.remove('none');
+        document.getElementById('Mdungeondefcopy').classList.remove('none');
+        document.getElementById('Mdungeoncri').classList.remove('none');
+        document.getElementById('Mdungeoncricopy').classList.remove('none');
+        document.getElementById('dungeonatt').classList.remove('none');
+        document.getElementById('dungeonname').classList.remove('none');
+        document.getElementById('dungeonnamecopy').classList.remove('none');
+        document.getElementById('div-dungeon').classList.remove('none');
     }
 });
 

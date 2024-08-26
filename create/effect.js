@@ -36,6 +36,17 @@ document.getElementById('teb').addEventListener('input', function() {
     inputText = inputText.replace(/ambush/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Ambush.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/<</g, '<a class="skk">《</a>');
     inputText = inputText.replace(/>>/g, '<a class="skk">》</a>');
+    inputText = inputText.replace(/reversal/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Reversal.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/shadowdive/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Shadow Dive.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/ride/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Ride.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/transform/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Transform.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/imform/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Impact Transform.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/purge/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Purge.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/station/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Station.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/crossnize/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Crossnize.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/dragod/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Dragod.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/dragonify/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Dragonify.png" alt="Image" class="Iskill"></span>');
+
 
 
     let lines = inputText.split('\n');

@@ -69,6 +69,41 @@ function defdanger() {
 
 
 
+//============================================================//
+//============================================================//
+//=========================[dungeon]===========================//
+//============================================================//
+//============================================================//
+function namedungeon() {
+    var inputText = document.getElementById('dungeonnameinput').value;
+    document.getElementById('dungeonname').innerText = inputText;
+    document.getElementById('dungeonnamecopy').innerText = inputText;
+}
+function attdungeon() {
+    var inputText = document.getElementById('dungeonattinput').value;
+    document.getElementById('dungeonatt').innerText = inputText;
+}
+function atkdungeon() {
+    var inputText = document.getElementById('dungeonpowerinput').value;
+    document.getElementById('Mdungeonpower').innerText = inputText;
+    document.getElementById('Mdungeonpowercopy').innerText = inputText;
+}
+function cridungeon() {
+    var inputText = document.getElementById('dungeoncriinput').value;
+    document.getElementById('Mdungeoncri').innerText = inputText;
+    document.getElementById('Mdungeoncricopy').innerText = inputText;
+}
+function defdungeon() {
+    var inputText = document.getElementById('dungeoninput').value;
+    document.getElementById('Mdungeondef').innerText = inputText;
+    document.getElementById('Mdungeondefcopy').innerText = inputText;
+}
+//============================================================//
+
+
+
+
+
 
 
 

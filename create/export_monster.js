@@ -14,7 +14,7 @@ function div_img() {
     var legendDefcopy = document.querySelector('.Mlegenddefcopy');
     var legendCri = document.querySelector('.Mlegendcri');
     var legendCricopy = document.querySelector('.Mlegendcricopy');
-    // ================================== Legend ================================== //
+    // ================================== Danger ================================== //
     var dangername = document.querySelector('.dangername');
     var dangernamecopy = document.querySelector('.dangernamecopy');
     var dangeratt = document.querySelector('.dangeratt');
@@ -24,8 +24,16 @@ function div_img() {
     var dangerDefcopy = document.querySelector('.Mdangerdefcopy');
     var dangerCri = document.querySelector('.Mdangercri');
     var dangerCricopy = document.querySelector('.Mdangercricopy');
-    // ================================== Legend ================================== //
-
+    // ================================== Dungeon ================================== //
+    var dungeonname = document.querySelector('.dungeonname');
+    var dungeonnamecopy = document.querySelector('.dungeonnamecopy');
+    var dungeonatt = document.querySelector('.dungeonatt');
+    var dungeonPower = document.querySelector('.Mdungeonpower');
+    var dungeonPowercopy = document.querySelector('.Mdungeonpowercopy');
+    var dungeonDef = document.querySelector('.Mdungeondef');
+    var dungeonDefcopy = document.querySelector('.Mdungeondefcopy');
+    var dungeonCri = document.querySelector('.Mdungeoncri');
+    var dungeonCricopy = document.querySelector('.Mdungeoncricopy');
 
 
 
@@ -97,6 +105,17 @@ function div_img() {
     dangermoveLeft(dangerCri);
     dangermoveLeft(dangerCricopy);
     
+    moveUp(dungeonname);
+    moveUp(dungeonnamecopy);
+    moveUp2(dungeonatt);
+    dangermoveLeft(dungeonPower);
+    dangermoveLeft(dungeonPowercopy);
+    dangermoveLeft(dungeonDef);
+    dangermoveLeft(dungeonDefcopy);
+    dangermoveLeft(dungeonCri);
+    dangermoveLeft(dungeonCricopy);
+
+
     moveUp2(Se_);
 
 
