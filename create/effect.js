@@ -34,6 +34,8 @@ document.getElementById('teb').addEventListener('input', function() {
     inputText = inputText.replace(/ovh/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overthrow.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/weaponlink/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Weaponry Link.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/ambush/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Ambush.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/<</g, '<a class="skk">《</a>');
+    inputText = inputText.replace(/>>/g, '<a class="skk">》</a>');
 
 
     let lines = inputText.split('\n');

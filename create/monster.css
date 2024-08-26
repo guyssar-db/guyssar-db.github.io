@@ -280,7 +280,10 @@
     top:0; 
     left:0;
     }
+    .skk{
+    vertical-align:bottom;
 
+    }
 
 
   /********************************************/
@@ -502,7 +505,7 @@
   /********************************************/
 
   
-  #Mdungeonpowercopy,#Mdungeondefcopy {
+  #Mdungeonpowercopy,#Mdungeondefcopy, #Mdungeoncricopy{
     color: #000000;
     -webkit-text-stroke: 4px #000;
     z-index: 7;
@@ -539,4 +542,27 @@
     text-align: start;
     letter-spacing: 0.5px;
     z-index: 8;
+  }
+  .Mdungeoncri,
+  .Mdungeoncricopy
+  {
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 42px;
+    transform: translate(-191px, -50px) rotate(-90deg);
+    color: #ffffff;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: -1px;
+    z-index: 8;
+  }
+  .dungeonatt {
+    transform: translate(-48px, 213px);
+    font-family: 'ChamBold', sans-serif;
+    font-style: italic;
+    color: #362513;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 13pt;
   }
