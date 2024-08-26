@@ -566,3 +566,16 @@
     white-space: nowrap;
     font-size: 13pt;
   }
+  .dungeonname, .dungeonnamecopy{
+    transform: translate(0px, 265px);
+    font-family: 'ChamBold', sans-serif;
+    font-style: italic;
+    color: #362513;
+    font-size: 20pt;
+    z-index: 8;
+  }
+  .dungeonnamecopy{
+    color: #fff;
+    -webkit-text-stroke: 3px #fff;
+    z-index: 7;
+  }
