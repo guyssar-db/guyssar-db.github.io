@@ -308,7 +308,7 @@
   /********************************************/
   /********************Danger******************/
   /********************************************/
-  #Mdangerpower,#Mdangerpowercopy,#Mdangercri,#Mdangercricopy,#Mdangerdef,#Mdangerdefcopy
+  .Mdangerpower,.Mdangerpowercopy,.Mdangercri,.Mdangercricopy,.Mdangerdef,.Mdangerdefcopy
   {
     font-family: 'compacta', sans-serif;
   }
@@ -318,13 +318,13 @@
     height: 32px;
     width: 200px;
     font-size: 30px;
-    transform: translate(-198px, -45px) rotate(-90deg);
+    transform: translate(-201px, -45px) rotate(-90deg);
     color: #de2222;
     white-space: nowrap;
     text-align: start;
     font-style: italic;
     letter-spacing: 0.5px;
-    z-index: 8;
+
   }
   .Mdangerdef,.Mdangerdefcopy {
     position: absolute;
@@ -337,7 +337,6 @@
     text-align: start;
     font-style: italic;
     letter-spacing: 0.5px;
-    z-index: 8;
   }
   .Mdangercri,.Mdangercricopy{
     position: absolute;
@@ -350,10 +349,9 @@
     text-align: center;
     font-style: italic;
     letter-spacing: 0.5px;
-    z-index: 8;
   }
 
-  #Mdangerpowercopy,#Mdangercricopy,#Mdangerdefcopy {
+  .Mdangerpowercopy,.Mdangercricopy,.Mdangerdefcopy {
     color: #000000;
     -webkit-text-stroke: 6px #000;
     z-index: 7;
@@ -393,7 +391,7 @@
   /********************************************/
   /********************Legend******************/
   /********************************************/
-  #Mlegendpower,#Mlegendpowercopy,#Mlegenddef,#Mlegenddefcopy,#Mlegendcri,#Mlegendcricopy 
+  .Mlegendpower,.Mlegendpowercopy,.Mlegenddef,.Mlegenddefcopy,.Mlegendcri,.Mlegendcricopy 
   {
     font-family: 'legendpower', sans-serif;
   }
@@ -409,7 +407,6 @@
     text-align: end;
     font-style: italic;
     letter-spacing: -1px;
-    z-index: 8;
   }
 
   .Mlegenddef,
@@ -424,7 +421,6 @@
     text-align: start;
     font-style: italic;
     letter-spacing: -1px;
-    z-index: 8;
   }
 
   .Mlegendcri,
@@ -439,13 +435,12 @@
     text-align: center;
     font-style: italic;
     letter-spacing: -1px;
-    z-index: 8;
 
   }
 
-  #Mlegendpowercopy,
-  #Mlegenddefcopy,
-  #Mlegendcricopy {
+  .Mlegendpowercopy,
+  .Mlegenddefcopy,
+  .Mlegendcricopy {
     color: #000000;
     -webkit-text-stroke: 6px #000;
     z-index: 7;
@@ -505,19 +500,31 @@
   /********************************************/
 
   
-  #Mdungeonpowercopy,#Mdungeondefcopy, #Mdungeoncricopy{
+  .Mdungeonpowercopy,.Mdungeondefcopy, .Mdungeoncricopy{
     color: #000000;
     -webkit-text-stroke: 4px #000;
     z-index: 7;
   }
   
-  #Mdungeonpower, #Mdungeonpowercopy, #Mdungeoncri, #Mdungeoncricopy, #Mdungeondef, #Mdungeondefcopy
+  .Mdungeonpower, .Mdungeonpowercopy, .Mdungeoncri, .Mdungeoncricopy, .Mdungeondef, .Mdungeondefcopy
   {
     font-family: 'matura', sans-serif;
   }
 
 
-  .Mdungeonpower,.Mdungeonpowercopy  {
+  .Mdungeonpowercopy  {
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 35px;
+    transform: translate(-186.5px, 63px) scaleY(0.8) rotate(-90deg);
+    color: #de2222;
+    white-space: nowrap;
+    text-align: end;
+    letter-spacing: 0.5px;
+    z-index: 7;
+  }
+  .Mdungeonpower  {
     position: absolute;
     height: 32px;
     width: 200px;
@@ -541,7 +548,7 @@
     white-space: nowrap;
     text-align: start;
     letter-spacing: 0.5px;
-    z-index: 8;
+  
   }
   .Mdungeoncri,
   .Mdungeoncricopy
@@ -555,7 +562,6 @@
     white-space: nowrap;
     text-align: center;
     letter-spacing: -1px;
-    z-index: 8;
   }
   .dungeonatt {
     transform: translate(-48px, 213px);
@@ -566,13 +572,16 @@
     white-space: nowrap;
     font-size: 13pt;
   }
+  .dungeonname,.Mdungeoncri,.Mdungeondef,.Mlegendcri,.Mlegenddef,.Mlegendpower,.Mdangercri,.Mdangerdef,.Mdangerpower
+  {
+    z-index: 8;
+  }
   .dungeonname, .dungeonnamecopy{
     transform: translate(0px, 265px);
     font-family: 'ChamBold', sans-serif;
     font-style: italic;
     color: #362513;
     font-size: 20pt;
-    z-index: 8;
   }
   .dungeonnamecopy{
     color: #fff;

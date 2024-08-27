@@ -28,43 +28,33 @@
                     <p id="se" class="se effect-darkness"></p>
                 </div>
             </div>
+            <!------------------------------------------------------------->
             <div id="textbox" class="textbox_ z1 absolute">
                 <div class="textbox">
                     <img id="mdu-textbox" src="" alt="">
                 </div>
             </div>
+
+            <!------------------------------------------------------------->
+            <p id="power-text" class="absolute none">2000</p>
+            <p id="power-text-copy" class="absolute none">2000</p>
+            <p id="cri-text" class="absolute none">1</p>
+            <p id="cri-text-copy" class="absolute none">1</p>
+            <p id="def-text" class="absolute none">2000</p>
+            <p id="def-text-copy" class="absolute none">2000</p>
             <!----------------------------Dungeon--------------------------------->
-            <p id="Mdungeonpower" class="absolute Mdungeonpower none">3000</p>
-            <p id="Mdungeonpowercopy" class="absolute Mdungeonpowercopy none ">3000</p>
-            <p id="Mdungeondef" class="absolute Mdungeondef none">1000</p>
-            <p id="Mdungeondefcopy" class="absolute Mdungeondefcopy none ">1000</p>
-            <p id="Mdungeoncri" class="absolute Mdungeoncri none">1</p>
-            <p id="Mdungeoncricopy" class="absolute Mdungeoncricopy none">1</p>
             <p id="dungeonatt" class="absolute dungeonatt z3 none">เ---ผี่าอู---า</p>
             <p id="dungeonname" class="absolute dungeonname z4 none">ชื่อู</p>
             <p id="dungeonnamecopy" class="absolute dungeonnamecopy z3  none">ชื่อู</p>
             <!----------------------------Danger--------------------------------->
-                <p id="Mdangerpower" class="absolute Mdangerpower none">5000</p>
-                <p id="Mdangerpowercopy" class="absolute Mdangerpowercopy none">5000</p>
-                <p id="Mdangerdef" class="absolute Mdangerdef none">5000</p>
-                <p id="Mdangerdefcopy" class="absolute Mdangerdefcopy none">5000</p>
-                <p id="Mdangercri" class="absolute Mdangercri none">2</p>
-                <p id="Mdangercricopy" class="absolute Mdangercricopy none">2</p>
-                <p id="dangeratt" class="absolute dangeratt z3 none">เ---ผี่าอู---า</p>
-                <p id="dangername" class="absolute dangername z4 none">ชื่อู</p>
-                <p id="dangernamecopy" class="absolute dangernamecopy z4 none">ชื่อู</p>
-
+            <p id="dangeratt" class="absolute dangeratt z3 none">เ---ผี่าอู---า</p>
+            <p id="dangername" class="absolute dangername z4 none">ชื่อู</p>
+            <p id="dangernamecopy" class="absolute dangernamecopy z4 none">ชื่อู</p>
             <!----------------------------legendText--------------------------------->
-                <p id="Mlegendpower" class="absolute Mlegendpower none ">5000</p>
-                <p id="Mlegendpowercopy" class="absolute Mlegendpowercopy none">5000</p>
-                <p id="Mlegenddef" class="absolute Mlegenddef none">5000</p>
-                <p id="Mlegenddefcopy" class="absolute Mlegenddefcopy none">5000</p>
-                <p id="Mlegendcri" class="absolute Mlegendcri none">2</p>
-                <p id="Mlegendcricopy" class="absolute Mlegendcricopy none">2</p>
-                <p id="legendname" class="absolute legendname z4 none">ชื่อู</p>
-                <p id="legendnamecopy" class="absolute legendnamecopy z3 none">ชื่อู</p>
-                <p id="legendatt" class="absolute legendatt z3 none">เผี่าอูา</p>
-                <p id="legendW" class="absolute legendW z3 none">เลเจนด์เวิลด์</p>
+            <p id="legendname" class="absolute legendname z4 none">ชื่อู</p>
+            <p id="legendnamecopy" class="absolute legendnamecopy z3 none">ชื่อู</p>
+            <p id="legendatt" class="absolute legendatt z3 none">เผี่าอูา</p>
+            <p id="legendW" class="absolute legendW z3 none">เลเจนด์เวิลด์</p>
             <!----------------------------Worlds--------------------------------->
             <img id="chaos" class="absolute z2 none" src="./assets/chaos.png" alt="">
             <img id="hundred" class="absolute z2 none" src="./assets/hundred.png" alt="">
@@ -154,20 +144,6 @@
                         <input type="text" name="legendattinput" id="legendattinput" oninput="attlegend()">
                     </div>
                 </div>
-                <div class="flex gap-3">
-                    <div>
-                        <p class="text-white font-bold">Power</p>
-                        <input type="text" name="legendpowerinput" id="legendpowerinput" oninput="atklegend()">
-                    </div>
-                    <div>
-                        <p class="text-white font-bold">Critical</p>
-                        <input type="text" name="legendcriinput" id="legendcriinput" oninput="crilegend()">
-                    </div>
-                    <div>
-                        <p class="text-white font-bold">Defence</p>
-                        <input type="text" name="legenddefinput" id="legenddefinput" oninput="deflegend()">
-                    </div>
-                </div>
                 <!------------------------------------------------------------->
                 <div class="mt-5 flex gap-3 justify-around">
                     <div>
@@ -202,20 +178,6 @@
                     <div class="basis-1/2">
                         <p class="text-white font-bold">Attibute</p>
                         <input type="text" name="dangerattinput" id="dangerattinput" oninput="attdanger()">
-                    </div>
-                </div>
-                <div class="flex gap-3 justify-around">
-                    <div>
-                        <p class="text-white font-bold">Power</p>
-                        <input type="text" name="dangerpowerinput" id="dangerpowerinput" oninput="atkdanger()">
-                    </div>
-                    <div>
-                        <p class="text-white font-bold">Critical</p>
-                        <input type="text" name="dangercriinput" id="dangercriinput" oninput="cridanger()">
-                    </div>
-                    <div>
-                        <p class="text-white font-bold">Defence</p>
-                        <input type="text" name="dangerdefinput" id="dangerdefinput" oninput="defdanger()">
                     </div>
                 </div>
                 <!------------------------------------------------------------->
@@ -253,20 +215,6 @@
                         <input type="text" name="dungeonattinput" id="dungeonattinput" oninput="attdungeon()">
                     </div>
                 </div>
-                <div class="flex gap-3 justify-around">
-                    <div>
-                        <p class="text-white font-bold">Power</p>
-                        <input type="text" name="dungeonpowerinput" id="dungeonpowerinput" oninput="atkdungeon()">
-                    </div>
-                    <div>
-                        <p class="text-white font-bold">Critical</p>
-                        <input type="text" name="dungeoncriinput" id="dungeoncriinput" oninput="cridungeon()">
-                    </div>
-                    <div>
-                        <p class="text-white font-bold">Defence</p>
-                        <input type="text" name="dungeoninput" id="dungeoninput" oninput="defdungeon()">
-                    </div>
-                </div>
                 <!------------------------------------------------------------->
                 <div class="mt-5 flex gap-3 justify-around">
                     <div>
@@ -289,6 +237,20 @@
         </div>
         <!------------------------------------------------------------->
         <!------------------------------------------------------------->
+        <div class="flex gap-3 justify-around">
+            <div>
+                <p class="text-white font-bold">Power</p>
+                <input type="text" name="powerinput" id="powerinput" oninput="atkinput()">
+            </div>
+            <div>
+                <p class="text-white font-bold">Critical</p>
+                <input type="text" name="criinput" id="criinput" oninput="criinput()">
+            </div>
+            <div>
+                <p class="text-white font-bold">Defence</p>
+                <input type="text" name="definput" id="definput" oninput="definput()">
+            </div>
+        </div>
         <div class="mt-5">
             <div class="flex gap-3 flex-wrap">
                 <div>

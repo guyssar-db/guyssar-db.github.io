@@ -12,22 +12,22 @@ function attlegend() {
     var inputText = document.getElementById('legendattinput').value;
     document.getElementById('legendatt').innerText = inputText;
 }
-function atklegend() {
-    var inputText = document.getElementById('legendpowerinput').value;
-    document.getElementById('Mlegendpower').innerText = inputText;
-    document.getElementById('Mlegendpowercopy').innerText = inputText;
-}
-function crilegend() {
-    var inputText = document.getElementById('legendcriinput').value;
-    document.getElementById('Mlegendcri').innerText = inputText;
-    document.getElementById('Mlegendcricopy').innerText = inputText;
-}
-function deflegend() {
-    var inputText = document.getElementById('legenddefinput').value;
-    document.getElementById('Mlegenddef').innerText = inputText;
-    document.getElementById('Mlegenddefcopy').innerText = inputText;
-}
 //============================================================//
+function atkinput() {
+    var inputText = document.getElementById('powerinput').value;
+    document.getElementById('power-text').innerText = inputText;
+    document.getElementById('power-text-copy').innerText = inputText;
+}
+function criinput() {
+    var inputText = document.getElementById('criinput').value;
+    document.getElementById('cri-text').innerText = inputText;
+    document.getElementById('cri-text-copy').innerText = inputText;
+}
+function definput() {
+    var inputText = document.getElementById('definput').value;
+    document.getElementById('def-text').innerText = inputText;
+    document.getElementById('def-text-copy').innerText = inputText;
+}
 
 
 
