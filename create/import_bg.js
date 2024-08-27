@@ -28,40 +28,80 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Dragging functionality
-    imageContainer.addEventListener('mousedown', function(e) {
+    // Start dragging (mouse and touch)
+    function startDrag(e) {
         isDragging = true;
-        initialMouseX = e.clientX;
-        initialMouseY = e.clientY;
+        const event = e.touches ? e.touches[0] : e;
+        initialMouseX = event.clientX;
+        initialMouseY = event.clientY;
         imageContainer.style.cursor = 'grabbing';
-    });
+    }
 
-    document.addEventListener('mousemove', function(e) {
+    // Dragging (mouse and touch)
+    function drag(e) {
         if (isDragging) {
-            const deltaX = e.clientX - initialMouseX;
-            const deltaY = e.clientY - initialMouseY;
+            const event = e.touches ? e.touches[0] : e;
+            const deltaX = event.clientX - initialMouseX;
+            const deltaY = event.clientY - initialMouseY;
             translateX += deltaX;
             translateY += deltaY;
             dpim.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
-            initialMouseX = e.clientX;
-            initialMouseY = e.clientY;
+            initialMouseX = event.clientX;
+            initialMouseY = event.clientY;
         }
-    });
+    }
 
-    document.addEventListener('mouseup', function() {
+    // End dragging (mouse and touch)
+    function endDrag() {
         isDragging = false;
         imageContainer.style.cursor = 'grab';
-    });
+    }
 
-    // Zoom functionality
-    imageContainer.addEventListener('wheel', function(e) {
+    // Zoom functionality (mouse wheel and touch pinch)
+    function zoom(e) {
         e.preventDefault();
-        const scaleFactor = 1.1;
-        if (e.deltaY < 0) {
-            scale *= scaleFactor;
-        } else {
-            scale /= scaleFactor;
+        if (e.deltaY) {
+            // Mouse wheel
+            const scaleFactor = 1.1;
+            if (e.deltaY < 0) {
+                scale *= scaleFactor;
+            } else {
+                scale /= scaleFactor;
+            }
+        } else if (e.touches && e.touches.length === 2) {
+            // Pinch zoom
+            const dx = e.touches[0].clientX - e.touches[1].clientX;
+            const dy = e.touches[0].clientY - e.touches[1].clientY;
+            const distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (startDistance) {
+                scale *= distance / startDistance;
+            }
+            startDistance = distance;
         }
+
         dpim.style.transform = `translate(${translateX}px, ${translateY}px) scale(${scale})`;
+    }
+
+    imageContainer.addEventListener('mousedown', startDrag);
+    document.addEventListener('mousemove', drag);
+    document.addEventListener('mouseup', endDrag);
+
+    imageContainer.addEventListener('touchstart', startDrag);
+    document.addEventListener('touchmove', drag);
+    document.addEventListener('touchend', endDrag);
+
+    imageContainer.addEventListener('wheel', zoom);
+
+    let startDistance = null;
+    imageContainer.addEventListener('touchmove', function(e) {
+        if (e.touches.length === 2) {
+            zoom(e);
+        }
+    });
+    document.addEventListener('touchend', function(e) {
+        if (e.touches.length < 2) {
+            startDistance = null;
+        }
     });
 });
