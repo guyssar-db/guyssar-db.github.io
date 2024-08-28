@@ -167,7 +167,7 @@ function div_img() {
         element.style.width = '70px';
     });
     document.querySelectorAll('.Iskill2').forEach(function(element) {
-        element.style.width = '82px';
+        element.style.width = '92px';
     });
 
     d_.style.border = '0';

@@ -37,6 +37,8 @@ document.getElementById('teb').addEventListener('input', function() {
     inputText = inputText.replace(/ambush/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Ambush.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/<</g, '<a class="skk">《</a>');
     inputText = inputText.replace(/>>/g, '<a class="skk">》</a>');
+    inputText = inputText.replace(/{/g, '<a class="skk2">【</a>');
+    inputText = inputText.replace(/}/g, '<a class="skk">】</a>');
     inputText = inputText.replace(/reversal/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Reversal.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/shadowdive/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Shadow Dive.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/ride/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Ride.png" alt="Image" class="Iskill"></span>');

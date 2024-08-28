@@ -293,8 +293,12 @@
     }
     .skk{
     vertical-align:bottom;
-
+    font-style: bold;
     }
+    .skk2{
+      vertical-align:middle;
+      margin-left: -7px;
+      }
 
 
   /********************************************/
