@@ -158,7 +158,7 @@ function div_img() {
 
 
 
-    document.querySelectorAll('.Iskill, .nctext').forEach(function(element) {
+    document.querySelectorAll('.Iskill, .nctext, .Iskill2').forEach(function(element) {
         moveDown(element);
     });
 
@@ -166,7 +166,9 @@ function div_img() {
     document.querySelectorAll('.Iskill').forEach(function(element) {
         element.style.width = '70px';
     });
-
+    document.querySelectorAll('.Iskill2').forEach(function(element) {
+        element.style.width = '82px';
+    });
 
     d_.style.border = '0';
 
@@ -213,14 +215,14 @@ function div_img() {
         if (dungeonDefcopy) dungeonDefcopy.style.transform = '';
         if (dungeonCri) dungeonCri.style.transform = '';
         if (dungeonCricopy) dungeonCricopy.style.transform = '';
-        document.querySelectorAll('.Iskill').forEach(function(element) {
+        document.querySelectorAll('.Iskill,.Iskill2').forEach(function(element) {
             element.style.width = '';
         });
 
-        document.querySelectorAll('.Iskill, .nctext').forEach(function(element) {
+        document.querySelectorAll('.Iskill, .nctext, .Iskill2').forEach(function(element) {
             element.style.transform = '';
         });
-        document.querySelectorAll('.Iskill, .nctext').forEach(function(element) {
+        document.querySelectorAll('.Iskill, .nctext,.Iskill2').forEach(function(element) {
             element.style.marginRight = ''; 
         });
 

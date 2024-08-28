@@ -29,10 +29,10 @@ document.getElementById('teb').addEventListener('input', function() {
     inputText = inputText.replace(/\[b\]/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/bnctext.png" alt="Image" class="nctext"></span>');
     inputText = inputText.replace(/omnilord/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Omni Lord-1.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/darkomni/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Omni Lord-2.png" alt="Image" class="Iskill"></span>');
-    inputText = inputText.replace(/ovt/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overturn.png" alt="Image" class="Iskill"></span>');
-    inputText = inputText.replace(/ovk/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overkill.png" alt="Image" class="Iskill"></span>');
-    inputText = inputText.replace(/ovr/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/OverkillREBØØT.png" alt="Image" class="Iskill"></span>');
-    inputText = inputText.replace(/ovh/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overthrow.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/ovt/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overturn.png" alt="Image" class="Iskill2"></span>');
+    inputText = inputText.replace(/ovk/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overkill.png" alt="Image" class="Iskill2"></span>');
+    inputText = inputText.replace(/ovr/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/OverkillREBØØT.png" alt="Image" class="Iskill2"></span>');
+    inputText = inputText.replace(/ovh/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overthrow.png" alt="Image" class="Iskill2"></span>');
     inputText = inputText.replace(/weaponlink/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Weaponry Link.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/ambush/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Ambush.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/<</g, '<a class="skk">《</a>');
@@ -48,7 +48,7 @@ document.getElementById('teb').addEventListener('input', function() {
     inputText = inputText.replace(/dragod/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Dragod.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/dragonify/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Dragonify.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/duo/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Duo.png" alt="Image" class="Iskill"></span>');
-    inputText = inputText.replace(/od/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/OverDrive.png" alt="Image" class="Iskill"></span>');
+    inputText = inputText.replace(/od/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/OverDrive.png" alt="Image" class="Iskill2"></span>');
 
 
 
