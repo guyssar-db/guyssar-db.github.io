@@ -371,7 +371,7 @@
     color: #c41916;
     font-size: 20pt;
   }
-  #dangernamecopy{
+  .dangernamecopy{
     color: #000000;
     -webkit-text-stroke: 3px #000;
     z-index: 3;
@@ -446,11 +446,11 @@
     z-index: 7;
   }
 
-  #legendname {
+  .legendname {
     z-index: 4;
   }
 
-  #legendnamecopy {
+  .legendnamecopy {
     color: #e5c86a;
     -webkit-text-stroke: 2px #e5c86a;
     transform: translate(0, 274px) scaleX(1);

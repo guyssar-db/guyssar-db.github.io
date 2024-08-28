@@ -42,18 +42,11 @@
             <p id="cri-text-copy" class="absolute none">1</p>
             <p id="def-text" class="absolute none">2000</p>
             <p id="def-text-copy" class="absolute none">2000</p>
-            <!----------------------------Dungeon--------------------------------->
-            <p id="dungeonatt" class="absolute dungeonatt z3 none">เ---ผี่าอู---า</p>
-            <p id="dungeonname" class="absolute dungeonname z4 none">ชื่อู</p>
-            <p id="dungeonnamecopy" class="absolute dungeonnamecopy z3  none">ชื่อู</p>
-            <!----------------------------Danger--------------------------------->
-            <p id="dangeratt" class="absolute dangeratt z3 none">เ---ผี่าอู---า</p>
-            <p id="dangername" class="absolute dangername z4 none">ชื่อู</p>
-            <p id="dangernamecopy" class="absolute dangernamecopy z4 none">ชื่อู</p>
+            <p id="name-text" class="absolute z4 none">ชื่อู</p>
+            <p id="name-text-copy" class="absolute z3 none">ชื่อู</p>
+            <p id="att-text" class="absolute z3 none">เ---ผี่าอู---า</p>
+           
             <!----------------------------legendText--------------------------------->
-            <p id="legendname" class="absolute legendname z4 none">ชื่อู</p>
-            <p id="legendnamecopy" class="absolute legendnamecopy z3 none">ชื่อู</p>
-            <p id="legendatt" class="absolute legendatt z3 none">เผี่าอูา</p>
             <p id="legendW" class="absolute legendW z3 none">เลเจนด์เวิลด์</p>
             <!----------------------------Worlds--------------------------------->
             <img id="chaos" class="absolute z2 none" src="./assets/chaos.png" alt="">
@@ -134,16 +127,6 @@
         <div id="div-legend" class="none">
             <p class="text-center text-white font-bold bg-yellow-600 border">Legend</p>
             <div class="border p-3">
-                <div class="flex gap-3">
-                    <div class="basis-1/2">
-                        <p class="text-white font-bold">Card Name</p>
-                        <input type="text" name="legendnameinput" id="legendnameinput" oninput="namelegend()">
-                    </div>
-                    <div class="basis-1/2">
-                        <p class="text-white font-bold">Attibute</p>
-                        <input type="text" name="legendattinput" id="legendattinput" oninput="attlegend()">
-                    </div>
-                </div>
                 <!------------------------------------------------------------->
                 <div class="mt-5 flex gap-3 justify-around">
                     <div>
@@ -170,16 +153,7 @@
         <div id="div-danger" class="none">
             <p class="text-center text-white font-bold bg-red-600 border">Danger</p>
             <div class="border p-3">
-                <div class="flex gap-3 justify-around">
-                    <div class="basis-1/2">
-                        <p class="text-white font-bold">Card Name</p>
-                        <input type="text" name="dangernameinput" id="dangernameinput" oninput="namedanger()">
-                    </div>
-                    <div class="basis-1/2">
-                        <p class="text-white font-bold">Attibute</p>
-                        <input type="text" name="dangerattinput" id="dangerattinput" oninput="attdanger()">
-                    </div>
-                </div>
+                
                 <!------------------------------------------------------------->
                 <div class="mt-5 flex gap-3 justify-around">
                     <div>
@@ -205,16 +179,7 @@
         <div id="div-dungeon" class="none">
             <p class="text-center font-bold bg-gray-200 border">Dungeon</p>
             <div class="border p-3">
-                <div class="flex gap-3 justify-around">
-                    <div class="basis-1/2">
-                        <p class="text-white font-bold">Card Name</p>
-                        <input type="text" name="dungeonnameinput" id="dungeonnameinput" oninput="namedungeon()">
-                    </div>
-                    <div class="basis-1/2">
-                        <p class="text-white font-bold">Attibute</p>
-                        <input type="text" name="dungeonattinput" id="dungeonattinput" oninput="attdungeon()">
-                    </div>
-                </div>
+                
                 <!------------------------------------------------------------->
                 <div class="mt-5 flex gap-3 justify-around">
                     <div>
@@ -237,6 +202,16 @@
         </div>
         <!------------------------------------------------------------->
         <!------------------------------------------------------------->
+        <div class="flex gap-3">
+            <div class="basis-1/2">
+                <p class="text-white font-bold">Card Name</p>
+                <input type="text" name="nameinput" id="nameinput" oninput="nameinput()">
+            </div>
+            <div class="basis-1/2">
+                <p class="text-white font-bold">Attibute</p>
+                <input type="text" name="attinput" id="attinput" oninput="attinput()">
+            </div>
+        </div>
         <div class="flex gap-3 justify-around">
             <div>
                 <p class="text-white font-bold">Power</p>

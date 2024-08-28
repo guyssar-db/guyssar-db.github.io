@@ -3,14 +3,14 @@
 //=========================[legend]===========================//
 //============================================================//
 //============================================================//
-function namelegend() {
-    var inputText = document.getElementById('legendnameinput').value;
-    document.getElementById('legendname').innerText = inputText;
-    document.getElementById('legendnamecopy').innerText = inputText;
+function nameinput() {
+    var inputText = document.getElementById('nameinput').value;
+    document.getElementById('name-text').innerText = inputText;
+    document.getElementById('name-text-copy').innerText = inputText;
 }
-function attlegend() {
-    var inputText = document.getElementById('legendattinput').value;
-    document.getElementById('legendatt').innerText = inputText;
+function attinput() {
+    var inputText = document.getElementById('attinput').value;
+    document.getElementById('att-text').innerText = inputText;
 }
 //============================================================//
 function atkinput() {
