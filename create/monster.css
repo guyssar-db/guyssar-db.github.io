@@ -603,3 +603,81 @@
     -webkit-text-stroke: 3px #fff;
     z-index: 7;
   }
+
+
+  .dragonpower, .dragonpowercopy,.dragoncri,.dragoncricopy,.dragondef,.dragondefcopy
+  {
+    font-family: 'compacta', sans-serif;
+  }
+  .dragonpower, .dragonpowercopy{
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 35px;
+    transform: translate(-202px, 65px) scaleY(0.8) rotate(-90deg);
+    color: #de2222;
+    white-space: nowrap;
+    font-style: italic;
+    text-align: end;
+    letter-spacing: 0.5px;
+  }
+  .dragondef,.dragondefcopy{
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 35px;
+    transform: translate(-202px, -152px) scaleY(0.8) rotate(-90deg);
+    color: #00b3eb;
+    white-space: nowrap;
+    font-style: italic;
+    text-align: start;
+    letter-spacing: 0.5px;
+  }
+  .dragoncri,.dragoncricopy{
+    position: absolute;
+    height: 32px;
+    width: 200px;
+    font-size: 42px;
+    transform: translate(-203px, -41px) rotate(-90deg);
+    color: #ffffff;
+    font-style: italic;
+    white-space: nowrap;
+    text-align: center;
+    letter-spacing: -1px;
+  }
+  .dragonpower,.dragoncri,.dragondef,.dragonname
+  {
+    z-index: 8;
+  }
+  .dragonpowercopy,.dragoncricopy,.dragondefcopy
+  {
+    color: #000000;
+    -webkit-text-stroke: 5px #000;
+    z-index: 7;
+  }
+  .dragonatt {
+    transform: translate(-110px, 231px);
+    font-family: 'ChamBold', sans-serif;
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 13pt;
+  }
+  .dragonname,.dragonnamecopy{
+    transform: translate(50px, 271px);
+    font-family: 'ChamBold', sans-serif;
+    font-style: italic;
+    color: #ffffff;
+    font-size: 20pt;
+  }
+  .dragonname{
+    z-index: 8;
+  }
+  .dragonnamecopy{
+    
+      color: #000000;
+      -webkit-text-stroke: 3px #000;
+      z-index: 7;
+    
+  }

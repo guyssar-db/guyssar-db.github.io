@@ -83,8 +83,17 @@ document.getElementById('world-selector').addEventListener('change', function ()
     document.getElementById('def-text-copy').classList.remove('Mlegenddefcopy');
     document.getElementById('name-text').classList.remove('legendname');
     document.getElementById('name-text-copy').classList.remove('legendnamecopy');
-    document.getElementById('att-text').classList.remove('legendratt');
+    document.getElementById('att-text').classList.remove('legendatt');
 
+    document.getElementById('power-text').classList.remove('dragonpower');
+    document.getElementById('power-text-copy').classList.remove('dragonpowercopy');
+    document.getElementById('cri-text').classList.remove('dragoncri');
+    document.getElementById('cri-text-copy').classList.remove('dragoncricopy');
+    document.getElementById('def-text').classList.remove('dragondef');
+    document.getElementById('def-text-copy').classList.remove('dragondefcopy');
+    document.getElementById('name-text').classList.remove('dragonname');
+    document.getElementById('name-text-copy').classList.remove('dragonnamecopy');
+    document.getElementById('att-text').classList.remove('dragonatt');
 
 
 
@@ -169,6 +178,26 @@ document.getElementById('world-selector').addEventListener('change', function ()
         document.getElementById('name-text-copy').classList.add('dungeonnamecopy');
     document.getElementById('att-text').classList.add('dungeonatt');
 
+    } else if (this.value === 'mdg'){
+        document.getElementById('power-text').classList.remove('none');
+        document.getElementById('power-text-copy').classList.remove('none');
+        document.getElementById('cri-text').classList.remove('none');
+        document.getElementById('cri-text-copy').classList.remove('none');
+        document.getElementById('def-text').classList.remove('none');
+        document.getElementById('def-text-copy').classList.remove('none');
+        document.getElementById('name-text').classList.remove('none');
+        document.getElementById('name-text-copy').classList.remove('none');
+        document.getElementById('att-text').classList.remove('none');
+
+        document.getElementById('power-text').classList.add('dragonpower');
+        document.getElementById('power-text-copy').classList.add('dragonpowercopy');
+        document.getElementById('cri-text').classList.add('dragoncri');
+        document.getElementById('cri-text-copy').classList.add('dragoncricopy');
+        document.getElementById('def-text').classList.add('dragondef');
+        document.getElementById('def-text-copy').classList.add('dragondefcopy');
+        document.getElementById('name-text').classList.add('dragonname');
+        document.getElementById('name-text-copy').classList.add('dragonnamecopy');
+        document.getElementById('att-text').classList.add('dragonatt');
     }
 });
 

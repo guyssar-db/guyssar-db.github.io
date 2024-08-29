@@ -34,6 +34,7 @@ function div_img() {
     var dungeonDefcopy = document.querySelector('.Mdungeondefcopy');
     var dungeonCri = document.querySelector('.Mdungeoncri');
     var dungeonCricopy = document.querySelector('.Mdungeoncricopy');
+    var dragonatt = document.querySelector('.dragonatt');
 
 
 
@@ -140,6 +141,8 @@ function div_img() {
     moveUp(dungeonnamecopy);
     moveUp2(dungeonatt);
 
+    moveUp2(dragonatt);
+
     gungeonmoveLeft(dungeonPower);
     gungeonmoveLeft(dungeonPowercopy);
     gungeonmovedown(dungeonPower);
@@ -196,6 +199,7 @@ function div_img() {
         if (legendCricopy) legendCricopy.style.transform = '';
         // ================================== Legend ================================== //
         if (Se_) Se_.style.transform = '';
+        
         if (dangername) dangername.style.transform = '';
         if (dangernamecopy) dangernamecopy.style.transform = '';
         if (dangeratt) dangeratt.style.transform = '';
@@ -215,6 +219,9 @@ function div_img() {
         if (dungeonDefcopy) dungeonDefcopy.style.transform = '';
         if (dungeonCri) dungeonCri.style.transform = '';
         if (dungeonCricopy) dungeonCricopy.style.transform = '';
+
+        if (dragonatt) dragonatt.style.transform = '';
+
         document.querySelectorAll('.Iskill,.Iskill2').forEach(function(element) {
             element.style.width = '';
         });
