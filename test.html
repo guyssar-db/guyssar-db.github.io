@@ -3,74 +3,170 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scale Control</title>
+    <title>Fluid Layout with Flex</title>
     <style>
         body {
-            height: 2000px; /* สร้างความยาวของหน้าเพื่อให้มีการเลื่อน */
+
+            background-color: #2a2a3e;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
         }
 
-        .container {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        p {
-            transition: transform 0.2s ease;
-            font-size: 24px;
-            color: #fff;
-            white-space: nowrap;
-            
-            -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: #000;
-        }
-
-        .controls {
-            position: fixed;
-            top: 20px;
-            left: 20px;
+        .flex-container {
             display: flex;
-            gap: 10px;
+            flex-wrap: wrap;
+            gap: 8px;
+            background-color: #1e1e2e;
+            padding: 20px;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .flex-container2 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            background-color: #1e1e2e;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .flex-container3 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            background-color: #1e1e2e;
+            padding:0 20px 20px 20px;
+            border-radius:0 0 10px 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .flex-container4 {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            background-color: #1e1e2e;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+        }
+        .input-text, .effect,.BTN,.BTN2,.BTN3 {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
         }
 
-        .controls button {
-            padding: 10px 20px;
-            font-size: 16px;
+        .input-text,.effect {
+            flex: 1 0 140px;
+        }
+        .effect{
+            height: 200px;
+        }
+
+        .BTN {
+            flex: 1 0 60px;
+            background-color: #ff007a;
+            color: white;
             cursor: pointer;
         }
+
+        .BTN:hover {
+            background-color: #ff4081;
+        }
+        .BTN2 {
+            flex: 1 0 60px;
+            background-color: #00a2ff;
+            color: white;
+            cursor: pointer;
+        }
+
+        .BTN2:hover {
+            background-color: #23aefe;
+        }
+        .BTN3 {
+            flex: 1 0 60px;
+            background-color: #d900ff;
+            color: white;
+            cursor: pointer;
+        }
+
+        .BTN3:hover {
+            background-color: #e02fff;
+        }
+
+
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <p id="text">Resize me with buttons!</p>
+
+<div>
+    <div class="flex-container4">
+                <select class="input-text" id="world-selector">
+                    <option value="">worlds</option>
+                    <option value="maw">[0-3] Ancient Monster</option>
+                    <option value="mcs">Chaos Monster</option>
+                    <option value="mdr">[0-3] Danger Monster</option>
+                    <option value="mdn">[0-3] Darkness Monster</option>
+                    <option value="mdu"> Dungeon Monster</option>
+                    <option value="mdg">Dragon Monster</option>
+                    <option value="mgr_c">[0-3] Generic Monster (Classic)</option>
+                    <option value="mhw">[0-3] Hero Monster</option>
+                    <option value="mhm">Hundred Demons Monster</option>
+                    <option value="mlw">[0-3] Legend Monster</option>
+                    <option value="mls">LostWorld Monster</option>
+                    <option value="mmw">[0-3] Magic Monster</option>
+                    <option value="mst_c">[0-3] StarDragon Monster (Classic)</option>
+                    <option value="mst">[0-3] StarDragon Monster</option>
+                </select>
+                <select class="input-text" id="size-selector">
+                    <option value="s0" class="bg-legend">[Size0]</option>
+                    <option value="s1" class="bg-legend">[Size1]</option>
+                    <option value="s2" class="bg-legend">[Size2]</option>
+                    <option value="s3" class="bg-legend">[Size3]</option>
+                </select>
+                
+                <input type="checkbox" class="input-text" id="chaoscheck" name="chaoscheck" value="chaoscheck">
+
+                <input type="checkbox" class="input-text" id="hundemoncheck" name="hundemoncheck" value="hundemoncheck">
+        
+       
     </div>
-    
-    <div class="controls">
-        <button id="decreaseButton">-</button>
-        <button id="increaseButton">+</button>
+    <div class="flex-container">
+        <input class="input-text" type="text" placeholder="Power" name="powerinput" id="powerinput" oninput="atkinput()">
+        <input class="input-text" type="text" placeholder="Critical" name="criinput" id="criinput" oninput="criinput()">
+        <input class="input-text" type="text" placeholder="Defence" name="definput" id="definput" oninput="definput()">
     </div>
+    <div class="flex-container2">
+        <input class="input-text" type="text" placeholder="Card Name" name="nameinput" id="nameinput" oninput="nameinput()">
+        <button id="increaseBTNName" class="BTN2" >Name ScaleX +0.1</button>
+        <button id="decreaseBTNName" class="BTN2" >Name ScaleX -0.1</button>
+    </div>
+    <div class="flex-container2">
+        <input class="input-text" type="text" placeholder="Attibute" name="attinput" id="attinput" oninput="attinput()">
+        <button id="increaseBTNAttibute" class="BTN3" >Attibute ScaleX +0.1</button>
+        <button id="decreaseBTNAttibute" class="BTN3" >Attibute ScaleX -0.1</button>
+    </div>
+    <div class="flex-container2">
+        <input class="input-text" type="text" placeholder="Card Series">
+        <input class="input-text" type="text" placeholder="illust">
+    </div>
+    <div class="flex-container2">
+        <textarea type="text" name="teb" class="effect" id="teb"placeholder="Effect"></textarea>
+    </div>
+    <div class="flex-container3">
+        <button id="BTNEffectUp" class="BTN" >Effect Up +0.1</button>
+        <button id="BTNEffectDown" class="BTN" >Effect Down -0.1</button>
+        <div class="mt-5">
+            <select class="input-text" id="color-selector">
+                <option value="textblack" class="bg-legend">Text Color Black</option>
+                <option value="textwhite" class="bg-legend">Text Color White</option>
+            </select>
+        </div>
+    </div>
+</div>
 
-    <script>
-        var scale = 1;
-        var scaleStep = 0.1; // จำนวนที่เพิ่มหรือลดในแต่ละครั้ง
-
-        function updateScale() {
-            document.getElementById('text').style.transform = 'scaleX(' + scale + ')';
-        }
-
-        document.getElementById('increaseButton').addEventListener('click', function() {
-            scale += scaleStep;
-            updateScale();
-        });
-
-        document.getElementById('decreaseButton').addEventListener('click', function() {
-            scale = Math.max(scale - scaleStep, 0.1); // จำกัดไม่ให้ scale ต่ำกว่า 0.1
-            updateScale();
-        });
-    </script>
 </body>
 </html>

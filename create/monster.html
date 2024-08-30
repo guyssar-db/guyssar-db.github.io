@@ -4,270 +4,183 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../assets/fakebf.png"sizes="192x192">
+    <link rel="icon" href="../assets/fakebf.png" sizes="192x192">
     <script src="../main_css.js"></script>
-    <style> .img-logo {width: 100px;}@media(max-width: 450px){body{width:max-content}}@media (max-width: 768px) {.nav-links {display: none;}}#navbar-menu.active {display: block;}.w-100{width:auto;}</style>
+    <style>
+        .img-logo {
+            width: 100px;
+        }
+
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        #navbar-menu.active {
+            display: block;
+        }
+
+        .w-100 {
+            width: auto;
+        }
+    </style>
     <title>Monster - Cake Create</title>
     <link rel="stylesheet" href="./monster.css">
-    
+
 </head>
 
 <body class="bg-slate-900">
 
-<!---------------------------------------------------------------------------------------------------------------->
-<!------------------------------------------------------Previwe--------------------------------------------------->
-<p class="text-red-600 text-center bg-red-100">ฟีเจอร์อื่นๆยังไม่เสร็จ</p>
+    <!---------------------------------------------------------------------------------------------------------------->
+    <!------------------------------------------------------Previwe--------------------------------------------------->
+    <p class="text-red-600 text-center bg-red-100">ฟีเจอร์อื่นๆยังไม่เสร็จ</p>
 
-<!---------------------------------------------------------------------------------------------------------------->
-<div id="main" class="flex flex-wrap p-5">
-    <div id="pv" class="pv">
-        <div id="img_" class="img_">
+    <!---------------------------------------------------------------------------------------------------------------->
+    <div id="main" class="flex flex-wrap p-5">
+        <div id="pv" class="pv">
+            <div id="img_" class="img_">
 
-            <div id="nub" class="nub z8">
-                <div id="se_" class="se_">
-                    <p id="se" class="se effect-darkness"></p>
+                <div id="nub" class="nub z8">
+                    <div id="se_" class="se_">
+                        <p id="se" class="se effect-darkness"></p>
+                    </div>
+                </div>
+                <!------------------------------------------------------------->
+                <div id="textbox" class="textbox_ z1 absolute">
+                    <div class="textbox">
+                        <img id="mdu-textbox" src="" alt="">
+                    </div>
+                </div>
+
+                <!------------------------------------------------------------->
+                <p id="power-text" class="absolute none">2000</p>
+                <p id="power-text-copy" class="absolute none">2000</p>
+                <p id="cri-text" class="absolute none">2</p>
+                <p id="cri-text-copy" class="absolute none">2</p>
+                <p id="def-text" class="absolute none">2000</p>
+                <p id="def-text-copy" class="absolute none">2000</p>
+                <p id="name-text" class="absolute z4 none">ชื่อู</p>
+                <p id="name-text-copy" class="absolute z3 none">ชื่อู</p>
+                <p id="att-text" class="absolute z3 none">เ---ผี่าอู---า</p>
+
+                <!----------------------------legendText--------------------------------->
+                <p id="legendW" class="absolute legendW z3 none">เลเจนด์เวิลด์</p>
+                <!----------------------------Worlds--------------------------------->
+                <img id="chaos" class="absolute z2 none" src="./assets/chaos.png" alt="">
+                <img id="hundred" class="absolute z2 none" src="./assets/hundred.png" alt="">
+                <img id="worlds" class="z1" src="" alt="">
+                <!----------------------------BG--------------------------------->
+                <div id="in" class="in">
+                    <div id="imh" class="imh">
+                        <img id="dpim" src="">
+                    </div>
                 </div>
             </div>
+        </div>
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <div class="p-6">
             <!------------------------------------------------------------->
-            <div id="textbox" class="textbox_ z1 absolute">
-                <div class="textbox">
-                    <img id="mdu-textbox" src="" alt="">
-                </div>
-            </div>
-
             <!------------------------------------------------------------->
-            <p id="power-text" class="absolute none">2000</p>
-            <p id="power-text-copy" class="absolute none">2000</p>
-            <p id="cri-text" class="absolute none">2</p>
-            <p id="cri-text-copy" class="absolute none">2</p>
-            <p id="def-text" class="absolute none">2000</p>
-            <p id="def-text-copy" class="absolute none">2000</p>
-            <p id="name-text" class="absolute z4 none">ชื่อู</p>
-            <p id="name-text-copy" class="absolute z3 none">ชื่อู</p>
-            <p id="att-text" class="absolute z3 none">เ---ผี่าอู---า</p>
-           
-            <!----------------------------legendText--------------------------------->
-            <p id="legendW" class="absolute legendW z3 none">เลเจนด์เวิลด์</p>
-            <!----------------------------Worlds--------------------------------->
-            <img id="chaos" class="absolute z2 none" src="./assets/chaos.png" alt="">
-            <img id="hundred" class="absolute z2 none" src="./assets/hundred.png" alt="">
-            <img id="worlds" class="z1" src="" alt="" >
-            <!----------------------------BG--------------------------------->
-            <div id="in" class="in">
-                <div id="imh" class="imh">
-                    <img id="dpim" src="">
-                </div>
-            </div>
-        </div>
-    </div>
-<!---------------------------------------------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------------------------------------------->
-<!---------------------------------------------------------------------------------------------------------------->
-    <div class="p-6">
-        <!------------------------------------------------------------->
-        <div class="block mb-2">
-            <input type="file" id="file-input" style="display: none;">
-            <button id="img-import"class="px-4 py-2 leading-none border rounded bg-blue-600 text-white rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white hover:text-black">ImportBG</button>
-            <button id="exp" class="px-4 py-2 leading-none border rounded bg-red-400 text-white rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white hover:text-black">Export</button>
-        </div>
-        <!------------------------------------------------------------->
-        <!------------------------------------------------------------->
-        <!------------------------------------------------------------->
-        <div class="flex flex-wrap">
-            <div>
-                <div class="m-3">
-                    <p class="text-white font-bold">Worlds</p>
-                    <select class="text-center" id="world-selector">
-                        <option value="">None</option>
-                        <option value="maw">[0-3] Ancient Monster</option>
-                        <option value="mcs">Chaos Monster</option>
-                        <option value="mdr">[0-3] Danger Monster</option>
-                        <option value="mdn">[0-3] Darkness Monster</option>
-                        <option value="mdu"> Dungeon Monster</option>
-                        <option value="mdg">Dragon Monster</option>
-                        <option value="mgr_c">[0-3] Generic Monster (Classic)</option>
-                        <option value="mhw">[0-3] Hero Monster</option>
-                        <option value="mhm">Hundred Demons Monster</option>
-                        <option value="mlw">[0-3] Legend Monster</option>
-                        <option value="mls">LostWorld Monster</option>
-                        <option value="mmw">[0-3] Magic Monster</option>
-                        <option value="mst_c">[0-3] StarDragon Monster (Classic)</option>
-                        <option value="mst">[0-3] StarDragon Monster</option>
-                    </select>
-                </div>
-            </div>
             <!------------------------------------------------------------->
-            <div class="flex">
-                <!------------------------------------------------------------->
-                <div class="m-3">
-                    <p class="text-white font-bold">Size</p>
-                    <select class="text-center" id="size-selector">
-                        <option value="s0" class="bg-legend">[Size0]</option>
-                        <option value="s1" class="bg-legend">[Size1]</option>
-                        <option value="s2" class="bg-legend">[Size2]</option>
-                        <option value="s3" class="bg-legend">[Size3]</option>
-                    </select>
-                </div>
-                <!------------------------------------------------------------->
-                <div class="m-3 justify-center items-center text-center">
-                    <label class="text-white" for="chaoscheck">Chaos</label><br>
-                    <input type="checkbox" class="chaoscheckcss" id="chaoscheck" name="chaoscheck" value="chaoscheck">
-                </div>
-                <!------------------------------------------------------------->
-                <div class="m-3 justify-center items-center text-center">
-                    <label class="text-white" for="hundemoncheck">Hundred Demon</label><br>
-                    <input type="checkbox" class="hundemoncheckcss" id="hundemoncheck" name="hundemoncheck" value="hundemoncheck">
-                </div>
-                <!------------------------------------------------------------->
-            </div>
-        </div>
-        <!------------------------------------------------------------->
-        <!----------------------------Legend--------------------------->
-        <!------------------------------------------------------------->
-        <div id="div-legend" class="none">
-            <p class="text-center text-white font-bold bg-yellow-600 border">Legend</p>
-            <div class="border p-3">
-                <!------------------------------------------------------------->
-                <div class="mt-5 flex gap-3 justify-around">
-                    <div>
-                        <p class="text-white font-bold">Attibute ScaleX</p>
-                        <div class="flex gap-1">
-                            <button id="legenddecreaseBTNAttribute" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
-                            <button id="legendincreaseBTNAttribute" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="text-white font-bold">Name ScaleX</p>
-                        <div class="flex gap-1">
-                            <button id="legenddecreaseBTNName" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
-                            <button id="legendincreaseBTNname" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
-                        </div>
-                    </div>
-                </div>
-                <!------------------------------------------------------------->
-            </div>
-        </div>
-        <!------------------------------------------------------------->
-        <!----------------------------Danger--------------------------->
-        <!------------------------------------------------------------->
-        <div id="div-danger" class="none">
-            <p class="text-center text-white font-bold bg-red-600 border">Danger</p>
-            <div class="border p-3">
-                
-                <!------------------------------------------------------------->
-                <div class="mt-5 flex gap-3 justify-around">
-                    <div>
-                        <p class="text-white font-bold">Attibute ScaleX</p>
-                        <div class="flex gap-1">
-                            <button id="decreaseBTNAttribute" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
-                            <button id="increaseBTNnameAttribute" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="text-white font-bold">Name ScaleX</p>
-                        <div class="flex gap-1">
-                            <button id="decreaseBTNName" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
-                            <button id="increaseBTNnameAttribute" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
-                        </div>
-                    </div>
-                </div>
-                <!------------------------------------------------------------->
-            </div>
-        </div>
-        <!------------------------------------------------------------->
-        <!------------------------------------------------------------->
-        <div id="div-dungeon" class="none">
-            <p class="text-center font-bold bg-gray-200 border">Dungeon</p>
-            <div class="border p-3">
-                
-                <!------------------------------------------------------------->
-                <div class="mt-5 flex gap-3 justify-around">
-                    <div>
-                        <p class="text-white font-bold">Attibute ScaleX</p>
-                        <div class="flex gap-1">
-                            <button id="dungeondecreaseBTNAttribute" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
-                            <button id="dungeonincreaseBTNnameAttribute" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
-                        </div>
-                    </div>
-                    <div>
-                        <p class="text-white font-bold">Name ScaleX</p>
-                        <div class="flex gap-1">
-                            <button id="dungeondecreaseBTNName" class="border btn font-bold font-bold bg-red-200">->Text<-</button>
-                            <button id="dungeonincreaseBTNname" class="border btn font-bold font-bold bg-green-200"><+Text+></button>
-                        </div>
-                    </div>
-                </div>
-                <!------------------------------------------------------------->
-            </div>
-        </div>
-        <!------------------------------------------------------------->
-        <!------------------------------------------------------------->
-        <div class="flex gap-3">
-            <div class="basis-1/2">
-                <p class="text-white font-bold">Card Name</p>
-                <input type="text" name="nameinput" id="nameinput" oninput="nameinput()">
-            </div>
-            <div class="basis-1/2">
-                <p class="text-white font-bold">Attibute</p>
-                <input type="text" name="attinput" id="attinput" oninput="attinput()">
-            </div>
-        </div>
-        <div class="flex gap-3 justify-around">
+            <!------------------------------------------------------------->
             <div>
-                <p class="text-white font-bold">Power</p>
-                <input type="text" name="powerinput" id="powerinput" oninput="atkinput()">
-            </div>
-            <div>
-                <p class="text-white font-bold">Critical</p>
-                <input type="text" name="criinput" id="criinput" oninput="criinput()">
-            </div>
-            <div>
-                <p class="text-white font-bold">Defence</p>
-                <input type="text" name="definput" id="definput" oninput="definput()">
-            </div>
-        </div>
-        <div class="mt-5">
-            <div class="flex gap-3 flex-wrap">
-                <div>
-                    <p class="text-white font-bold">Effect Move</p>
-                    <div class="">
-                        <div class="flex gap-1 mt-1">
-
-                            <button id="BTNEffectUp" class="border btn font-bold font-bold bg-blue-300">Up</button>
-                            <button id="BTNEffectDown" class="border btn font-bold font-bold bg-blue-300">Down</button>
-
-                        </div>
-                    </div>
-                    <div class="mt-5">
-                        <p class="text-white font-bold">Effect Color</p>
-                        <select class="text-center" id="color-selector">
-                            <option value="textblack" class="bg-legend">Black</option>
-                            <option value="textwhite" class="bg-legend">White</option>
-                        </select>
-                    </div>
-                </div>
-                <div>
-                    <p class="text-white font-bold">Effect</p>
-                    <textarea type="text" name="teb" id="teb"></textarea>
-                </div>
-            </div>
-        </div>
-    </div>
+                <div class="flex-container4">
+                    <input type="file" id="file-input" style="display: none;">
+                    <button id="img-import"
+                        class="px-4 py-2 leading-none border rounded bg-blue-600 text-white rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white hover:text-black">ImportBG</button>
+                    <button id="exp"
+                        class="px-4 py-2 leading-none border rounded bg-red-400 text-white rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white hover:text-black">Export</button>
     
-</div>
+                </div>
+                <div class="flex-container4">
+                            <select class="input-text text-center" id="world-selector">
+                                <option value="">Worlds</option>
+                                <option value="maw">[0-3] Ancient Monster</option>
+                                <option value="mcs">Chaos Monster</option>
+                                <option value="mdr">[0-3] Danger Monster</option>
+                                <option value="mdn">[0-3] Darkness Monster</option>
+                                <option value="mdu"> Dungeon Monster</option>
+                                <option value="mdg">Dragon Monster</option>
+                                <option value="mgr_c">[0-3] Generic Monster (Classic)</option>
+                                <option value="mhw">[0-3] Hero Monster</option>
+                                <option value="mhm">Hundred Demons Monster</option>
+                                <option value="mlw">[0-3] Legend Monster</option>
+                                <option value="mls">LostWorld Monster</option>
+                                <option value="mmw">[0-3] Magic Monster</option>
+                                <option value="mst_c">[0-3] StarDragon Monster (Classic)</option>
+                                <option value="mst">[0-3] StarDragon Monster</option>
+                            </select>
+                            <select class="input-text text-center" id="size-selector">
+                                <option value="s0" class="bg-legend">[Size0]</option>
+                                <option value="s1" class="bg-legend">[Size1]</option>
+                                <option value="s2" class="bg-legend">[Size2]</option>
+                                <option value="s3" class="bg-legend">[Size3]</option>
+                            </select>
+                            <div class="flex p-1 gap-6 justify-center justify-items-center p-1 text-center items-center place-items-center">
+                                <div class="justify-center justify-items-center p-1 text-center items-center place-items-center">
+                                    <label class="text-white font-bold"  for="input-text">CHAOS</label>
+                                    <input type="checkbox" class="checkbox" id="chaoscheck" name="chaoscheck" value="chaoscheck">
+                                </div>
+                                <div class="justify-center justify-items-center p-1 text-center items-center place-items-center">
+                                    <label class="text-white font-bold" for="input-text" >HundradDemon</label>
+                                    <input type="checkbox" class="checkbox" id="hundemoncheck" name="hundemoncheck" value="hundemoncheck">
+                                </div>
+                            </div>
+                    
+                   
+                </div>
+                <div class="flex-container">
+                    <input class="input-text text-center" type="text" placeholder="Power" name="powerinput" id="powerinput" oninput="atkinput()">
+                    <input class="input-text text-center" type="text" placeholder="Critical" name="criinput" id="criinput" oninput="criinput()">
+                    <input class="input-text text-center" type="text" placeholder="Defence" name="definput" id="definput" oninput="definput()">
+                </div>
+                <div class="flex-container2">
+                    <input class="input-text text-center" type="text" placeholder="Card Name" name="nameinput" id="nameinput" oninput="nameinput()">
+                    <button id="decreaseBTNName" class="BTN2" >Name ScaleX -0.1</button>
+                    <button id="increaseBTNName" class="BTN2" >Name ScaleX +0.1</button>
+                </div>
+                <div class="flex-container2">
+                    <input class="input-text text-center" type="text" placeholder="Attibute" name="attinput" id="attinput" oninput="attinput()">
+                    <button id="decreaseBTNAttibute" class="BTN3" >Attibute ScaleX -0.1</button>
+                    <button id="increaseBTNAttibute" class="BTN3" >Attibute ScaleX +0.1</button>
+                </div>
+                <div class="flex-container2">
+                    <input class="input-text text-center" type="text" placeholder="Card Series">
+                    <input class="input-text text-center" type="text" placeholder="illust">
+                </div>
+                <div class="flex-container2">
+                    <textarea type="text" name="teb" class="effect" id="teb"placeholder="Effect"></textarea>
+                </div>
+                <div class="flex-container3">
+                    <button id="BTNEffectDown" class="BTN" >Effect Down -0.1</button>
+                    <button id="BTNEffectUp" class="BTN" >Effect Up +0.1</button>
+                    
+                        <select class="input-text" id="color-selector">
+                            <option value="textblack" class="bg-legend">Text Color Black</option>
+                            <option value="textwhite" class="bg-legend">Text Color White</option>
+                        </select>
+                    
+                </div>
+            </div>
 
+        </div>
+    </div>
 
-<!---------------------------------------------------------------------------------------------------------------->
-<!---------------------------------------------------SCRIPT------------------------------------------------------->
-<!---------------------------------------------------------------------------------------------------------------->
-    <script src="./export_monster.js"></script>
-    <script src="./worlds_select.js"></script>
-    <script src="./change.js"></script>
-    <script src="./effect.js"></script>
-    <script src="./import_bg.js"></script>
-    <script src="../lc-mouse-drag.min.js"></script>
-    <script src="../lc-mouse-drag.js"></script>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-    </body>
-           
+        <!---------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------SCRIPT------------------------------------------------------->
+        <!---------------------------------------------------------------------------------------------------------------->
+        <script src="./export_monster.js"></script>
+        <script src="./worlds_select.js"></script>
+        <script src="./change.js"></script>
+        <script src="./effect.js"></script>
+        <script src="./import_bg.js"></script>
+        <script src="../lc-mouse-drag.min.js"></script>
+        <script src="../lc-mouse-drag.js"></script>
+        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+</body>
+
 </html>

@@ -98,11 +98,7 @@ document.getElementById('world-selector').addEventListener('change', function ()
 
 
     document.getElementById('legendW').classList.add('none');
-    document.getElementById('div-legend').classList.add('none');
 
-    document.getElementById('div-danger').classList.add('none');
-
-    document.getElementById('div-dungeon').classList.add('none');
 
 
     if (this.value === 'mlw') {
@@ -119,7 +115,6 @@ document.getElementById('world-selector').addEventListener('change', function ()
 
 
         document.getElementById('legendW').classList.remove('none');
-        document.getElementById('div-legend').classList.remove('none');
         document.getElementById('power-text').classList.add('Mlegendpower');
         document.getElementById('power-text-copy').classList.add('Mlegendpowercopy');
         document.getElementById('cri-text').classList.add('Mlegendcri');
@@ -143,7 +138,6 @@ document.getElementById('world-selector').addEventListener('change', function ()
         document.getElementById('att-text').classList.remove('none');
 
 
-        document.getElementById('div-danger').classList.remove('none');
         document.getElementById('power-text').classList.add('Mdangerpower');
         document.getElementById('power-text-copy').classList.add('Mdangerpowercopy');
         document.getElementById('cri-text').classList.add('Mdangercri');
@@ -167,7 +161,6 @@ document.getElementById('world-selector').addEventListener('change', function ()
         document.getElementById('att-text').classList.remove('none');
 
 
-        document.getElementById('div-dungeon').classList.remove('none');
         document.getElementById('power-text').classList.add('Mdungeonpower');
         document.getElementById('power-text-copy').classList.add('Mdungeonpowercopy');
         document.getElementById('cri-text').classList.add('Mdungeoncri');

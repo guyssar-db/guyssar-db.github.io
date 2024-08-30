@@ -41,6 +41,17 @@
     #main {
       width: 640px;
       justify-content: center;
+      body {
+        width: 640px;
+        justify-content: center;
+      }
+    }
+
+  }
+  @media (max-width: 649px) {
+    body {
+      width: 640px;
+      justify-content: center;
     }
 
   }
@@ -58,6 +69,116 @@
   /********************************************/
   /********************************************/
   /********************************************/
+  body {
+
+    background-color: #2a2a3e;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #1e1e2e;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.flex-container2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #1e1e2e;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.flex-container3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #1e1e2e;
+    padding:0 20px 20px 20px;
+    border-radius:0 0 10px 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.flex-container4 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    background-color: #282832;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1rem;
+}
+.input-text, .effect,.BTN,.BTN2,.BTN3 {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-text,.effect {
+    flex: 1 0 140px;
+}
+.effect{
+    height: 200px;
+}
+
+.BTN {
+    flex: 1 0 60px;
+    background-color: #ff007a;
+    color: white;
+    cursor: pointer;
+}
+
+.BTN:hover {
+    background-color: #ff4081;
+}
+.BTN2 {
+    flex: 1 0 60px;
+    background-color: #00a2ff;
+    color: white;
+    cursor: pointer;
+}
+
+.BTN2:hover {
+    background-color: #23aefe;
+}
+.BTN3 {
+    flex: 1 0 60px;
+    background-color: #d900ff;
+    color: white;
+    cursor: pointer;
+}
+
+.BTN3:hover {
+    background-color: #e02fff;
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #3498db; /* เปลี่ยนสีของ checkbox เมื่อเลือก */
+}
+
+/* ปรับแต่งสไตล์เมื่อ checkbox ถูกเลือก */
+.checkbox:checked {
+  border: 2px solid #2ecc71; /* เปลี่ยนสีเส้นขอบเมื่อเลือก */
+  background-color: #2ecc71; /* เปลี่ยนสีพื้นหลังเมื่อเลือก */
+}
+
+/* ปรับแต่งสไตล์เมื่อ checkbox ไม่ถูกเลือก */
+.checkbox:not(:checked) {
+  border: 2px solid #e74c3c; /* สีเส้นขอบเมื่อไม่เลือก */
+  background-color: transparent; /* พื้นหลังโปร่งแสงเมื่อไม่เลือก */
+}
+
+
   .pv {
     flex-direction: column;
   }

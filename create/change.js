@@ -146,25 +146,6 @@ let scaleXValue = 1;
 //============================================================//
 //============================================================//
 
-const legendname = document.getElementById('legendname');
-const legendnamecopy = document.getElementById('legendnamecopy');
-const legenddecreaseBTN = document.getElementById('legenddecreaseBTNName');
-const legendincreaseBTN = document.getElementById('legendincreaseBTNname');
-
-function updateScaleX() {
-    legendname.style.transform = `translate(0, 274px) scaleX(${scaleXValue})`;
-    legendnamecopy.style.transform = `translate(0, 274px) scaleX(${scaleXValue})`;
-}
-
-legenddecreaseBTN.addEventListener('click', () => {
-    scaleXValue -= 0.1;
-    updateScaleX();
-});
-
-legendincreaseBTN.addEventListener('click', () => {
-    scaleXValue += 0.1;
-    updateScaleX();
-});
 
 
 
@@ -193,66 +174,32 @@ btnDown.addEventListener('click', () => {
 //==//==//==//==//==//==//==//==//==//==//==//==//==//==//
 //==//==//==//==//==//==//==//==//==//==//==//==//==//==//
 
-const legendatt = document.getElementById('legendatt');
-const legenddecreaseBTNAttribute = document.getElementById('legenddecreaseBTNAttribute');
-const legendincreaseBTNAttribute = document.getElementById('legendincreaseBTNAttribute');
-
-function AttupdateScaleX() {
-    legendatt.style.transform = `translate(-124px, 224px) scaleX(${scaleXValue})`;
-}
-
-legenddecreaseBTNAttribute.addEventListener('click', () => {
-    scaleXValue -= 0.1;
-    AttupdateScaleX();
-});
-
-legendincreaseBTNAttribute.addEventListener('click', () => {
-    scaleXValue += 0.1;
-    AttupdateScaleX();
-});
 
 //============================================================//
-let scaleXValue2 = 1;
-let scaleXValue2name = 1;
+//let scaleXValue2 = 1;
+//let scaleXValue2name = 1;
 
 
-const dungeonname = document.getElementById('dungeonname');
-const dungeonnamecopy = document.getElementById('dungeonnamecopy');
-const dungeondecreaseBTNName = document.getElementById('dungeondecreaseBTNName');
-const dungeonincreaseBTNname = document.getElementById('dungeonincreaseBTNname');
+//const dungeonname = document.getElementById('dungeonname');
+//const dungeonnamecopy = document.getElementById('dungeonnamecopy');
+//const dungeondecreaseBTNName = document.getElementById('dungeondecreaseBTNName');
+//const dungeonincreaseBTNname = document.getElementById('dungeonincreaseBTNname');
 
-function dunNameScaleX() {
-    dungeonname.style.transform = `translate(0px, 265px) scaleX(${scaleXValue2name})`;
-    dungeonnamecopy.style.transform = `translate(0px, 265px) scaleX(${scaleXValue2name})`;
-}
+//function dunNameScaleX() {
+//    dungeonname.style.transform = `translate(0px, 265px) scaleX(${scaleXValue2name})`;
+//    dungeonnamecopy.style.transform = `translate(0px, 265px) scaleX(${scaleXValue2name})`;
+//}
 
-dungeondecreaseBTNName.addEventListener('click', () => {
-    scaleXValue2name -= 0.1;
-    dunNameScaleX();
-});
+//dungeondecreaseBTNName.addEventListener('click', () => {
+  //  scaleXValue2name -= 0.1;
+//    dunNameScaleX();
+//});
 
-dungeonincreaseBTNname.addEventListener('click', () => {
-    scaleXValue2name += 0.1;
-    dunNameScaleX();
-});
+//dungeonincreaseBTNname.addEventListener('click', () => {
+ //   scaleXValue2name += 0.1;
+  //  dunNameScaleX();
+//});
 
-const dungeondatt = document.getElementById('dungeonatt');
-const dungeondecreaseBTNAttribute = document.getElementById('dungeondecreaseBTNAttribute');
-const dungeonincreaseBTNAttribute = document.getElementById('dungeonincreaseBTNnameAttribute');
-
-function dunAttupdateScaleX() {
-    dungeondatt.style.transform = `translate(-48px, 213px) scaleX(${scaleXValue2})`;
-}
-
-dungeondecreaseBTNAttribute.addEventListener('click', () => {
-    scaleXValue2 -= 0.1;
-    dunAttupdateScaleX();
-});
-
-dungeonincreaseBTNAttribute.addEventListener('click', () => {
-    scaleXValue2 += 0.1;
-    dunAttupdateScaleX();
-});
 
 //============================================================//
 
