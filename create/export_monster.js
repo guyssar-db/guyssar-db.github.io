@@ -34,7 +34,16 @@ function div_img() {
     var dungeonDefcopy = document.querySelector('.Mdungeondefcopy');
     var dungeonCri = document.querySelector('.Mdungeoncri');
     var dungeonCricopy = document.querySelector('.Mdungeoncricopy');
+
     var dragonatt = document.querySelector('.dragonatt');
+    var dragonname = document.querySelector('.dragonname');
+    var dragonnamecopy = document.querySelector('.dragonnamecopy');
+    var dragonpower = document.querySelector('.dragonpower');
+    var dragonpowercopy = document.querySelector('.dragonpowercopy');
+    var dragondef = document.querySelector('.dragondef');
+    var dragondefcopy = document.querySelector('.dragondefcopy');
+    var dragoncri = document.querySelector('.dragoncri');
+    var dragoncricopy = document.querySelector('.dragoncricopy');
 
 
 
@@ -54,6 +63,14 @@ function div_img() {
             var matrix = new WebKitCSSMatrix(style.transform);
             var currentY = matrix.m42; 
             element.style.transform = `translate(${matrix.m41}px, ${currentY - 10}px)`;
+        }
+    }
+    function moveUp3(element) {
+        if (element) {
+            var style = window.getComputedStyle(element);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            var currentY = matrix.m42;
+            element.style.transform = `translate(${matrix.m41}px, ${currentY - 13.25}px)`;
         }
     }
 
@@ -140,8 +157,55 @@ function div_img() {
     moveUp(dungeonname);
     moveUp(dungeonnamecopy);
     moveUp2(dungeonatt);
-
+    function dragonmoveLeft(element) {
+        if (element) {
+            var style = window.getComputedStyle(element);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            var currentX = matrix.m41;
+            element.style.transform = `translate(${currentX - 14}px, ${matrix.m42}px) rotate(-90deg)`;
+        }
+    }
+    function dragoncrimoveLeft(element) {
+        if (element) {
+            var style = window.getComputedStyle(element);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            var currentX = matrix.m41;
+            element.style.transform = `translate(${currentX - 17}px, ${matrix.m42}px) rotate(-90deg)`;
+        }
+    }
+    function dgmoveDown(element) {
+        if (element) {
+            var style = window.getComputedStyle(element);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            var currentY = matrix.m42; 
+            element.style.transform = `translate(${matrix.m41}px, ${currentY + 21}px)`;
+        }
+    }
+    function dgmoveUp(element) {
+        if (element) {
+            var style = window.getComputedStyle(element);
+            var matrix = new WebKitCSSMatrix(style.transform);
+            var currentY = matrix.m42; 
+            element.style.transform = `translate(${matrix.m41}px, ${currentY - 21}px)`;
+        }
+    }
     moveUp2(dragonatt);
+    moveUp3(dragonname);
+    moveUp3(dragonnamecopy);
+    dgmoveDown(dragonpower)
+    dgmoveDown(dragonpowercopy)
+    dgmoveUp(dragondef);
+    dgmoveUp(dragondefcopy);
+    dragonmoveLeft(dragonpower);
+    dragonmoveLeft(dragonpowercopy);
+    dragonmoveLeft(dragondef);
+    dragonmoveLeft(dragondefcopy);
+    dragoncrimoveLeft(dragoncri);
+    dragoncrimoveLeft(dragoncricopy);
+
+
+
+
 
     gungeonmoveLeft(dungeonPower);
     gungeonmoveLeft(dungeonPowercopy);
@@ -221,6 +285,14 @@ function div_img() {
         if (dungeonCricopy) dungeonCricopy.style.transform = '';
 
         if (dragonatt) dragonatt.style.transform = '';
+        if (dragonname) dragonname.style.transform = '';
+        if (dragonnamecopy) dragonnamecopy.style.transform = '';
+        if (dragonpower) dragonpower.style.transform = '';
+        if (dragonpowercopy) dragonpowercopy.style.transform = '';
+        if (dragoncri) dragoncri.style.transform = '';
+        if (dragoncricopy) dragoncricopy.style.transform = '';
+        if (dragondef) dragondef.style.transform = '';
+        if (dragondefcopy) dragondefcopy.style.transform = '';
 
         document.querySelectorAll('.Iskill,.Iskill2').forEach(function(element) {
             element.style.width = '';

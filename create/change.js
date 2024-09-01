@@ -1,8 +1,4 @@
-//============================================================//
-//============================================================//
-//=========================[legend]===========================//
-//============================================================//
-//============================================================//
+
 function nameinput() {
     var inputText = document.getElementById('nameinput').value;
     document.getElementById('name-text').innerText = inputText;
@@ -32,73 +28,6 @@ function definput() {
 
 
 
-
-
-//============================================================//
-//============================================================//
-//=========================[danger]===========================//
-//============================================================//
-//============================================================//
-function namedanger() {
-    var inputText = document.getElementById('dangernameinput').value;
-    document.getElementById('dangername').innerText = inputText;
-    document.getElementById('dangernamecopy').innerText = inputText;
-}
-function attdanger() {
-    var inputText = document.getElementById('dangerattinput').value;
-    document.getElementById('dangeratt').innerText = inputText;
-}
-function atkdanger() {
-    var inputText = document.getElementById('dangerpowerinput').value;
-    document.getElementById('Mdangerpower').innerText = inputText;
-    document.getElementById('Mdangerpowercopy').innerText = inputText;
-}
-function cridanger() {
-    var inputText = document.getElementById('dangercriinput').value;
-    document.getElementById('Mdangercri').innerText = inputText;
-    document.getElementById('Mdangercricopy').innerText = inputText;
-}
-function defdanger() {
-    var inputText = document.getElementById('dangerdefinput').value;
-    document.getElementById('Mdangerdef').innerText = inputText;
-    document.getElementById('Mdangerdefcopy').innerText = inputText;
-}
-//============================================================//
-
-
-
-
-
-//============================================================//
-//============================================================//
-//=========================[dungeon]===========================//
-//============================================================//
-//============================================================//
-function namedungeon() {
-    var inputText = document.getElementById('dungeonnameinput').value;
-    document.getElementById('dungeonname').innerText = inputText;
-    document.getElementById('dungeonnamecopy').innerText = inputText;
-}
-function attdungeon() {
-    var inputText = document.getElementById('dungeonattinput').value;
-    document.getElementById('dungeonatt').innerText = inputText;
-}
-function atkdungeon() {
-    var inputText = document.getElementById('dungeonpowerinput').value;
-    document.getElementById('Mdungeonpower').innerText = inputText;
-    document.getElementById('Mdungeonpowercopy').innerText = inputText;
-}
-function cridungeon() {
-    var inputText = document.getElementById('dungeoncriinput').value;
-    document.getElementById('Mdungeoncri').innerText = inputText;
-    document.getElementById('Mdungeoncricopy').innerText = inputText;
-}
-function defdungeon() {
-    var inputText = document.getElementById('dungeoninput').value;
-    document.getElementById('Mdungeondef').innerText = inputText;
-    document.getElementById('Mdungeondefcopy').innerText = inputText;
-}
-//============================================================//
 
 
 
@@ -140,7 +69,6 @@ colorSelector.addEventListener('change', function () {
 //============================================================//
 //============================================================//
 
-let scaleXValue = 1;
 
 //============================================================//
 //============================================================//
@@ -176,29 +104,46 @@ btnDown.addEventListener('click', () => {
 
 
 //============================================================//
-//let scaleXValue2 = 1;
-//let scaleXValue2name = 1;
+document.getElementById("decreaseBTNName").addEventListener("click", function() {
+    const elements = [
+        { element: document.querySelector(".dungeonname"), translate: "translate(0px, 265px)" },
+        { element: document.querySelector(".dungeonnamecopy"), translate: "translate(0px, 265px)" },
+        { element: document.querySelector(".dangername"), translate: "translate(60px, 274px)" },
+        { element: document.querySelector(".dangernamecopy"), translate: "translate(60px, 274px)" },
+        { element: document.querySelector(".dragonname"), translate: "translate(50px, 271px)" },
+        { element: document.querySelector(".dragonnamecopy"), translate: "translate(50px, 271px)" }
+
+    ];
+
+    elements.forEach(function(item) {
+        if (item.element) {
+            const currentScaleX = item.element.style.transform.match(/scaleX\(([^)]+)\)/);
+            const newScaleX = currentScaleX ? parseFloat(currentScaleX[1]) - 0.1 : 0.9;
+            item.element.style.transform = `${item.translate} scaleX(${newScaleX})`;
+        }
+    });
+});
+
+document.getElementById("increaseBTNName").addEventListener("click", function() {
+    const elements = [
+        { element: document.querySelector(".dungeonname"), translate: "translate(0px, 265px)" },
+        { element: document.querySelector(".dungeonnamecopy"), translate: "translate(0px, 265px)" },
+        { element: document.querySelector(".dangername"), translate: "translate(60px, 274px)" },
+        { element: document.querySelector(".dangernamecopy"), translate: "translate(60px, 274px)" },
+        { element: document.querySelector(".dragonname"), translate: "translate(50px, 271px)" },
+        { element: document.querySelector(".dragonnamecopy"), translate: "translate(50px, 271px)" }
+    ];
+
+    elements.forEach(function(item) {
+        if (item.element) {
+            const currentScaleX = item.element.style.transform.match(/scaleX\(([^)]+)\)/);
+            const newScaleX = currentScaleX ? parseFloat(currentScaleX[1]) + 0.1 : 1.1;
+            item.element.style.transform = `${item.translate} scaleX(${newScaleX})`;
+        }
+    });
+});
 
 
-//const dungeonname = document.getElementById('dungeonname');
-//const dungeonnamecopy = document.getElementById('dungeonnamecopy');
-//const dungeondecreaseBTNName = document.getElementById('dungeondecreaseBTNName');
-//const dungeonincreaseBTNname = document.getElementById('dungeonincreaseBTNname');
-
-//function dunNameScaleX() {
-//    dungeonname.style.transform = `translate(0px, 265px) scaleX(${scaleXValue2name})`;
-//    dungeonnamecopy.style.transform = `translate(0px, 265px) scaleX(${scaleXValue2name})`;
-//}
-
-//dungeondecreaseBTNName.addEventListener('click', () => {
-  //  scaleXValue2name -= 0.1;
-//    dunNameScaleX();
-//});
-
-//dungeonincreaseBTNname.addEventListener('click', () => {
- //   scaleXValue2name += 0.1;
-  //  dunNameScaleX();
-//});
 
 
 //============================================================//
