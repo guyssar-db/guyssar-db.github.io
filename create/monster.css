@@ -8,6 +8,10 @@
     font-weight: bold;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Cham';
+    src: url('../assets/flag/590438/PSL-Chamnarn Regular.ttf') format('truetype');
+  }
 
   @font-face {
     font-family: 'legendpower';
@@ -208,7 +212,10 @@
     justify-content: center;
     user-select: none;
   }
-
+.nameAs{
+  width: 450px;
+    height: 629px;
+}
   #chaos,
   #hundred {
     min-width: 450px;
@@ -437,10 +444,29 @@
   .effect-danger{
     transform: translate(10px, -120px) scaleX(0.8);
   }
+  .effect-dragon{
+    transform: translate(10px, -115px) scaleX(0.8);
+  }
 
 
 
 
+  .series-text,.series-textcopy{
+      font-family: 'Cham', sans-serif;
+      font-size: 13px;
+      transform: translate(-159.6px, 299.4px) scaleX(0.9);
+      white-space: nowrap;
+      text-align: start;
+    color: #fff;
+
+    z-index: 8;
+
+  }
+  .series-textcopy{
+    color: #000000;
+    -webkit-text-stroke: 2px #000;
+    z-index: 7;
+  }
   /********************************************/
   /********************Danger******************/
   /********************************************/

@@ -64,10 +64,14 @@
                 <p id="name-text" class="absolute z4 none">ชื่อู</p>
                 <p id="name-text-copy" class="absolute z3 none">ชื่อู</p>
                 <p id="att-text" class="absolute z3 none">เ---ผี่าอู---า</p>
+                <p id="series-text" class="absolute z3 series-text">S-UB06/0010</p>
+                <p id="series-text-copy" class="absolute z3 series-textcopy">S-UB06/0010</p>
+
 
                 <!----------------------------legendText--------------------------------->
                 <p id="legendW" class="absolute legendW z3 none">เลเจนด์เวิลด์</p>
                 <!----------------------------Worlds--------------------------------->
+                <img id="nameas" class="absolute z2 nameAs none" src="./assets/nameAs.png" alt="">
                 <img id="chaos" class="absolute z2 none" src="./assets/chaos.png" alt="">
                 <img id="hundred" class="absolute z2 none" src="./assets/hundred.png" alt="">
                 <img id="worlds" class="z1" src="" alt="">
@@ -94,93 +98,116 @@
                         class="px-4 py-2 leading-none border rounded bg-blue-600 text-white rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white hover:text-black">ImportBG</button>
                     <button id="exp"
                         class="px-4 py-2 leading-none border rounded bg-red-400 text-white rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white hover:text-black">Export</button>
-    
+
                 </div>
-                <div class="flex-container4">
-                            <select class="input-text text-center" id="world-selector">
-                                <option value="">Worlds</option>
-                                <option value="maw">[0-3] Ancient Monster</option>
-                                <option value="mcs">Chaos Monster</option>
-                                <option value="mdr">[0-3] Danger Monster</option>
-                                <option value="mdn">[0-3] Darkness Monster</option>
-                                <option value="mdu"> Dungeon Monster</option>
-                                <option value="mdg">Dragon Monster</option>
-                                <option value="mgr_c">[0-3] Generic Monster (Classic)</option>
-                                <option value="mhw">[0-3] Hero Monster</option>
-                                <option value="mhm">Hundred Demons Monster</option>
-                                <option value="mlw">[0-3] Legend Monster</option>
-                                <option value="mls">LostWorld Monster</option>
-                                <option value="mmw">[0-3] Magic Monster</option>
-                                <option value="mst_c">[0-3] StarDragon Monster (Classic)</option>
-                                <option value="mst">[0-3] StarDragon Monster</option>
-                            </select>
-                            <select class="input-text text-center" id="size-selector">
-                                <option value="s0" class="bg-legend">[Size0]</option>
-                                <option value="s1" class="bg-legend">[Size1]</option>
-                                <option value="s2" class="bg-legend">[Size2]</option>
-                                <option value="s3" class="bg-legend">[Size3]</option>
-                            </select>
-                            <div class="flex p-1 gap-6 justify-center justify-items-center p-1 text-center items-center place-items-center">
-                                <div class="justify-center justify-items-center p-1 text-center items-center place-items-center">
-                                    <label class="text-white font-bold"  for="input-text">CHAOS</label>
-                                    <input type="checkbox" class="checkbox" id="chaoscheck" name="chaoscheck" value="chaoscheck">
-                                </div>
-                                <div class="justify-center justify-items-center p-1 text-center items-center place-items-center">
-                                    <label class="text-white font-bold" for="input-text" >HundradDemon</label>
-                                    <input type="checkbox" class="checkbox" id="hundemoncheck" name="hundemoncheck" value="hundemoncheck">
-                                </div>
+                <div class="flex-container4 text-center justify-center">
+                    <div>
+
+                        <select class="input-text text-center" id="world-selector">
+                            <option value="">Worlds</option>
+                            <option value="maw">[0-3] Ancient Monster</option>
+                            <option value="mcs">Chaos Monster</option>
+                            <option value="mdr">[0-3] Danger Monster</option>
+                            <option value="mdn">[0-3] Darkness Monster</option>
+                            <option value="mdu"> Dungeon Monster</option>
+                            <option value="mdg">Dragon Monster</option>
+                            <option value="mgr_c">[0-3] Generic Monster (Classic)</option>
+                            <option value="mhw">[0-3] Hero Monster</option>
+                            <option value="mhm">Hundred Demons Monster</option>
+                            <option value="mlw">[0-3] Legend Monster</option>
+                            <option value="mls">LostWorld Monster</option>
+                            <option value="mmw">[0-3] Magic Monster</option>
+                            <option value="mst_c">[0-3] StarDragon Monster (Classic)</option>
+                            <option value="mst">[0-3] StarDragon Monster</option>
+                        </select>
+                        <select class="input-text text-center" id="size-selector">
+                            <option value="s0" class="bg-legend">[Size0]</option>
+                            <option value="s1" class="bg-legend">[Size1]</option>
+                            <option value="s2" class="bg-legend">[Size2]</option>
+                            <option value="s3" class="bg-legend">[Size3]</option>
+                        </select>
+                        <input class="input-text text-center none" type="text" placeholder="Name As" name="text-name-as"
+                            id="text-name-as" oninput="textnameas()">
+                        <div
+                            class="flex p-1 gap-6 justify-center justify-items-center p-1 text-center items-center place-items-center">
+                            <div
+                                class="justify-center justify-items-center p-1 text-center items-center place-items-center">
+                                <label class="text-white font-bold" for="input-text">CHAOS</label>
+                                <input type="checkbox" class="checkbox" id="chaoscheck" name="chaoscheck"
+                                    value="chaoscheck">
                             </div>
-                    
-                   
+                            <div
+                                class="justify-center justify-items-center p-1 text-center items-center place-items-center">
+                                <label class="text-white font-bold" for="input-text">HundradDemon</label>
+                                <input type="checkbox" class="checkbox" id="hundemoncheck" name="hundemoncheck"
+                                    value="hundemoncheck">
+                            </div>
+                            <div
+                                class="justify-center justify-items-center p-1 text-center items-center place-items-center">
+                                <label class="text-white font-bold" for="nameascheck">Name As</label>
+                                <input type="checkbox" class="checkbox" id="nameascheck" name="nameascheck"
+                                    value="nameascheck">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
                 </div>
                 <div class="flex-container">
-                    <input class="input-text text-center" type="text" placeholder="Power" name="powerinput" id="powerinput" oninput="atkinput()">
-                    <input class="input-text text-center" type="text" placeholder="Critical" name="criinput" id="criinput" oninput="criinput()">
-                    <input class="input-text text-center" type="text" placeholder="Defence" name="definput" id="definput" oninput="definput()">
+                    <input class="input-text text-center" type="text" placeholder="Power" name="powerinput"
+                        id="powerinput" oninput="atkinput()">
+                    <input class="input-text text-center" type="text" placeholder="Critical" name="criinput"
+                        id="criinput" oninput="criinput()">
+                    <input class="input-text text-center" type="text" placeholder="Defence" name="definput"
+                        id="definput" oninput="definput()">
                 </div>
                 <div class="flex-container2">
-                    <input class="input-text text-center" type="text" placeholder="Card Name" name="nameinput" id="nameinput" oninput="nameinput()">
-                    <button id="decreaseBTNName" class="BTN2" >Name ScaleX -0.1</button>
-                    <button id="increaseBTNName" class="BTN2" >Name ScaleX +0.1</button>
+                    <input class="input-text text-center" type="text" placeholder="Card Name" name="nameinput"
+                        id="nameinput" oninput="nameinput()">
+                    <button id="decreaseBTNName" class="BTN2">Name ScaleX -0.1</button>
+                    <button id="increaseBTNName" class="BTN2">Name ScaleX +0.1</button>
                 </div>
                 <div class="flex-container2">
-                    <input class="input-text text-center" type="text" placeholder="Attibute" name="attinput" id="attinput" oninput="attinput()">
-                    <button id="decreaseBTNAttibute" class="BTN3" >Attibute ScaleX -0.1</button>
-                    <button id="increaseBTNAttibute" class="BTN3" >Attibute ScaleX +0.1</button>
+                    <input class="input-text text-center" type="text" placeholder="Attibute" name="attinput"
+                        id="attinput" oninput="attinput()">
+                    <button id="decreaseBTNAttibute" class="BTN3">Attibute ScaleX -0.1</button>
+                    <button id="increaseBTNAttibute" class="BTN3">Attibute ScaleX +0.1</button>
                 </div>
                 <div class="flex-container2">
                     <input class="input-text text-center" type="text" placeholder="Card Series">
                     <input class="input-text text-center" type="text" placeholder="illust">
                 </div>
                 <div class="flex-container2">
-                    <textarea type="text" name="teb" class="effect" id="teb"placeholder="Effect"></textarea>
+                    <textarea type="text" name="teb" class="effect" id="teb" placeholder="Effect"></textarea>
                 </div>
                 <div class="flex-container3">
-                    <button id="BTNEffectDown" class="BTN" >Effect Down -0.1</button>
-                    <button id="BTNEffectUp" class="BTN" >Effect Up +0.1</button>
-                    
-                        <select class="input-text" id="color-selector">
-                            <option value="textblack" class="bg-legend">Text Color Black</option>
-                            <option value="textwhite" class="bg-legend">Text Color White</option>
-                        </select>
-                    
+                    <button id="BTNEffectDown" class="BTN">Effect Down -0.1</button>
+                    <button id="BTNEffectUp" class="BTN">Effect Up +0.1</button>
+
+                    <select class="input-text" id="color-selector">
+                        <option value="textblack" class="bg-legend">Text Color Black</option>
+                        <option value="textwhite" class="bg-legend">Text Color White</option>
+                    </select>
+
                 </div>
             </div>
 
         </div>
     </div>
 
-        <!---------------------------------------------------------------------------------------------------------------->
-        <!---------------------------------------------------SCRIPT------------------------------------------------------->
-        <!---------------------------------------------------------------------------------------------------------------->
-        <script src="./export_monster.js"></script>
-        <script src="./worlds_select.js"></script>
-        <script src="./change.js"></script>
-        <script src="./effect.js"></script>
-        <script src="./import_bg.js"></script>
-        <script src="../lc-mouse-drag.min.js"></script>
-        <script src="../lc-mouse-drag.js"></script>
-        <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <!---------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------SCRIPT------------------------------------------------------->
+    <!---------------------------------------------------------------------------------------------------------------->
+    <script src="./export_monster.js"></script>
+    <script src="./worlds_select.js"></script>
+    <script src="./change.js"></script>
+    <script src="./effect.js"></script>
+    <script src="./import_bg.js"></script>
+    <script src="../lc-mouse-drag.min.js"></script>
+    <script src="../lc-mouse-drag.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 </body>
 
 </html>

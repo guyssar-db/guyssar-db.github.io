@@ -31,6 +31,18 @@ document.getElementById('hundemoncheck').addEventListener('change', function () 
     }
 });
 
+document.getElementById('nameascheck').addEventListener('change', function () {
+    const nameasImage = document.getElementById('nameas');
+    const textnameasImage = document.getElementById('text-name-as');
+    if (this.checked) {
+        nameasImage.classList.remove('none');
+        textnameasImage.classList.remove('none');
+    } else {
+        nameasImage.classList.add('none');
+        textnameasImage.classList.add('none');
+    }
+});
+
 document.getElementById('world-selector').addEventListener('change', function () {
 
     //==//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==//==//

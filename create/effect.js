@@ -1,6 +1,7 @@
 document.getElementById('teb').addEventListener('input', function() {
     let inputText = this.value;
 
+    inputText = inputText.replace(/evil/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Evil Deity.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/buddygift/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/BuddyGift.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/1turn/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/1 per Turn Rag.png" alt="Image" class="Iskill"></span>');
     inputText = inputText.replace(/1game/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/1 per Game Rag.png" alt="Image" class="Iskill"></span>');

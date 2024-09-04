@@ -244,6 +244,10 @@ document.getElementById('world-selector').addEventListener('change', function ()
             nubElement.classList.add('z2');
             nubElement.classList.remove('z1');
             break;
+		case 'mdg':
+            nubElement.classList.add('z2');
+            nubElement.classList.remove('z1');
+            break;
         default:
             nubElement.classList.remove('z1', 'z2');
             break;
