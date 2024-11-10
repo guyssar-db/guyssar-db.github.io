@@ -1,46 +1,245 @@
 <!DOCTYPE html>
-<html lang="TH">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://www.thaibuddyfight.com/wp-content/uploads/2022/06/Thai-Buddyfight-Fav-Icon.png"sizes="192x192">
-    <script src="./main_css.js"></script>
-    <style>.img-logo {width: 100px;}@media (max-width: 768px) {.nav-links {display: none;}}#navbar-menu.active {display: block;}</style>
-    <title>หน้าแรก - Fake Buddyfight</title>
-    <script src="./nav.js" async></script>
+    <title>Monster/Dev</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
+<body style="background-color: #2a2a3e;">
+    <div class="con">
+        <div class="con_">
+            <div class="con1">
+                <div id="img">
+                    <div class="text_ absolute">
+                        <div class="size_ absolute">
+                            <p id="size" class=" sizeancient2">1</p>
+                            <p id="size2" class=" sizeancient">1</p>
+                        </div>
+                        <div id="divname" class="z8 absolute">
+                            <p id="textname2" class=" maintext textancient2">ชื่ออู1</p>
+                            <p id="textname" class=" maintext textancient">ชื่ออู1</p>
+                        </div>
+                    </div>
 
-<body class="bg-slate-900">
-    <div>
-        <nav class="flex items-center justify-between flex-wrap bg-slate-950 p-3 lg:flex">
-            <div class="flex items-center flex-shrink-0 text-white mr-6">
-                <span class="font-semibold text-xl tracking-tight"><img class="img-logo" src="./assets/fakebf.png"
-                        alt=""></span>
-            </div>
-            <div class="block lg:hidden">
-                <button id="hamburger-menu-button"
-                    class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-white">
-                    <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                        <title>Menu</title>
-                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                    </svg>
-                </button>
-            </div>
-            <div id="navbar-menu" class="w-full block flex-grow lg:flex lg:items-center lg:w-auto hidden">
-                <div id="nav_bar" class="text-sm lg:flex-grow">
-                </div>
-                <hr class="lg:hidden mt-4 mb-4">
-                <div>
-                    <a href="https://discord.gg/eyTqcyRD82"><img class="inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white lg:mt-0" src="./assets/discord-icon-svgrepo-com.svg" alt="" width="50px"></a>
+                    <div class="world-bg absolute">
+                        <div id="tem_" class="none">
+                            <img id="imgspl" class="z7 absolute" src="">
+                            <img id="imgspr" class="z7 absolute" src="">
+                        </div>
+                        <img id="imgchaos" class="z6 absolute none" src="./assets/chaos.png">
+                        <img id="imghundred" class="z6 absolute none" src="./assets/hundred.png">
+                        <div id="tem">
+                            <img id="world1" class="z5 absolute" src="./assets/size/aw.png">
+                            <img id="worldl" class="z3 absolute none" src="">
+                            <img id="worldr" class="z4 absolute none" src="">
+                        </div>
+                    </div>
+                    
+                    <div class="bg_" style="width: 450px;height: 629px;overflow: hidden;border-radius: 20px;">
+                        <div class="bg" id="imh" style="width: 450px;height: 629px;border-radius: 20px;background: #fff;">
+                          <img id="imbg" src="">
+                        </div>
+                      </div>
                 </div>
             </div>
-        </nav>
+    
+    
+            <div class="con2">
+                <div class="line flex">
+                        <input type="file" id="file-input" style="display: none;">
+                        <button id="Import">Import BG</button>
+                    <button id="Save">Download</button>
+                    <button id="Keyword">Keywords</button>
+                </div>
+                <div id="select_type" class="line flex mt-1">
+                    <select name="montype" id="montype">
+                        <option class="bold" value="mon">Monster</option>
+                        <option class="bold" value="dualmon">Dual Monster</option>
+                    </select>
+                </div>
+                <div id="world-select-dual" class="line_dual flex mt-1 none">
+                    <select name="worldL" id="worldL">
+                        <option value="awl">Ancient</option>
+                        <option value="csl">Chaos</option>
+                        <option value="drl">Danger</option>
+                        <option value="dnl">Darkness</option>
+                        <option value="dul"> Dungeon</option>
+                        <option value="dgl">Dragon</option>
+                        <option value="gr_cl">Generic (Classic)</option>
+                        <option value="hwl">Hero</option>
+                        <option value="hml">Hundred Demons</option>
+                        <option value="knl">Katana</option>
+                        <option value="lwl">Legend</option>
+                        <option value="lsl">LostWorld</option>
+                        <option value="mwl">Magic</option>
+                        <option value="st_cl">StarDragon (Classic)</option>
+                        <option value="stl">StarDragon</option>
+                    </select>
+                    <select name="worldR" id="worldR">
+                        <option value="awr">Ancient</option>
+                        <option value="csr">Chaos</option>
+                        <option value="drr">Danger</option>
+                        <option value="dnr">Darkness</option>
+                        <option value="dur"> Dungeon</option>
+                        <option value="dgr">Dragon</option>
+                        <option value="gr_cr">Generic (Classic)</option>
+                        <option value="hwr">Hero</option>
+                        <option value="hmr">Hundred Demons</option>
+                        <option value="knr">Katana</option>
+                        <option value="lwr">Legend</option>
+                        <option value="lsr">LostWorld</option>
+                        <option value="mwr">Magic</option>
+                        <option value="st_cr">StarDragon (Classic)</option>
+                        <option value="str">StarDragon</option>
+                    </select>
+                </div>
+                <div id="world-select" class="line flex mt-1">
+                    <select name="worldMain" id="worldMain">
+                        <option value="aw">Ancient</option>
+                        <option value="cs">Chaos</option>
+                        <option value="dr">Danger</option>
+                        <option value="dn">Darkness</option>
+                        <option value="du"> Dungeon</option>
+                        <option value="dg">Dragon</option>
+                        <option value="gr_c">Generic (Classic)</option>
+                        <option value="hw">Hero</option>
+                        <option value="hm">Hundred Demons</option>
+                        <option value="kn">Katana</option>
+                        <option value="lw">Legend</option>
+                        <option value="ls">LostWorld</option>
+                        <option value="mw">Magic</option>
+                        <option value="st_c">StarDragon (Classic)</option>
+                        <option value="st">StarDragon</option>
+                    </select>
+                </div>
+                <div class="line flex mt-1">
+                    <select name="chaos" id="chaos" class="off">
+                        <option class="bold off" value="chaosoff">Chaos / OFF</option>
+                        <option class="bold on" value="chaoson">Chaos / ON</option>
+                    </select>
+                    <select name="HundredDemon" id="HundredDemon" class="off">
+                        <option class="bold off" value="hunoff">Hundred / OFF</option>
+                        <option class="bold on" value="hunon">Hundred / ON</option>
+                    </select>
+                    <select name="NameAs" id="NameAs" class="off">
+                        <option class="bold off" value="nameasoff">NameAs / OFF</option>
+                        <option class="bold onn" value="nameason">NameAs / ON</option>
+                    </select>
+                    <select name="SP" id="SP" class="off">
+                        <option class="bold off" value="SPoff">SP / OFF</option>
+                        <option class="bold on" value="SPon">SP / ON</option>
+                    </select>
+                    <button onclick="togglesetting()" class="btn flex btnsetting"><svg height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 489.802 489.802" xml:space="preserve">
+                        <g>
+                            <path d="M20.701,281.901l32.1,0.2c4.8,24.7,14.3,48.7,28.7,70.5l-22.8,22.6c-8.2,8.1-8.2,21.2-0.2,29.4l24.6,24.9
+                                c8.1,8.2,21.2,8.2,29.4,0.2l22.8-22.6c21.6,14.6,45.5,24.5,70.2,29.5l-0.2,32.1c-0.1,11.5,9.2,20.8,20.7,20.9l35,0.2
+                                c11.5,0.1,20.8-9.2,20.9-20.7l0.2-32.1c24.7-4.8,48.7-14.3,70.5-28.7l22.6,22.8c8.1,8.2,21.2,8.2,29.4,0.2l24.9-24.6
+                                c8.2-8.1,8.2-21.2,0.2-29.4l-22.6-22.8c14.6-21.6,24.5-45.5,29.5-70.2l32.1,0.2c11.5,0.1,20.8-9.2,20.9-20.7l0.2-35
+                                c0.1-11.5-9.2-20.8-20.7-20.9l-32.1-0.2c-4.8-24.7-14.3-48.7-28.7-70.5l22.8-22.6c8.2-8.1,8.2-21.2,0.2-29.4l-24.6-24.9
+                                c-8.1-8.2-21.2-8.2-29.4-0.2l-22.8,22.6c-21.6-14.6-45.5-24.5-70.2-29.5l0.2-32.1c0.1-11.5-9.2-20.8-20.7-20.9l-35-0.2
+                                c-11.5-0.1-20.8,9.2-20.9,20.7l-0.3,32.1c-24.8,4.8-48.8,14.3-70.5,28.7l-22.6-22.8c-8.1-8.2-21.2-8.2-29.4-0.2l-24.8,24.6
+                                c-8.2,8.1-8.2,21.2-0.2,29.4l22.6,22.8c-14.6,21.6-24.5,45.5-29.5,70.2l-32.1-0.2c-11.5-0.1-20.8,9.2-20.9,20.7l-0.2,35
+                                C-0.099,272.401,9.201,281.801,20.701,281.901z M179.301,178.601c36.6-36.2,95.5-35.9,131.7,0.7s35.9,95.5-0.7,131.7
+                                s-95.5,35.9-131.7-0.7S142.701,214.801,179.301,178.601z"/>
+                        </g>
+                        </svg><p>Setting</p>
+                    </button>
+                </div>
+
+                <div id="NameASdiv" class="line3 flex mt-1 none">
+                    <input type="text" id="NameASText" placeholder="NameAS">
+                </div>
+
+                <div id="scaleedit" class="none" >
+                    <div class="linetop mt-1">
+                        <div class="flex center gab-6">
+                            <svg fill="#fff" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+                        viewBox="0 0 489.802 489.802" xml:space="preserve">
+                        <g>
+                            <path d="M20.701,281.901l32.1,0.2c4.8,24.7,14.3,48.7,28.7,70.5l-22.8,22.6c-8.2,8.1-8.2,21.2-0.2,29.4l24.6,24.9
+                                c8.1,8.2,21.2,8.2,29.4,0.2l22.8-22.6c21.6,14.6,45.5,24.5,70.2,29.5l-0.2,32.1c-0.1,11.5,9.2,20.8,20.7,20.9l35,0.2
+                                c11.5,0.1,20.8-9.2,20.9-20.7l0.2-32.1c24.7-4.8,48.7-14.3,70.5-28.7l22.6,22.8c8.1,8.2,21.2,8.2,29.4,0.2l24.9-24.6
+                                c8.2-8.1,8.2-21.2,0.2-29.4l-22.6-22.8c14.6-21.6,24.5-45.5,29.5-70.2l32.1,0.2c11.5,0.1,20.8-9.2,20.9-20.7l0.2-35
+                                c0.1-11.5-9.2-20.8-20.7-20.9l-32.1-0.2c-4.8-24.7-14.3-48.7-28.7-70.5l22.8-22.6c8.2-8.1,8.2-21.2,0.2-29.4l-24.6-24.9
+                                c-8.1-8.2-21.2-8.2-29.4-0.2l-22.8,22.6c-21.6-14.6-45.5-24.5-70.2-29.5l0.2-32.1c0.1-11.5-9.2-20.8-20.7-20.9l-35-0.2
+                                c-11.5-0.1-20.8,9.2-20.9,20.7l-0.3,32.1c-24.8,4.8-48.8,14.3-70.5,28.7l-22.6-22.8c-8.1-8.2-21.2-8.2-29.4-0.2l-24.8,24.6
+                                c-8.2,8.1-8.2,21.2-0.2,29.4l22.6,22.8c-14.6,21.6-24.5,45.5-29.5,70.2l-32.1-0.2c-11.5-0.1-20.8,9.2-20.9,20.7l-0.2,35
+                                C-0.099,272.401,9.201,281.801,20.701,281.901z M179.301,178.601c36.6-36.2,95.5-35.9,131.7,0.7s35.9,95.5-0.7,131.7
+                                s-95.5,35.9-131.7-0.7S142.701,214.801,179.301,178.601z"/>
+                        </g>
+                        </svg>
+                        <p class="text-setting">Setting ScaleX</p>
+                        </div>
+                    </div>
+                    <div class="linebot">
+                        <div class="inline">
+                            <button class="btn">Attibute -0.1</button>
+                            <button class="btn">Attibute +0.1</button>
+                            <p id="attcount" class="num-scale">1</p>
+                        </div>
+                        <div class="inline">
+                            <button class="btn">Name -0.1</button>
+                            <button class="btn">Name +0.1</button>
+                            <p id="attcount" class="num-scale">1</p>
+                        </div>
+                            
+
+                    </div>
+                </div>
+
+                <div id="spsetting" class="none">
+                    <div class="linetop mt-1">
+                        <div class="flex center gab-6">
+                            
+                        <p class="text-setting">SP Setting</p>
+                        </div>
+                    </div>
+                    <div class="linebot">
+                        <div class="inline">
+                            <button class="btn">Attibute -0.1</button>
+                            <button class="btn">Attibute +0.1</button>
+                            <p id="attcount" class="num-scale">1</p>
+                        </div>
+                        <div class="inline">
+                            <button class="btn">Name -0.1</button>
+                            <button class="btn">Name +0.1</button>
+                            <p id="attcount" class="num-scale">1</p>
+                        </div>
+                            
+
+                    </div>
+                </div>
+
+                <div class="linetop mt-1">
+                    <input type="text" id="ATK" placeholder="ATK">
+                    <input type="text" id="CRI" placeholder="CRI">
+                    <input type="text" id="DEF" placeholder="DEF">
+                </div>
+                <div class="line2">
+                    <input type="text" id="Size" placeholder="Size(0-9)" oninput="sizeinput()">>
+                    <input type="text" id="Attibute" placeholder="Attibute">
+                </div>
+                <div class="line2">
+                    <input type="text" id="Name" placeholder="Name" oninput="nameinput()">
+                </div>
+                <div class="line2">
+                    <input type="text" id="Set" placeholder="Card Set">
+                    <input type="text" id="Illust" placeholder="Illust">
+                </div>
+                <div class="linebot">
+                    <textarea name="Effect" id="Effect" placeholder="Effect"></textarea>
+                </div>
+            </div>
+    
+            
+        </div>
     </div>
+    
 
 
-
-    <script>const hamburgerMenuButton = document.getElementById('hamburger-menu-button');const navbarMenu = document.getElementById('navbar-menu');hamburgerMenuButton.addEventListener('click', () => {navbarMenu.classList.toggle('active');});</script>
+    <script src="./index.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 </body>
-
 </html>
