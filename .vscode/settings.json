@@ -1,0 +1,8 @@
+{
+    "powermode.presets": "exploding-rift",
+    "powermode.enabled": false,
+    "powermode.combo.counterSize": 10,
+    "powermode.combo.counterEnabled": "hide",
+    "powermode.combo.location": "off",
+    "powermode.shake.enabled": false
+}
