@@ -17,6 +17,16 @@
                             <p id="size" class=" sizeancient2">1</p>
                             <p id="size2" class=" sizeancient">1</p>
                         </div>
+                        <div id="pcd" class="absolute z9">
+                            <p id="power" class="ancientpower absolute">2000</p>
+                            <p id="cri" class="ancientcri absolute" style="text-align: center;">3</p>
+                            <p id="def" class="ancientdef absolute">2000</p>
+                        </div>
+                        <div id="pcd" class="absolute z8">
+                            <p id="power2" class="ancientpower2 absolute">2000</p>
+                            <p id="cri2" class="ancientcri2 absolute" style="text-align: center;">3</p>
+                            <p id="def2" class="ancientdef2 absolute">2000</p>
+                        </div>
                         <div id="divname" class="z8 absolute">
                             <p id="textname2" class=" maintext textancient2">ชื่ออู1</p>
                             <p id="textname" class=" maintext textancient">ชื่ออู1</p>
@@ -214,12 +224,12 @@
                 </div>
 
                 <div class="linetop mt-1">
-                    <input type="text" id="ATK" placeholder="ATK">
-                    <input type="text" id="CRI" placeholder="CRI">
-                    <input type="text" id="DEF" placeholder="DEF">
+                    <input type="text" id="ATK" placeholder="ATK" oninput="powerinput()">
+                    <input type="text" id="CRI" placeholder="CRI" oninput="criinput()">
+                    <input type="text" id="DEF" placeholder="DEF" oninput="definput()">
                 </div>
                 <div class="line2">
-                    <input type="text" id="Size" placeholder="Size(0-9)" oninput="sizeinput()">>
+                    <input type="text" id="Size" placeholder="Size(0-9)" oninput="sizeinput()">
                     <input type="text" id="Attibute" placeholder="Attibute">
                 </div>
                 <div class="line2">

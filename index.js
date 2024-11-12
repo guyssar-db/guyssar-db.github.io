@@ -116,10 +116,13 @@ document.getElementById("Save").addEventListener("click", function() {
         scale: 6 
     }).then(function(canvas) {
         
-        var link = document.createElement('a');
-        link.href = canvas.toDataURL('image/png');
-        link.download = 'name.png';
-        link.click();
+        var fileName = prompt("Please enter the file name:", "name");
+        if (fileName) {
+            var link = document.createElement('a');
+            link.href = canvas.toDataURL('image/png');
+            link.download = fileName + '.png';
+            link.click();
+        }
     });
 });
 
@@ -372,4 +375,19 @@ function sizeinput() {
     var inputText = document.getElementById('Size').value;
     document.getElementById('size').innerText = inputText;
     document.getElementById('size2').innerText = inputText;
+}
+function powerinput() {
+    var inputText = document.getElementById('ATK').value;
+    document.getElementById('power').innerText = inputText;
+    document.getElementById('power2').innerText = inputText;
+}
+function definput() {
+    var inputText = document.getElementById('DEF').value;
+    document.getElementById('def').innerText = inputText;
+    document.getElementById('def2').innerText = inputText;
+}
+function criinput() {
+    var inputText = document.getElementById('CRI').value;
+    document.getElementById('cri').innerText = inputText;
+    document.getElementById('cri2').innerText = inputText;
 }
