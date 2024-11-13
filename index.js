@@ -391,3 +391,8 @@ function criinput() {
     document.getElementById('cri').innerText = inputText;
     document.getElementById('cri2').innerText = inputText;
 }
+function attinput() {
+    var inputText = document.getElementById('ATT').value;
+    document.getElementById('attibute').innerText = inputText;
+    document.getElementById('attibute2').innerText = inputText;
+}

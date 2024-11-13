@@ -186,7 +186,7 @@ p{
     color: #fff;
     flex: 1 0 140px;
 }
-#montype,#worldL,#worldR,#worldMain,#NameASText,#Size,#Attibute,#Name,#Set,#Illust
+#montype,#worldL,#worldR,#worldMain,#NameASText,#Size,#ATT,#Name,#Set,#Illust
 {
     text-align: center;
     width: 100%;
@@ -409,4 +409,27 @@ p{
 }
 .ancientdef2,.ancientcri2,.ancientpower2{
     -webkit-text-stroke: 6px #000;
+}
+
+
+
+#att{
+
+    width: 200px;
+    height: 20px;
+    transform: translate(27px,499px);
+}
+
+#attibute,#attibute2{
+    white-space: nowrap;
+    font-family: 'ChamBold', sans-serif;
+    width: 100%;
+    color: #fff;
+    font-size: 17px;
+    white-space: nowrap;
+    font-style: italic;
+    text-align: center !important;
+}
+#attibute{
+    -webkit-text-stroke: 2.5px #000;
 }
