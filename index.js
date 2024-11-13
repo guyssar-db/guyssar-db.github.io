@@ -268,6 +268,7 @@ NameAsSelect.addEventListener('change', function() {
 
 const SPSelect = document.getElementById('SP');
 const SPdiv = document.getElementById('spsetting');
+const SPtype = document.getElementById('monSP');
 
 const SPhide1 = document.getElementById('tem_');
 const SPhide2 = document.getElementById('tem');
@@ -279,6 +280,7 @@ SPSelect.addEventListener('change', function() {
         SPdiv.classList.remove('none');
         SPhide1.classList.remove('none');
         SPhide2.classList.add('none');
+        SPtype.classList.remove('none');
 
     }
     else{
@@ -287,6 +289,8 @@ SPSelect.addEventListener('change', function() {
         SPdiv.classList.add('none');
         SPhide1.classList.add('none');
         SPhide2.classList.remove('none');
+        SPtype.classList.add('none');
+
 
     }
     });
