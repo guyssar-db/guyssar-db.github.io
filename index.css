@@ -10,13 +10,11 @@
 
   @font-face {
     font-family: 'ChamBold';
-    src: url('./assets/flag/590438/PSLxChamnarnBold2.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+    src: url('./assets/flag/590438/PSLxChamnarnBold.ttf') format('truetype');
   }
   @font-face {
     font-family: 'Cham';
-    src: url('./assets/flag/590438/PSL-Chamnarn Regular.ttf') format('truetype');
+    src: url('./assets/flag/590438/PSL-ChamnarnRegular.ttf') format('truetype');
   }
 
   @font-face {
@@ -196,6 +194,7 @@ p{
     font-weight: bold;
 }
 #Effect{
+    font-family: Arial, Helvetica, sans-serif;
     text-align: start;
     width: 100%;
     flex: 1 0 140px;
@@ -364,8 +363,60 @@ p{
     justify-items: center;
     justify-content: center;
 }
+.image-wrapper img {
+    height: 20px;
+    width: 60px;
+    vertical-align: middle;
+    transform: translateY(-1px);
+}
+.image-wrapperfront img{
+    height: 10px;
+    width: 10px;
+}
+.se_{
+    width: 450px;
+    height: 300px;
 
+}
+#seb{
+    transform: translateY(10px);
+}
+.se{
+    font-size: 15pt;
+    font-family: 'ChamBold';
+    white-space: pre-wrap;
+    word-break: break-word;
+    text-align: start;
+    align-self: flex-end;
+    width: 495px;
+    transform: scaleX(0.9);
+}
+.nub,.se_{
+    height: 429px;
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    pointer-events: none;
+  }
 
+  .nub{
+    position: absolute;
+    width: 450px;
+    transform: translateY(60px);
+  }
+  .se{
+    user-select: none;
+    pointer-events: none;
+  }
+  #addline{
+    width: 496px;
+    white-space: nowrap;
+
+  }
+  #se p {
+    white-space: pre-wrap; 
+}
 #pcd{
     padding: 1rem;
     transform:translate(-280px,297.5px) rotate(-90deg);
@@ -384,7 +435,10 @@ p{
     width: 100%;
 }
 
-
+p{
+    user-select: none;
+    pointer-events: none;
+}
 /**  /==/==/==/==/==/==/==/==/  **/
 /**  /==/==/  ancient  /==/==/  **/
 /**  /==/==/==/==/==/==/==/==/  **/
