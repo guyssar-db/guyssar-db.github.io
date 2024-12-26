@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,23 @@
     <link rel="icon" href="./assets/fakebf.png" sizes="192x192">
     <link rel="stylesheet" href="./index.css">
 </head>
+
 <body style="background-color: #2a2a3e;">
     <div class="con">
         <div class="con_">
             <div class="con1">
                 <div id="img">
                     <div class="text_ absolute">
-                        
-                            <div id="nub" class="nub z9">
-                                <div id="se_" class="se_">
-                                    <p id="se" class="se effect-darkness"></p>
-                                </div>
+
+                        <!-- Effect -->
+                        <div id="nub" class="nub z9">
+                            <div id="se_" class="se_">
+                                <p id="se" class="se effect-darkness"></p>
                             </div>
-                        
+                        </div>
+                        <!-- Effect -->
+
+                        <!-- Text -->
                         <div id="mainsize" class="size_ absolute">
                             <p id="size" class=" sizeancient2">1</p>
                             <p id="size2" class=" sizeancient">1</p>
@@ -43,6 +48,7 @@
                             <p id="textname" class=" maintext textancient">ชื่ออู1</p>
                         </div>
                     </div>
+                    <!-- Text -->
 
                     <div class="world-bg absolute">
                         <div id="tem_" class="none">
@@ -51,27 +57,31 @@
                         </div>
                         <img id="monSP" src="./assets/size/mon_text.png" alt="" class="absolute SPancient none">
                         <img id="imgchaos" class="z6 absolute none" src="./assets/chaos.png">
-                        <img id="imghundred" class="z6 absolute none" src="./assets/hundred.png">
+                        <img id="imghundred" class="z5 absolute none" src="./assets/hundred.png">
+                        <img id="Effectline" class="z5 absolute" src="">
                         <div id="tem">
-                            <img id="world1" class="z5 absolute" src="./assets/size/aw.png">
-                            <img id="worldl" class="z3 absolute none" src="">
-                            <img id="worldr" class="z4 absolute none" src="">
+                            <img id="world1" class="z4 absolute" src="./assets/size/aw.png">
+                            <img id="worldl" class="z2 absolute none" src="">
+                            <img id="worldr" class="z3 absolute none" src="">
                         </div>
                     </div>
-                    
+
+                    <!-- BG IMG -->
                     <div class="bg_" style="width: 450px;height: 629px;overflow: hidden;border-radius: 20px;">
-                        <div class="bg" id="imh" style="width: 450px;height: 629px;border-radius: 20px;background: #fff;">
-                          <img id="imbg" src="">
+                        <div class="bg" id="imh"
+                            style="width: 450px;height: 629px;border-radius: 20px;background: #fff;">
+                            <img id="imbg" src="">
                         </div>
-                      </div>
+                    </div>
+                    <!-- BG IMG -->
                 </div>
             </div>
-    
-    
+
+
             <div class="con2">
                 <div class="line flex">
-                        <input type="file" id="file-input" style="display: none;">
-                        <button id="Import">Import BG</button>
+                    <input type="file" id="file-input" style="display: none;">
+                    <button id="Import">Import BG</button>
                     <button id="Save">Download</button>
                     <button id="Keyword">Keywords</button>
                 </div>
@@ -153,10 +163,12 @@
                         <option class="bold off" value="SPoff">SP / OFF</option>
                         <option class="bold on" value="SPon">SP / ON</option>
                     </select>
-                    <button onclick="togglesetting()" class="btn flex btnsetting"><svg height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                        viewBox="0 0 489.802 489.802" xml:space="preserve">
-                        <g>
-                            <path d="M20.701,281.901l32.1,0.2c4.8,24.7,14.3,48.7,28.7,70.5l-22.8,22.6c-8.2,8.1-8.2,21.2-0.2,29.4l24.6,24.9
+                    <button onclick="togglesetting()" class="btn flex btnsetting"><svg height="30px" width="30px"
+                            version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 489.802 489.802"
+                            xml:space="preserve">
+                            <g>
+                                <path d="M20.701,281.901l32.1,0.2c4.8,24.7,14.3,48.7,28.7,70.5l-22.8,22.6c-8.2,8.1-8.2,21.2-0.2,29.4l24.6,24.9
                                 c8.1,8.2,21.2,8.2,29.4,0.2l22.8-22.6c21.6,14.6,45.5,24.5,70.2,29.5l-0.2,32.1c-0.1,11.5,9.2,20.8,20.7,20.9l35,0.2
                                 c11.5,0.1,20.8-9.2,20.9-20.7l0.2-32.1c24.7-4.8,48.7-14.3,70.5-28.7l22.6,22.8c8.1,8.2,21.2,8.2,29.4,0.2l24.9-24.6
                                 c8.2-8.1,8.2-21.2,0.2-29.4l-22.6-22.8c14.6-21.6,24.5-45.5,29.5-70.2l32.1,0.2c11.5,0.1,20.8-9.2,20.9-20.7l0.2-35
@@ -165,9 +177,10 @@
                                 c-11.5-0.1-20.8,9.2-20.9,20.7l-0.3,32.1c-24.8,4.8-48.8,14.3-70.5,28.7l-22.6-22.8c-8.1-8.2-21.2-8.2-29.4-0.2l-24.8,24.6
                                 c-8.2,8.1-8.2,21.2-0.2,29.4l22.6,22.8c-14.6,21.6-24.5,45.5-29.5,70.2l-32.1-0.2c-11.5-0.1-20.8,9.2-20.9,20.7l-0.2,35
                                 C-0.099,272.401,9.201,281.801,20.701,281.901z M179.301,178.601c36.6-36.2,95.5-35.9,131.7,0.7s35.9,95.5-0.7,131.7
-                                s-95.5,35.9-131.7-0.7S142.701,214.801,179.301,178.601z"/>
-                        </g>
-                        </svg><p>Setting</p>
+                                s-95.5,35.9-131.7-0.7S142.701,214.801,179.301,178.601z" />
+                            </g>
+                        </svg>
+                        <p>Setting</p>
                     </button>
                 </div>
 
@@ -175,13 +188,14 @@
                     <input type="text" id="NameASText" placeholder="NameAS">
                 </div>
 
-                <div id="scaleedit" class="none" >
+                <div id="scaleedit" class="none">
                     <div class="linetop mt-1">
                         <div class="flex center gab-6">
-                            <svg fill="#fff" height="30px" width="30px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-                        viewBox="0 0 489.802 489.802" xml:space="preserve">
-                        <g>
-                            <path d="M20.701,281.901l32.1,0.2c4.8,24.7,14.3,48.7,28.7,70.5l-22.8,22.6c-8.2,8.1-8.2,21.2-0.2,29.4l24.6,24.9
+                            <svg fill="#fff" height="30px" width="30px" version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 489.802 489.802" xml:space="preserve">
+                                <g>
+                                    <path d="M20.701,281.901l32.1,0.2c4.8,24.7,14.3,48.7,28.7,70.5l-22.8,22.6c-8.2,8.1-8.2,21.2-0.2,29.4l24.6,24.9
                                 c8.1,8.2,21.2,8.2,29.4,0.2l22.8-22.6c21.6,14.6,45.5,24.5,70.2,29.5l-0.2,32.1c-0.1,11.5,9.2,20.8,20.7,20.9l35,0.2
                                 c11.5,0.1,20.8-9.2,20.9-20.7l0.2-32.1c24.7-4.8,48.7-14.3,70.5-28.7l22.6,22.8c8.1,8.2,21.2,8.2,29.4,0.2l24.9-24.6
                                 c8.2-8.1,8.2-21.2,0.2-29.4l-22.6-22.8c14.6-21.6,24.5-45.5,29.5-70.2l32.1,0.2c11.5,0.1,20.8-9.2,20.9-20.7l0.2-35
@@ -190,10 +204,10 @@
                                 c-11.5-0.1-20.8,9.2-20.9,20.7l-0.3,32.1c-24.8,4.8-48.8,14.3-70.5,28.7l-22.6-22.8c-8.1-8.2-21.2-8.2-29.4-0.2l-24.8,24.6
                                 c-8.2,8.1-8.2,21.2-0.2,29.4l22.6,22.8c-14.6,21.6-24.5,45.5-29.5,70.2l-32.1-0.2c-11.5-0.1-20.8,9.2-20.9,20.7l-0.2,35
                                 C-0.099,272.401,9.201,281.801,20.701,281.901z M179.301,178.601c36.6-36.2,95.5-35.9,131.7,0.7s35.9,95.5-0.7,131.7
-                                s-95.5,35.9-131.7-0.7S142.701,214.801,179.301,178.601z"/>
-                        </g>
-                        </svg>
-                        <p class="text-setting">Setting ScaleX</p>
+                                s-95.5,35.9-131.7-0.7S142.701,214.801,179.301,178.601z" />
+                                </g>
+                            </svg>
+                            <p class="text-setting">Setting ScaleX</p>
                         </div>
                     </div>
                     <div class="linebot">
@@ -207,7 +221,7 @@
                             <button class="btn">Name +0.1</button>
                             <p id="attcount" class="num-scale">1</p>
                         </div>
-                            
+
 
                     </div>
                 </div>
@@ -215,8 +229,8 @@
                 <div id="spsetting" class="none">
                     <div class="linetop mt-1">
                         <div class="flex center gab-6">
-                            
-                        <p class="text-setting">SP Setting</p>
+
+                            <p class="text-setting">SP Setting</p>
                         </div>
                     </div>
                     <div class="linebot">
@@ -230,7 +244,7 @@
                             <button class="btn">Name +0.1</button>
                             <p id="attcount" class="num-scale">1</p>
                         </div>
-                            
+
 
                     </div>
                 </div>
@@ -255,15 +269,16 @@
                     <textarea name="Effect" id="Effect" placeholder="Effect"></textarea>
                 </div>
             </div>
-    
-            
+
+
         </div>
     </div>
-    
+
 
 
     <script src="./index.js"></script>
     <script src="./effect.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 </body>
+
 </html>
