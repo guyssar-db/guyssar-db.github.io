@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'Cham';
-    src: url('./assets/flag/590438/PSL-ChamnarnRegular.ttf') format('truetype');
+    src: url('./assets/flag/590438/PSLxChamnarn.ttf') format('truetype');
 }
 
 @font-face {
@@ -95,6 +95,15 @@ img {
     flex-wrap: wrap;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.inline-color{
+    align-items: center;
+    padding: 0.3rem 1rem 0.3rem 1rem;
+    border-radius: 10px;
+    gap: 0.3rem;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .gab-6 {
     gap: 6px;
@@ -109,6 +118,30 @@ p {
     justify-content: center;
     justify-items: center;
     text-align: center;
+}
+.linetop-setting {
+    background-color: #2c2c50;
+    padding: 1rem 1rem 0.3rem 1rem;
+    border: solid 2px white;
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+    gap: 0.3rem;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.linebot-setting {
+    background-color: #2c2c50;
+    padding: 0.3rem 1rem 1rem 1rem;
+    border: solid 2px white;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    gap: 0.3rem;
+    width: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .inline {
@@ -244,7 +277,8 @@ p {
 #chaos,
 #HundredDemon,
 #NameAs,
-#SP {
+#SP,
+#texteffectcolor {
     text-align: center;
     width: 100%;
     flex: 1 0 140px;
@@ -358,11 +392,11 @@ p {
     z-index: 9;
 }
 
-z10 {
+.z10 {
     z-index: 10;
 }
 
-z11 {
+.z11 {
     z-index: 11;
 }
 
@@ -491,7 +525,7 @@ z11 {
 }
 .Iskill2 {
     position: absolute;
-    height: 30px;
+    height: 27px;
     width:15px;
     vertical-align: middle;
     transform: translateY(-3px);
@@ -534,13 +568,13 @@ z11 {
 
 .se {
     font-size: 15pt;
-    font-family: 'ChamBold';
+    font-family: 'Chambold';
     white-space: pre-wrap;
     word-break: break-word;
     text-align: start;
     align-self: flex-end;
-    width: 495px;
-    transform: scaleX(0.9);
+    width: 550px;
+    transform: scaleX(0.8);
 }
 
 .nub,
@@ -556,7 +590,6 @@ z11 {
 .nub {
     position: absolute;
     width: 450px;
-    transform: translateY(60px);
 }
 
 .se {
@@ -565,7 +598,7 @@ z11 {
 }
 
 #addline {
-    width: 496px;
+    width: 550px;
     white-space: nowrap;
 
 }
@@ -680,4 +713,16 @@ p {
 
 #attibute {
     -webkit-text-stroke: 2.5px #000;
+}
+
+.text-black{
+    color: #000;
+}
+.text-white{
+    color: white;
+}
+
+/* POSITION EFFECT */
+.Ancient{
+    transform: translateY(52px);
 }

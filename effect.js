@@ -2,7 +2,7 @@ document.getElementById('Effect').addEventListener('input', function () {
     let ability = this.value;
 
     ability = ability.replace(/evil/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Evil Deity.png" alt="Image" class="Iskill"></span>');
-    ability = ability.replace(/COST/g, '<span id="spankey" class="image-wrapper-COST"><img src="./assets/keywords/cost.png" alt="Image" class="Iskill2"></span>');
+    ability = ability.replace(/COST/g, '<span id="spankey" class="image-wrapper-COST"><img src="./assets/keywords/Cost.png" alt="Image" class="Iskill2"></span>');
     ability = ability.replace(/buddygift/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/BuddyGift.png" alt="Image" class="Iskill"></span>');
     ability = ability.replace(/1turn/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/1 per Turn Rag.png" alt="Image" class="Iskill"></span>');
     ability = ability.replace(/1game/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/1 per Game Rag.png" alt="Image" class="Iskill"></span>');

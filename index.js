@@ -400,3 +400,15 @@ function attinput() {
     document.getElementById('attibute').innerText = inputText;
     document.getElementById('attibute2').innerText = inputText;
 }
+
+const texteffectcolorSelect = document.getElementById('texteffectcolor');
+    const nubElement = document.getElementById('nub');
+
+    texteffectcolorSelect.addEventListener('change', function () {
+        const selectedValue = this.value;
+        if (selectedValue === 'text-cw') {
+            nubElement.classList.add('text-white');
+        } else {
+            nubElement.classList.remove('text-white');
+        }
+    });
