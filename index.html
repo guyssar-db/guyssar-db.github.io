@@ -1,274 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster | Create</title>
-    <link rel="icon" href="./assets/fakebf.png" sizes="192x192">
-    <link rel="stylesheet" href="./index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA Buddyfight</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .search-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .search-container input {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .card {
+      border: 2px solid #ccc;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px 0;
+      background-color: #fff;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .question {
+      font-weight: bold;
+      color: #007BFF;
+    }
+
+    .answer {
+      margin-top: 10px;
+      color: #555;
+    }
+
+    .no-results {
+      text-align: center;
+      color: #999;
+      font-size: 18px;
+      margin-top: 20px;
+    }
+
+    .discord {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+      transition: ease 0.5s;
+    }
+    .discord:hover{
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+      transition: ease 0.5s;
+    }
+    #count{
+      font-size: medium;
+    }
+  </style>
 </head>
 
-<body style="background-color: #2a2a3e;">
-    <div class="con">
-        <div class="con_">
-            <div class="con1">
-                <div id="img">
-                    <div class="text_ absolute">
-
-                        <!-- Effect -->
-                        <div id="nub" class="nub z9 Ancient ">
-                            <div id="se_" class="se_">
-                                <p id="se" class="se effect-darkness"></p>
-                            </div>
-                        </div>
-                        <!-- Effect -->
-
-                        <!-- Text -->
-                        <div id="mainsize" class="size_ absolute">
-                            <p id="size" class=" sizeancient2">1</p>
-                            <p id="size2" class=" sizeancient">1</p>
-                        </div>
-                        <div id="pcd" class="absolute z9">
-                            <p id="power" class="ancientpower absolute">2000</p>
-                            <p id="cri" class="ancientcri absolute" style="text-align: center;">3</p>
-                            <p id="def" class="ancientdef absolute">2000</p>
-                        </div>
-                        <div id="pcd" class="absolute z8">
-                            <p id="power2" class="ancientpower2 absolute">2000</p>
-                            <p id="cri2" class="ancientcri2 absolute" style="text-align: center;">3</p>
-                            <p id="def2" class="ancientdef2 absolute">2000</p>
-                        </div>
-                        <div id="att" class="absolute z8">
-                            <p id="attibute" class="absolute">ชื่ออู1</p>
-                            <p id="attibute2" class="absolute">ชื่ออู1</p>
-                        </div>
-                        <div id="divname" class="z8 absolute">
-                            <p id="textname2" class=" maintext textancient2">ชื่ออู1</p>
-                            <p id="textname" class=" maintext textancient">ชื่ออู1</p>
-                        </div>
-                    </div>
-                    <!-- Text -->
-
-                    <div class="world-bg absolute">
-                        <div id="tem_" class="none">
-                            <img id="imgspl" class="z7 absolute" src="">
-                            <img id="imgspr" class="z7 absolute" src="">
-                        </div>
-                        <img id="monSP" src="./assets/size/mon_text.png" alt="" class="absolute SPancient none">
-                        <img id="imgchaos" class="z6 absolute none" src="./assets/chaos.png">
-                        <img id="imghundred" class="z5 absolute none" src="./assets/hundred.png">
-                        <img id="Effectline" class="z5 absolute" src="">
-                        <div id="tem">
-                            <img id="world1" class="z4 absolute" src="./assets/size/aw.png">
-                            <img id="worldl" class="z2 absolute none" src="">
-                            <img id="worldr" class="z3 absolute none" src="">
-                        </div>
-                    </div>
-
-                    <!-- BG IMG -->
-                    <div class="bg_" style="width: 450px;height: 629px;overflow: hidden;border-radius: 20px;">
-                        <div class="bg" id="imh"
-                            style="width: 450px;height: 629px;border-radius: 20px;background: #fff;">
-                            <img id="imbg" src="">
-                        </div>
-                    </div>
-                    <!-- BG IMG -->
-                </div>
-            </div>
-
-
-            <div class="con2">
-                <div class="line flex">
-                    <input type="file" id="file-input" style="display: none;">
-                    <button id="Import">Import BG</button>
-                    <button id="Save">Download</button>
-                    <button id="Keyword">Keywords</button>
-                </div>
-                <div id="select_type" class="line flex mt-1">
-                    <select name="montype" id="montype">
-                        <option class="bold" value="mon">Monster</option>
-                        <option class="bold" value="dualmon">Dual Monster</option>
-                    </select>
-                </div>
-                <div id="world-select-dual" class="line_dual flex mt-1 none">
-                    <select name="worldL" id="worldL">
-                        <option value="awl">Ancient</option>
-                        <option value="drl">Danger</option>
-                        <option value="dnl">Darkness</option>
-                        <option value="dul"> Dungeon</option>
-                        <option value="dgl">Dragon</option>
-                        <option value="hwl">Hero</option>
-                        <option value="knl">Katana</option>
-                        <option value="lwl">Legend</option>
-                        <option value="mwl">Magic</option>
-                        <option value="st_cl">StarDragon (Classic)</option>
-                        <option value="stl">StarDragon</option>
-                    </select>
-                    <select name="worldR" id="worldR">
-                        <option value="awr">Ancient</option>
-                        <option value="drr">Danger</option>
-                        <option value="dnr">Darkness</option>
-                        <option value="dur"> Dungeon</option>
-                        <option value="dgr">Dragon</option>
-                        <option value="hwr">Hero</option>
-                        <option value="knr">Katana</option>
-                        <option value="lwr">Legend</option>
-                        <option value="mwr">Magic</option>
-                        <option value="st_cr">StarDragon (Classic)</option>
-                        <option value="str">StarDragon</option>
-                    </select>
-                </div>
-                <div id="world-select" class="line flex mt-1">
-                    <select name="worldMain" id="worldMain">
-                        <option value="aw">Ancient</option>
-                        <option value="cs">Chaos</option>
-                        <option value="dr">Danger</option>
-                        <option value="dn">Darkness</option>
-                        <option value="du"> Dungeon</option>
-                        <option value="dg">Dragon</option>
-                        <option value="gr_c">Generic (Classic)</option>
-                        <option value="hw">Hero</option>
-                        <option value="hm">Hundred Demons</option>
-                        <option value="kn">Katana</option>
-                        <option value="lw">Legend</option>
-                        <option value="ls">LostWorld</option>
-                        <option value="mw">Magic</option>
-                        <option value="st_c">StarDragon (Classic)</option>
-                        <option value="st">StarDragon</option>
-                    </select>
-                </div>
-                <div class="line flex mt-1">
-                    <select name="chaos" id="chaos" class="off">
-                        <option class="bold off" value="chaosoff">Chaos / OFF</option>
-                        <option class="bold on" value="chaoson">Chaos / ON</option>
-                    </select>
-                    <select name="HundredDemon" id="HundredDemon" class="off">
-                        <option class="bold off" value="hunoff">Hundred / OFF</option>
-                        <option class="bold on" value="hunon">Hundred / ON</option>
-                    </select>
-                    <select name="NameAs" id="NameAs" class="off">
-                        <option class="bold off" value="nameasoff">NameAs / OFF</option>
-                        <option class="bold onn" value="nameason">NameAs / ON</option>
-                    </select>
-                    <select name="SP" id="SP" class="off">
-                        <option class="bold off" value="SPoff">SP / OFF</option>
-                        <option class="bold on" value="SPon">SP / ON</option>
-                    </select>
-                    <button onclick="togglesetting()" class="btn flex btnsetting"><svg height="30px" width="30px"
-                            version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 489.802 489.802"
-                            xml:space="preserve">
-                            <g>
-                                <path d="M20.701,281.901l32.1,0.2c4.8,24.7,14.3,48.7,28.7,70.5l-22.8,22.6c-8.2,8.1-8.2,21.2-0.2,29.4l24.6,24.9
-                                c8.1,8.2,21.2,8.2,29.4,0.2l22.8-22.6c21.6,14.6,45.5,24.5,70.2,29.5l-0.2,32.1c-0.1,11.5,9.2,20.8,20.7,20.9l35,0.2
-                                c11.5,0.1,20.8-9.2,20.9-20.7l0.2-32.1c24.7-4.8,48.7-14.3,70.5-28.7l22.6,22.8c8.1,8.2,21.2,8.2,29.4,0.2l24.9-24.6
-                                c8.2-8.1,8.2-21.2,0.2-29.4l-22.6-22.8c14.6-21.6,24.5-45.5,29.5-70.2l32.1,0.2c11.5,0.1,20.8-9.2,20.9-20.7l0.2-35
-                                c0.1-11.5-9.2-20.8-20.7-20.9l-32.1-0.2c-4.8-24.7-14.3-48.7-28.7-70.5l22.8-22.6c8.2-8.1,8.2-21.2,0.2-29.4l-24.6-24.9
-                                c-8.1-8.2-21.2-8.2-29.4-0.2l-22.8,22.6c-21.6-14.6-45.5-24.5-70.2-29.5l0.2-32.1c0.1-11.5-9.2-20.8-20.7-20.9l-35-0.2
-                                c-11.5-0.1-20.8,9.2-20.9,20.7l-0.3,32.1c-24.8,4.8-48.8,14.3-70.5,28.7l-22.6-22.8c-8.1-8.2-21.2-8.2-29.4-0.2l-24.8,24.6
-                                c-8.2,8.1-8.2,21.2-0.2,29.4l22.6,22.8c-14.6,21.6-24.5,45.5-29.5,70.2l-32.1-0.2c-11.5-0.1-20.8,9.2-20.9,20.7l-0.2,35
-                                C-0.099,272.401,9.201,281.801,20.701,281.901z M179.301,178.601c36.6-36.2,95.5-35.9,131.7,0.7s35.9,95.5-0.7,131.7
-                                s-95.5,35.9-131.7-0.7S142.701,214.801,179.301,178.601z" />
-                            </g>
-                        </svg>
-                        <p>Setting</p>
-                    </button>
-                </div>
-
-                <div id="NameASdiv" class="line3 flex mt-1 none">
-                    <input type="text" id="NameASText" placeholder="NameAS">
-                </div>
-
-                <div id="scaleedit" class="">
-                    <div class="linetop-setting mt-1">
-                        <div class="flex center gab-6">
-                            <svg fill="#fff" height="30px" width="30px" version="1.1" id="Capa_1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                viewBox="0 0 489.802 489.802" xml:space="preserve">
-                                <g>
-                                    <path d="M20.701,281.901l32.1,0.2c4.8,24.7,14.3,48.7,28.7,70.5l-22.8,22.6c-8.2,8.1-8.2,21.2-0.2,29.4l24.6,24.9
-                                c8.1,8.2,21.2,8.2,29.4,0.2l22.8-22.6c21.6,14.6,45.5,24.5,70.2,29.5l-0.2,32.1c-0.1,11.5,9.2,20.8,20.7,20.9l35,0.2
-                                c11.5,0.1,20.8-9.2,20.9-20.7l0.2-32.1c24.7-4.8,48.7-14.3,70.5-28.7l22.6,22.8c8.1,8.2,21.2,8.2,29.4,0.2l24.9-24.6
-                                c8.2-8.1,8.2-21.2,0.2-29.4l-22.6-22.8c14.6-21.6,24.5-45.5,29.5-70.2l32.1,0.2c11.5,0.1,20.8-9.2,20.9-20.7l0.2-35
-                                c0.1-11.5-9.2-20.8-20.7-20.9l-32.1-0.2c-4.8-24.7-14.3-48.7-28.7-70.5l22.8-22.6c8.2-8.1,8.2-21.2,0.2-29.4l-24.6-24.9
-                                c-8.1-8.2-21.2-8.2-29.4-0.2l-22.8,22.6c-21.6-14.6-45.5-24.5-70.2-29.5l0.2-32.1c0.1-11.5-9.2-20.8-20.7-20.9l-35-0.2
-                                c-11.5-0.1-20.8,9.2-20.9,20.7l-0.3,32.1c-24.8,4.8-48.8,14.3-70.5,28.7l-22.6-22.8c-8.1-8.2-21.2-8.2-29.4-0.2l-24.8,24.6
-                                c-8.2,8.1-8.2,21.2-0.2,29.4l22.6,22.8c-14.6,21.6-24.5,45.5-29.5,70.2l-32.1-0.2c-11.5-0.1-20.8,9.2-20.9,20.7l-0.2,35
-                                C-0.099,272.401,9.201,281.801,20.701,281.901z M179.301,178.601c36.6-36.2,95.5-35.9,131.7,0.7s35.9,95.5-0.7,131.7
-                                s-95.5,35.9-131.7-0.7S142.701,214.801,179.301,178.601z" />
-                                </g>
-                            </svg>
-                            <p class="text-setting">Setting</p>
-                        </div>
-                    </div>
-                    <div class="linebot-setting">
-                        <div class="inline">
-                           
-                        </div>
-                            <p class="text-setting">Effect Color :</p>
-                            <div id="texteffectcolor-select" class="line flex ">
-                                <select name="texteffectcolor" id="texteffectcolor">
-                                    <option value="text-cb">Black</option>
-                                    <option value="text-cw">White</option>
-                                </select>
-                            </div>
-                    </div>
-                </div>
-
-                <div id="spsetting" class="none">
-                    <div class="linetop mt-1">
-                        <div class="flex center gab-6">
-
-                            <p class="text-setting">SP Setting</p>
-                        </div>
-                    </div>
-                    <div class="linebot">
-                        <div class="inline">
-                            <button class="btn">Attibute -0.1</button>
-                            <button class="btn">Attibute +0.1</button>
-                            <p id="attcount" class="num-scale">1</p>
-                        </div>
-                        <div class="inline">
-                            <button class="btn">Name -0.1</button>
-                            <button class="btn">Name +0.1</button>
-                            <p id="attcount" class="num-scale">1</p>
-                        </div>
-
-
-                    </div>
-                </div>
-
-                <div class="linetop mt-1">
-                    <input type="text" id="ATK" placeholder="ATK" oninput="powerinput()">
-                    <input type="text" id="CRI" placeholder="CRI" oninput="criinput()">
-                    <input type="text" id="DEF" placeholder="DEF" oninput="definput()">
-                </div>
-                <div class="line2">
-                    <input type="text" id="Size" placeholder="Size(0-9)" oninput="sizeinput()">
-                    <input type="text" id="ATT" placeholder="Attibute" oninput="attinput()">
-                </div>
-                <div class="line2">
-                    <input type="text" id="Name" placeholder="Name" oninput="nameinput()">
-                </div>
-                <div class="line2">
-                    <input type="text" id="Set" placeholder="Card Set">
-                    <input type="text" id="Illust" placeholder="Illust">
-                </div>
-                <div class="linebot">
-                    <textarea name="Effect" id="Effect" placeholder="Effect"></textarea>
-                </div>
-            </div>
-
-
-        </div>
+<body>
+  <header
+    style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background-color: #007BFF; color: white;">
+    <h1 id="count"></h1>
+    <a class="discord" href="https://discord.gg/Qf32jyTjpk" target="_blank">
+      <img src="https://cdn.prod.website-files.com/6257adef93867e50d84d30e2/636e0a6918e57475a843f59f_icon_clyde_black_RGB.svg" alt="Discord"
+        style="width: 30px; height: 30px; margin-right: 10px;">
+      เข้าร่วม Discord
+    </a>
+  </header>
+  <div style="padding: 20px;">
+    <h1>คำถามที่ถามบ่อย</h1>
+    <div class="search-container">
+      <input type="text" id="search" placeholder="ค้นหาคำถาม..." oninput="filterQuestions()">
     </div>
+    <div id="content"></div>
+  </div>
+
+  <script>
+    let questionsData = [];
+
+    // แสดงข้อมูลจำนวน
+      function updateQuestionCount() {
+    const countEl = document.getElementById('count');
+    countEl.textContent = `จำนวนคำถาม: ${questionsData.length}`;
+  }
+
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        questionsData = data;
+        displayQuestions(data);
+        updateQuestionCount();
+      })
+      .catch(error => console.error('เกิดข้อผิดพลาดในการดึงข้อมูล:', error));
+
+    // แสดงข้อมูลในหน้าเว็บ
+    function displayQuestions(data) {
+      const contentDiv = document.getElementById('content');
+      contentDiv.innerHTML = ''; 
+
+      if (data.length === 0) {
+        contentDiv.innerHTML = '<div class="no-results">ไม่พบคำถามที่ตรงกับการค้นหา</div>';
+        return;
+      }
+
+      data.forEach(item => {
+        const cardEl = document.createElement('div');
+        cardEl.className = 'card';
+
+        const qaEl = document.createElement('div');
+        qaEl.className = 'qa';
+        qaEl.textContent = `[QA${item.textqa}]`; 
+
+        const questionEl = document.createElement('div');
+        questionEl.className = 'question';
+        questionEl.textContent = `Q: ${item.textq}`;
+
+        const answerEl = document.createElement('div');
+        answerEl.className = 'answer';
+        answerEl.textContent = `A: ${item.texta}`;
+
+        cardEl.appendChild(qaEl);
+        cardEl.appendChild(questionEl);
+        cardEl.appendChild(answerEl);
+        contentDiv.appendChild(cardEl);
+      });
+    }
+
+    // แสดงข้อมูลค้นหา
+    function filterQuestions() {
+  const searchTerm = document.getElementById('search').value.toLowerCase();
+  const filteredData = questionsData.filter(item =>
+    (item.textq && item.textq.toLowerCase().includes(searchTerm)) ||
+    (item.texta && item.texta.toLowerCase().includes(searchTerm)) ||
+    (item.textqa && `[QA${item.textqa}]`.toLowerCase().includes(searchTerm))
+  );
+  displayQuestions(filteredData);
+}
 
 
-
-    <script src="./index.js"></script>
-    <script src="./effect.js"></script>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  </script>
 </body>
 
 </html>
