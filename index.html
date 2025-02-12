@@ -6,10 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monster | Create</title>
     <link rel="icon" href="./assets/fakebf.png" sizes="192x192">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/pcd.css">
 </head>
 
 <body style="background-color: #2a2a3e;">
+    <div id="keys">
+        <button id="keyclose">Close</button>
+        <h1 style="text-align: center; padding: 10px;">Keywords ที่ใช้ได้</h1>
+        <div id="keys_">
+            <div id="tablekeyword">
+                <table border="1" width="200px">
+                    <thead>
+                        <tr>
+                            <th>Keywords</th>
+                            <th>Images</th>
+                        </tr>
+                    </thead>
+                    <tbody id="fetchtr">
+    
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="line flex" style="width: 100%;">
+        <input type="file" id="file-input" style="display: none;">
+        <button id="Import">Import BG</button>
+        <button id="Save">Download</button>
+        <button id="Keyword">Keywords</button>
+    </div>
     <div class="con">
         <div class="con_">
             <div class="con1">
@@ -58,7 +85,7 @@
                         <img id="monSP" src="./assets/size/mon_text.png" alt="" class="absolute SPancient none">
                         <img id="imgchaos" class="z6 absolute none" src="./assets/chaos.png">
                         <img id="imghundred" class="z5 absolute none" src="./assets/hundred.png">
-                        <img id="Effectline" class="z5 absolute" src="">
+                        <img id="Effectline" class="z5 absolute" src="" >
                         <div id="tem">
                             <img id="world1" class="z4 absolute" src="./assets/size/aw.png">
                             <img id="worldl" class="z2 absolute none" src="">
@@ -78,13 +105,7 @@
             </div>
 
 
-            <div class="con2">
-                <div class="line flex">
-                    <input type="file" id="file-input" style="display: none;">
-                    <button id="Import">Import BG</button>
-                    <button id="Save">Download</button>
-                    <button id="Keyword">Keywords</button>
-                </div>
+            <div class="con2" style="overflow-y: scroll; height: 650px; overflow-x:hidden ; width: 600px;">
                 <div id="select_type" class="line flex mt-1">
                     <select name="montype" id="montype">
                         <option class="bold" value="mon">Monster</option>
@@ -128,6 +149,7 @@
                         <option value="du"> Dungeon</option>
                         <option value="dg">Dragon</option>
                         <option value="gr_c">Generic (Classic)</option>
+                        <option value="gr">Generic (New)</option>
                         <option value="hw">Hero</option>
                         <option value="hm">Hundred Demons</option>
                         <option value="kn">Katana</option>
@@ -180,7 +202,7 @@
                     <input type="text" id="NameASText" placeholder="NameAS">
                 </div>
 
-                <div id="scaleedit" class="">
+                <div id="scaleedit" class="none">
                     <div class="linetop-setting mt-1">
                         <div class="flex center gab-6">
                             <svg fill="#fff" height="30px" width="30px" version="1.1" id="Capa_1"
@@ -203,8 +225,17 @@
                         </div>
                     </div>
                     <div class="linebot-setting">
-                        <div class="inline">
-                           
+                        <p class="text-setting">Effect Move :</p>
+                        <div class="line">
+                            <div class="effect_move">
+                                <span id="se_s">
+                                    0px
+                                </span>
+                                <div class="buttons">
+                                    <button id="minusBtn">Up</button>
+                                    <button id="plusBtn">Down</button>
+                                </div>
+                            </div>
                         </div>
                             <p class="text-setting">Effect Color :</p>
                             <div id="texteffectcolor-select" class="line flex ">
@@ -266,8 +297,9 @@
 
 
 
-    <script src="./index.js"></script>
-    <script src="./effect.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/effect.js"></script>
+    <script src="./js/key.js"></script>
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
 </body>
 

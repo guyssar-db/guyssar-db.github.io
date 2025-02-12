@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'ChamBold';
+    src: url('../assets/flag/590438/PSLxChamnarnBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Cham';
+    src: url('../assets/flag/590438/PSLxChamnarn.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'legendpower';
+    src: url('../assets/flag/590438/legendpower.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'compacta';
+    src: url('../assets/flag/590438/compacta_mt_bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'matura';
+    src: url('../assets/flag/590438/magic power.otf') format('opentype');
+}

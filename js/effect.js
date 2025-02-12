@@ -2,7 +2,7 @@ document.getElementById('Effect').addEventListener('input', function () {
     let ability = this.value;
 
     ability = ability.replace(/evil/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Evil Deity.png" alt="Image" class="Iskill"></span>');
-    ability = ability.replace(/COST/g, '<span id="spankey" class="image-wrapper-COST"><img src="./assets/keywords/Cost.png" alt="Image" class="Iskill2"></span>');
+    ability = ability.replace(/COST/g, '<span id="spankey" class="image-wrapper-COST"><img src="./assets/keywords/Cost.png" alt="Image" class="Iskill3"></span>');
     ability = ability.replace(/buddygift/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/BuddyGift.png" alt="Image" class="Iskill"></span>');
     ability = ability.replace(/1turn/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/1 per Turn Rag.png" alt="Image" class="Iskill"></span>');
     ability = ability.replace(/1game/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/1 per Game Rag.png" alt="Image" class="Iskill"></span>');
@@ -44,7 +44,6 @@ document.getElementById('Effect').addEventListener('input', function () {
     ability = ability.replace(/transform/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Transform.png" alt="Image" class="Iskill"></span>');
     ability = ability.replace(/imform/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Impact Transform.png" alt="Image" class="Iskill"></span>');
     ability = ability.replace(/purge/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Purge.png" alt="Image" class="Iskill"></span>');
-    ability = ability.replace(/desattack/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Destroy Attack.png" alt="Image" class="Iskill"></span>');
 
     ability = ability.replace(/<</g, '<span class="skk2">《</span>');
     ability = ability.replace(/>>/g, '<span class="skk">》</span>');
@@ -70,3 +69,21 @@ document.getElementById('Effect').addEventListener('input', function () {
     document.getElementById('Effectline').src = `assets/textbox/m${worldMain}e${countline}.png`;
 
 });
+
+let translateYValue = 0;
+        const seDiv = document.getElementById('se_');
+        const showse = document.getElementById('se_s');
+        const plusBtn = document.getElementById('plusBtn');
+        const minusBtn = document.getElementById('minusBtn');
+
+        plusBtn.addEventListener('click', () => {
+            translateYValue += 1;
+            seDiv.style.transform = `translateY(${translateYValue}px)`;
+            showse.textContent = `${translateYValue}px`;
+        });
+
+        minusBtn.addEventListener('click', () => {
+            translateYValue -= 1;
+            seDiv.style.transform = `translateY(${translateYValue}px)`;
+            showse.textContent = `${translateYValue}px`;
+        });

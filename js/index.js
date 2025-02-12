@@ -412,3 +412,32 @@ const texteffectcolorSelect = document.getElementById('texteffectcolor');
             nubElement.classList.remove('text-white');
         }
     });
+
+    fetch('keywords.json')
+    .then(response => response.json())
+    .then(data => {
+      const tableBody = document.getElementById('fetchtr');
+  
+      data.forEach(item => {
+        const row = document.createElement('tr');
+  
+
+        const tdKeywords = document.createElement('td');
+        tdKeywords.textContent = item.keywords;
+  
+
+        const tdImg = document.createElement('td');
+        const img = document.createElement('img');
+        img.src = item.keyimg;
+        img.alt = item.keywords; 
+  
+        tdImg.appendChild(img);
+  
+        row.appendChild(tdKeywords);
+        row.appendChild(tdImg);
+  
+        tableBody.appendChild(row);
+      });
+    })
+    .catch(error => console.error('Error loading JSON data:', error));
+  

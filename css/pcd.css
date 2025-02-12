@@ -1,0 +1,53 @@
+@import url(./font.css);
+
+/**  /==/==/==/==/==/==/==/==/  **/
+/**  /==/==/  ancient  /==/==/  **/
+/**  /==/==/==/==/==/==/==/==/  **/
+
+.ancientpower,
+.ancientpower2,
+.ancientdef,
+.ancientdef2 {
+    font-family: 'compacta', sans-serif;
+    font-size: 28px;
+
+}
+
+.ancientcri,
+.ancientcri2 {
+    font-family: 'compacta', sans-serif;
+    font-size: 45px;
+
+}
+
+.ancientpower,
+.ancientpower2 {
+    color: #de2222;
+    transform: skew(12deg) translate(0px, -20px);
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+
+}
+
+.ancientcri,
+.ancientcri2 {
+    color: #fff;
+    transform: translate(31px, -20px);
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+}
+
+.ancientdef,
+.ancientdef2 {
+    color: #00b3eb;
+    transform: translate(380px, -20px);
+    white-space: nowrap;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+.ancientdef2,
+.ancientcri2,
+.ancientpower2 {
+    -webkit-text-stroke: 6px #000;
+}
