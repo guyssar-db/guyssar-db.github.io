@@ -799,7 +799,7 @@ p {
 
 .keyword-item {
     display:  flex;
-    width: 200px;
+    width: 300px;
     text-align: center;
     align-items: center;
     justify-content: space-around;
@@ -816,7 +816,7 @@ p {
 }
  .i2{
     display: flex;
-    width: 200px;  
+    width: 300px;  
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-around;
