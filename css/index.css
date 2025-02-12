@@ -713,7 +713,7 @@ p {
     width: 100%;
     flex: 1 0 140px;
     border-radius: 5px;
-    display: flex;
+    display: block;
     font-weight: bold;
     gap: 10px;
 
@@ -721,6 +721,12 @@ p {
     .buttons {
         color: white;
         align-content: center;
+    }
+    #se_s{
+        padding: 0 20px;
+        font-size: 25px;
+        border: 1px white solid;
+        border-radius: 10px;
     }
 
     .buttons {
@@ -733,13 +739,18 @@ p {
     }
 
     #plusBtn,
-    #minusBtn {
+    #minusBtn,
+    #resetBtn,#plusBtn5,#minusBtn5 {
         text-align: center;
         width: 100%;
         flex: 1 0 140px;
         padding: 0.6rem;
         border-radius: 5px;
         font-weight: bold;
+    }
+    #resetBtn{
+        background-color: #ffa8a8;
+        margin-top: 5px;
     }
 }
 
@@ -752,29 +763,69 @@ p {
     z-index: 100;
 
     #keys_ {
-        padding: 10px;
         display: flex;
+        padding: 10px;
         justify-content: center;
+        gap: 10px;
     }
 }
 
+
+
 #tablekeyword {
     height: 80vh;
-    width: 220px;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
     background-color: #222;
+    padding: 10px;
+}
+#tablekeyword2 {
+    height: 50vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    background-color: #222;
+    padding: 10px;
+}
 
-    th {
-        padding: 10px;
+#fetchtr,.fetchtr2 {
+    display: flex;
+    width: 100%;  
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.keyword-item {
+    display:  flex;
+    width: 200px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px; 
+    gap: 10px;
+    background-color: #333;
+    border: 1px solid #555;
+    color: white;
+}
+
+.keyword-item img {
+    width: 100px; /* ปรับขนาดรูปภาพ */
+    height: auto;
+}
+ .i2{
+    display: flex;
+    width: 200px;  
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-around;
+
+    img{
+        width: 96%;
     }
-
-    #fetchtr {
-        text-align: center;
-    }
-
-    td {
-        align-content: center;
-        padding: 5px;
+    .COST{
+        height: 10%;
+        width: 16px;
     }
 }

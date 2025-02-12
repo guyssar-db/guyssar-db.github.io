@@ -4,10 +4,6 @@
         "keyimg": "./assets/keywords/Evil Deity.png"
     },
     {
-        "keywords": "COST",
-        "keyimg": "./assets/keywords/Cost.png"
-    },
-    {
         "keywords": "buddygift",
         "keyimg": "./assets/keywords/BuddyGift.png"
     },
@@ -106,14 +102,6 @@
     {
         "keywords": "lifelose",
         "keyimg": "./assets/keywords/Life Lose.png"
-    },
-    {
-        "keywords": "[]",
-        "keyimg": "./assets/keywords/nctext.png"
-    },
-    {
-        "keywords": "[b]",
-        "keyimg": "./assets/keywords/bnctext.png"
     },
     {
         "keywords": "omnilord",

@@ -71,19 +71,40 @@ document.getElementById('Effect').addEventListener('input', function () {
 });
 
 let translateYValue = 0;
-        const seDiv = document.getElementById('se_');
-        const showse = document.getElementById('se_s');
-        const plusBtn = document.getElementById('plusBtn');
-        const minusBtn = document.getElementById('minusBtn');
+    const seDiv = document.getElementById('se_');
+    const showse = document.getElementById('se_s');
+    const plusBtn = document.getElementById('plusBtn');
+    const minusBtn = document.getElementById('minusBtn');
+    const closeBtn = document.getElementById('resetBtn');
+    const minusBtn5 = document.getElementById('minusBtn5');
+    const closeBtn5 = document.getElementById('resetBtn5');
 
-        plusBtn.addEventListener('click', () => {
-            translateYValue += 1;
-            seDiv.style.transform = `translateY(${translateYValue}px)`;
-            showse.textContent = `${translateYValue}px`;
-        });
+    plusBtn.addEventListener('click', () => {
+        translateYValue += 1;
+        seDiv.style.transform = `translateY(${translateYValue}px)`;
+        showse.textContent = `${translateYValue}px`;
+    });
 
-        minusBtn.addEventListener('click', () => {
-            translateYValue -= 1;
-            seDiv.style.transform = `translateY(${translateYValue}px)`;
-            showse.textContent = `${translateYValue}px`;
-        });
+    minusBtn.addEventListener('click', () => {
+        translateYValue -= 1;
+        seDiv.style.transform = `translateY(${translateYValue}px)`;
+        showse.textContent = `${translateYValue}px`;
+    });
+
+    plusBtn5.addEventListener('click', () => {
+        translateYValue += 5;
+        seDiv.style.transform = `translateY(${translateYValue}px)`;
+        showse.textContent = `${translateYValue}px`;
+    });
+
+    minusBtn5.addEventListener('click', () => {
+        translateYValue -= 5;
+        seDiv.style.transform = `translateY(${translateYValue}px)`;
+        showse.textContent = `${translateYValue}px`;
+    });
+
+    closeBtn.addEventListener('click', () => {
+        translateYValue = 0;
+        seDiv.style.transform = `translateY(${translateYValue}px)`;
+        showse.textContent = `${translateYValue}px`;
+    });

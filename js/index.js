@@ -416,28 +416,29 @@ const texteffectcolorSelect = document.getElementById('texteffectcolor');
     fetch('keywords.json')
     .then(response => response.json())
     .then(data => {
-      const tableBody = document.getElementById('fetchtr');
-  
-      data.forEach(item => {
-        const row = document.createElement('tr');
-  
+        const tableBody = document.getElementById('fetchtr');
 
-        const tdKeywords = document.createElement('td');
-        tdKeywords.textContent = item.keywords;
-  
+        data.forEach(item => {
+            const divItem = document.createElement('div');
+            divItem.classList.add('keyword-item');
 
-        const tdImg = document.createElement('td');
-        const img = document.createElement('img');
-        img.src = item.keyimg;
-        img.alt = item.keywords; 
-  
-        tdImg.appendChild(img);
-  
-        row.appendChild(tdKeywords);
-        row.appendChild(tdImg);
-  
-        tableBody.appendChild(row);
-      });
+            const tdKeywords = document.createElement('div');
+            tdKeywords.textContent = item.keywords;
+            tdKeywords.classList = "tdKeywords"; 
+
+            const tdImg = document.createElement('div');
+            const img = document.createElement('img');
+            tdKeywords.classList = "tdKeywords"; 
+            img.src = item.keyimg;
+            img.alt = item.keywords;
+
+            tdImg.appendChild(img);
+            divItem.appendChild(tdKeywords);
+            divItem.appendChild(tdImg);
+
+            tableBody.appendChild(divItem);
+        });
     })
     .catch(error => console.error('Error loading JSON data:', error));
+
   
