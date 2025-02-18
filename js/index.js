@@ -1,22 +1,22 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const imgImportButton = document.getElementById('Import');
     const fileInput = document.getElementById('file-input');
     const dpim = document.getElementById('imbg');
     const imageContainer = document.getElementById('imh');
-    
+
     let isDragging = false;
     let startX, startY, initialMouseX, initialMouseY, translateX = 0, translateY = 0;
     let scale = 1;
 
-    imgImportButton.addEventListener('click', function() {
+    imgImportButton.addEventListener('click', function () {
         fileInput.click();
     });
 
-    fileInput.addEventListener('change', function(event) {
+    fileInput.addEventListener('change', function (event) {
         const file = event.target.files[0];
         if (file) {
             const reader = new FileReader();
-            reader.onload = function(e) {
+            reader.onload = function (e) {
                 dpim.src = e.target.result;
                 dpim.style.transform = `translate(0, 0) scale(1)`;
                 translateX = 0;
@@ -89,12 +89,12 @@ document.addEventListener('DOMContentLoaded', function() {
     imageContainer.addEventListener('wheel', zoom);
 
     let startDistance = null;
-    imageContainer.addEventListener('touchmove', function(e) {
+    imageContainer.addEventListener('touchmove', function (e) {
         if (e.touches.length === 2) {
             zoom(e);
         }
     });
-    document.addEventListener('touchend', function(e) {
+    document.addEventListener('touchend', function (e) {
         if (e.touches.length < 2) {
             startDistance = null;
         }
@@ -111,11 +111,11 @@ document.addEventListener('DOMContentLoaded', function() {
 /////////////////////////////////////////////////////
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
 
-document.getElementById("Save").addEventListener("click", function() {
+document.getElementById("Save").addEventListener("click", function () {
     html2canvas(document.getElementById("img"), {
-        scale: 6 
-    }).then(function(canvas) {
-        
+        scale: 6
+    }).then(function (canvas) {
+
         var fileName = prompt("Please enter the file name:", "name");
         if (fileName) {
             var link = document.createElement('a');
@@ -144,24 +144,24 @@ const selectW = document.getElementById('world-select');
 const imgsplselect = document.getElementById('imgspl');
 const imgsprselect = document.getElementById('imgspr');
 
-    selectElement.addEventListener('change', function() {
-        if (this.value === 'dualmon') {
-            selectTypeDiv.classList.remove('line');
-            selectTypeDiv.classList.add('line_dual');
-            dealW.classList.remove('none');
-            selectW.classList.add('none');
-            imgsplselect.classList.remove('none');
-            imgsprselect.classList.remove('none');
-        } else {
-            selectTypeDiv.classList.remove('line_dual');
-            selectTypeDiv.classList.add('line');
-            dealW.classList.add('none');
-            selectW.classList.remove('none');
-            imgsplselect.classList.add('none');
-            imgsprselect.classList.add('none');
-            
-        }
-    });
+selectElement.addEventListener('change', function () {
+    if (this.value === 'dualmon') {
+        selectTypeDiv.classList.remove('line');
+        selectTypeDiv.classList.add('line_dual');
+        dealW.classList.remove('none');
+        selectW.classList.add('none');
+        imgsplselect.classList.remove('none');
+        imgsprselect.classList.remove('none');
+    } else {
+        selectTypeDiv.classList.remove('line_dual');
+        selectTypeDiv.classList.add('line');
+        dealW.classList.add('none');
+        selectW.classList.remove('none');
+        imgsplselect.classList.add('none');
+        imgsprselect.classList.add('none');
+
+    }
+});
 
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
 /////////////////////////////////////////////////////
@@ -172,11 +172,11 @@ const imgsprselect = document.getElementById('imgspr');
 const worldMain = document.getElementById('worldMain');
 const monsize = document.getElementById('mainsize');
 
-    worldMain.addEventListener('change', function() {
+worldMain.addEventListener('change', function () {
     if (this.value === 'ls') {
         monsize.classList.add('none');
     } else {
-        monsize.classList.remove('none');    
+        monsize.classList.remove('none');
     }
 });
 
@@ -192,18 +192,18 @@ const monsize = document.getElementById('mainsize');
 
 const ChaosSelect = document.getElementById('chaos');
 const Chaosimg = document.getElementById('imgchaos');
-ChaosSelect.addEventListener('change', function() {
-    if(this.value === 'chaoson'){
+ChaosSelect.addEventListener('change', function () {
+    if (this.value === 'chaoson') {
         ChaosSelect.classList.remove('off');
         ChaosSelect.classList.add('on');
         Chaosimg.classList.remove('none');
     }
-    else{
+    else {
         ChaosSelect.classList.add('off');
         ChaosSelect.classList.remove('on');
         Chaosimg.classList.add('none');
     }
-    });
+});
 
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
 /////////////////////////////////////////////////////
@@ -218,18 +218,18 @@ ChaosSelect.addEventListener('change', function() {
 const HundredSelect = document.getElementById('HundredDemon');
 const Hundredimg = document.getElementById('imghundred');
 
-HundredSelect.addEventListener('change', function() {
-    if(this.value === 'hunon'){
+HundredSelect.addEventListener('change', function () {
+    if (this.value === 'hunon') {
         HundredSelect.classList.remove('off');
         HundredSelect.classList.add('on');
         Hundredimg.classList.remove('none');
     }
-    else{
+    else {
         HundredSelect.classList.add('off');
         HundredSelect.classList.remove('on');
         Hundredimg.classList.add('none');
     }
-    });
+});
 
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
 /////////////////////////////////////////////////////
@@ -243,18 +243,18 @@ HundredSelect.addEventListener('change', function() {
 
 const NameAsSelect = document.getElementById('NameAs');
 const NameAsDIV = document.getElementById('NameASdiv');
-NameAsSelect.addEventListener('change', function() {
-    if(this.value === 'nameason'){
+NameAsSelect.addEventListener('change', function () {
+    if (this.value === 'nameason') {
         NameAsSelect.classList.remove('off');
         NameAsSelect.classList.add('onn');
         NameAsDIV.classList.remove('none');
     }
-    else{
+    else {
         NameAsSelect.classList.add('off');
         NameAsSelect.classList.remove('onn');
         NameAsDIV.classList.add('none');
     }
-    });
+});
 
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
 /////////////////////////////////////////////////////
@@ -273,8 +273,8 @@ const SPtype = document.getElementById('monSP');
 const SPhide1 = document.getElementById('tem_');
 const SPhide2 = document.getElementById('tem');
 
-SPSelect.addEventListener('change', function() {
-    if(this.value === 'SPon'){
+SPSelect.addEventListener('change', function () {
+    if (this.value === 'SPon') {
         SPSelect.classList.remove('off');
         SPSelect.classList.add('on');
         SPdiv.classList.remove('none');
@@ -283,7 +283,7 @@ SPSelect.addEventListener('change', function() {
         SPtype.classList.remove('none');
 
     }
-    else{
+    else {
         SPSelect.classList.add('off');
         SPSelect.classList.remove('on');
         SPdiv.classList.add('none');
@@ -293,7 +293,7 @@ SPSelect.addEventListener('change', function() {
 
 
     }
-    });
+});
 
 
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
@@ -301,7 +301,7 @@ SPSelect.addEventListener('change', function() {
 /////////////////////////////////////////////////////
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
 
-document.getElementById('montype').addEventListener('change', function() {
+document.getElementById('montype').addEventListener('change', function () {
     let type = this.value;
     if (type === 'dualmon') {
 
@@ -317,28 +317,28 @@ document.getElementById('montype').addEventListener('change', function() {
 
 function updateImages() {
     let type = document.getElementById('montype').value;
-    
+
     if (type === 'dualmon') {
 
         let worldL = document.getElementById('worldL').value;
         let worldR = document.getElementById('worldR').value;
-        
-        
+
+
         document.getElementById('worldl').src = `./assets/size/${worldL}.png`;
         document.getElementById('worldr').src = `./assets/size/${worldR}.png`;
         document.getElementById('imgspl').src = `./assets/size/c${worldL}.png`;
         document.getElementById('imgspr').src = `./assets/size/c${worldR}.png`;
 
-        
+
         document.getElementById('world1').classList.add('none');
         document.getElementById('worldl').classList.remove('none');
         document.getElementById('worldr').classList.remove('none');
     } else {
 
         let worldMain = document.getElementById('worldMain').value;
-        
+
         document.getElementById('world1').src = `./assets/size/${worldMain}.png`;
-        
+
         document.getElementById('world1').classList.remove('none');
         document.getElementById('worldl').classList.add('none');
         document.getElementById('worldr').classList.add('none');
@@ -358,7 +358,7 @@ document.getElementById('worldMain').addEventListener('change', updateImages);
 function togglesetting() {
     var element = document.getElementById("scaleedit");
     element.classList.toggle("none");
-  }
+}
 
 /////////////////////////////////////////////////////
 //=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//=//
@@ -402,18 +402,18 @@ function attinput() {
 }
 
 const texteffectcolorSelect = document.getElementById('texteffectcolor');
-    const nubElement = document.getElementById('nub');
+const nubElement = document.getElementById('nub');
 
-    texteffectcolorSelect.addEventListener('change', function () {
-        const selectedValue = this.value;
-        if (selectedValue === 'text-cw') {
-            nubElement.classList.add('text-white');
-        } else {
-            nubElement.classList.remove('text-white');
-        }
-    });
+texteffectcolorSelect.addEventListener('change', function () {
+    const selectedValue = this.value;
+    if (selectedValue === 'text-cw') {
+        nubElement.classList.add('text-white');
+    } else {
+        nubElement.classList.remove('text-white');
+    }
+});
 
-    fetch('keywords.json')
+fetch('keywords.json')
     .then(response => response.json())
     .then(data => {
         const tableBody = document.getElementById('fetchtr');
@@ -424,11 +424,11 @@ const texteffectcolorSelect = document.getElementById('texteffectcolor');
 
             const tdKeywords = document.createElement('div');
             tdKeywords.textContent = item.keywords;
-            tdKeywords.classList = "tdKeywords"; 
+            tdKeywords.classList = "tdKeywords";
 
             const tdImg = document.createElement('div');
             const img = document.createElement('img');
-            tdKeywords.classList = "tdKeywords"; 
+            tdKeywords.classList = "tdKeywords";
             img.src = item.keyimg;
             img.alt = item.keywords;
 
@@ -441,4 +441,197 @@ const texteffectcolorSelect = document.getElementById('texteffectcolor');
     })
     .catch(error => console.error('Error loading JSON data:', error));
 
-  
+const worldMainl = document.getElementById('worldL');
+const Effectline = document.getElementById('Effectline');
+const ms = document.getElementById('mainsize');
+const att = document.getElementById('att');
+const nn = document.getElementById('divname');
+const p1 = document.getElementById('power');
+const p2 = document.getElementById('power2');
+const c1 = document.getElementById('cri');
+const c2 = document.getElementById('cri2');
+const d1 = document.getElementById('def');
+const d2 = document.getElementById('def2');
+const tn1 = document.getElementById('textname');
+const tn2 = document.getElementById('textname2');
+
+function removeAllClasses() {
+    const classesToRemove = [
+        'smcs', 'smdr', 'smdn', 'smdu', 'smdg', 'smgr_c', 'smgr', 'smhw', 
+        'smhm', 'smkn', 'smlw', 'smls', 'smmw', 'smst_c', 'smst'
+    ];
+    classesToRemove.forEach(cls => ms.classList.remove(cls));
+}
+function removeAllatt(){
+    const classesToRemove = [
+        'attcs', 'attdr', 'attdn', 'attdu', 'attdg', 'attgr_c', 'attgr', 'atthw',
+        'atthm', 'attkn', 'attlw', 'attls', 'attmw', 'attst_c', 'attst'
+    ];
+    classesToRemove.forEach(cls => att.classList.remove(cls));
+}
+
+// ยังไม่เพิ่ม
+function removeAllname(){
+    const classesToRemove = [
+        'namecs', 'namedr', 'namedn', 'namedu', 'namedg', 'namegr_c', 'namegr', 'namehw',
+        'namehm', 'namekn', 'namelw', 'namels', 'namemw', 'namest_c', 'namest','nameaw'
+    ];
+    classesToRemove.forEach(cls => nn.classList.remove(cls));
+}
+function removeAllnamel(){
+    const classesToRemove = [
+        'namecsl', 'namedrl', 'namednl', 'namedul', 'namedgl', 'namegrl_c', 'namegrl', 'namehwl',
+        'namehml', 'nameknl', 'namelwl', 'namelsl', 'namemwl', 'namestl_c', 'namestl'
+    ];
+    classesToRemove.forEach(cls => nn.classList.remove(cls));
+}
+// ยังไม่เพิ่ม
+
+
+function removeAllClassesl() {
+    const classesToRemove = [
+        'smcsl', 'smdrl', 'smdnl', 'smdul', 'smdgl', 'smgrl_c', 'smgrl', 'smhwl', 
+        'smhml', 'smknl', 'smlwl', 'smlsl', 'smmwl', 'smst_cl', 'smstl'
+    ];
+    classesToRemove.forEach(cls => ms.classList.remove(cls));
+}
+function removeAllattl(){
+    const classesToRemove = [
+        'attcsl', 'attdrl', 'attdnl', 'attdul', 'attdgl', 'attgrl_c', 'attgrl', 'atthwl',
+        'atthml', 'attknl', 'attlwl', 'attlsl', 'attmwl', 'attstl_c', 'attstl'
+    ];
+    classesToRemove.forEach(cls => att.classList.remove(cls));
+}
+
+
+worldMain.addEventListener('change', function () {
+    switch (this.value) {
+        case 'cs':
+            Effectline.classList.add('z3');
+            Effectline.classList.remove('z5');
+            removeAllClasses();
+            removeAllatt();
+            removeAllClassesl()
+            removeAllattl()
+            removeAllname()
+            removeAllnamel()
+            ms.classList.add('smcs');
+            att.classList.add('attcs');
+            nn.classList.add('namecs');
+            break;
+        case 'dn':
+            Effectline.classList.add('z3');
+            Effectline.classList.remove('z5');
+            removeAllClasses();
+            removeAllatt();
+            removeAllClassesl()
+            removeAllattl()
+            removeAllname()
+            removeAllnamel()
+            ms.classList.add('smdn');
+            att.classList.add('attdn');
+            nn.classList.add('namedn');
+            break;
+        case 'aw':
+        case 'dr':
+        case 'du':
+        case 'dg':
+        case 'gr_c':
+        case 'gr':
+        case 'hw':
+        case 'hm':
+        case 'kn':
+        case 'lw':
+        case 'ls':
+        case 'mw':
+        case 'st_c':
+        case 'st':
+            Effectline.classList.add('z5');
+            Effectline.classList.remove('z3');
+            removeAllClasses();
+            removeAllatt();
+            removeAllClassesl()
+            removeAllattl()
+            removeAllname()
+            removeAllnamel()
+            ms.classList.add('sm'+this.value);
+            att.classList.add('att'+this.value);
+            nn.classList.add('name'+this.value);
+            break;
+        default:
+            Effectline.classList.add('z3');
+            Effectline.classList.remove('z4');
+            removeAllClasses();
+            removeAllatt();
+            removeAllattl()
+            removeAllname()
+            removeAllnamel()
+            break;
+    }
+});
+
+worldMainl.addEventListener('change', function () {
+    switch (this.value) {
+        case 'csl':
+            Effectline.classList.add('z3');
+            Effectline.classList.remove('z5');
+            removeAllClasses();
+            removeAllatt();
+            removeAllClassesl()
+            removeAllattl()
+            removeAllname()
+            removeAllnamel()
+            ms.classList.add('smcsl');
+            att.classList.add('attcsl');
+            nn.classList.add('namecsl');
+            break;
+        case 'dnl':
+            Effectline.classList.add('z3');
+            Effectline.classList.remove('z5');
+            removeAllClasses();
+            removeAllatt();
+            removeAllClassesl()
+            removeAllattl()
+            removeAllname()
+            removeAllnamel()
+            ms.classList.add('smdnl');
+            att.classList.add('attdnl');
+            nn.classList.add('namednl');            
+            break;
+        case 'awl':
+        case 'drl':
+        case 'dul':
+        case 'dgl':
+        case 'grl_c':
+        case 'grl':
+        case 'hwl':
+        case 'hml':
+        case 'knl':
+        case 'lwl':
+        case 'lsl':
+        case 'mwl':
+        case 'st_cl':
+        case 'stl':
+            Effectline.classList.add('z5');
+            Effectline.classList.remove('z3');
+            removeAllClasses();
+            removeAllatt();
+            removeAllClassesl()
+            removeAllattl()
+            removeAllname()
+            removeAllnamel()
+            ms.classList.add('sm'+this.value);
+            att.classList.add('att'+this.value);
+            nn.classList.add('name'+this.value);
+            break;
+        default:
+            Effectline.classList.add('z3');
+            Effectline.classList.remove('z4');
+            removeAllClasses();
+            removeAllatt();
+            removeAllattl()
+            removeAllname()
+            removeAllnamel()
+            break;
+    }
+});

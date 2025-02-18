@@ -413,16 +413,17 @@ p {
 }
 
 .SPancient {
-    transform: translateX(-224px) translateY(8px);
+    transform: translateX(-225.6px) translateY(8px);
 }
 
 .world-bg,
 #world1,
 #worldl,
 #Effectline,
+#Effectline2,
 #worldr,
 #monSP {
-    width: 450px;
+    width: 450.5px;
     height: 629px;
     border-radius: 20px;
 }
@@ -433,15 +434,16 @@ p {
 #imgchaos,
 #imghundred,
 #Effectline,
+#Effectline2,
 #imgspl,
 #imgspr {
-    transform: translateX(-224.8px);
+    transform: translateX(-225.6px);
     user-select: none;
     pointer-events: none;
 }
 
-#divname {
-    width: 450px;
+.divname {
+    width: 450.5px;
     transform: translateY(577px);
 }
 
@@ -656,7 +658,7 @@ p {
 /**  /==/==/  attibute /==/==/  **/
 /**  /==/==/==/==/==/==/==/==/  **/
 
-#att {
+.att {
 
     width: 200px;
     height: 20px;
@@ -722,7 +724,8 @@ p {
         color: white;
         align-content: center;
     }
-    #se_s{
+
+    #se_s {
         padding: 0 20px;
         font-size: 25px;
         border: 1px white solid;
@@ -740,7 +743,9 @@ p {
 
     #plusBtn,
     #minusBtn,
-    #resetBtn,#plusBtn5,#minusBtn5 {
+    #resetBtn,
+    #plusBtn5,
+    #minusBtn5 {
         text-align: center;
         width: 100%;
         flex: 1 0 140px;
@@ -748,7 +753,8 @@ p {
         border-radius: 5px;
         font-weight: bold;
     }
-    #resetBtn{
+
+    #resetBtn {
         background-color: #ffa8a8;
         margin-top: 5px;
     }
@@ -780,6 +786,7 @@ p {
     background-color: #222;
     padding: 10px;
 }
+
 #tablekeyword2 {
     height: 50vh;
     width: 100%;
@@ -789,21 +796,22 @@ p {
     padding: 10px;
 }
 
-#fetchtr,.fetchtr2 {
+#fetchtr,
+.fetchtr2 {
     display: flex;
-    width: 100%;  
+    width: 100%;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
 }
 
 .keyword-item {
-    display:  flex;
+    display: flex;
     width: 300px;
     text-align: center;
     align-items: center;
     justify-content: space-around;
-    padding: 10px; 
+    padding: 10px;
     gap: 10px;
     background-color: #333;
     border: 1px solid #555;
@@ -811,21 +819,136 @@ p {
 }
 
 .keyword-item img {
-    width: 100px; /* ปรับขนาดรูปภาพ */
+    width: 100px;
+    /* ปรับขนาดรูปภาพ */
     height: auto;
 }
- .i2{
+
+.i2 {
     display: flex;
-    width: 300px;  
+    width: 300px;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: space-around;
 
-    img{
+    img {
         width: 96%;
     }
-    .COST{
+
+    .COST {
         height: 10%;
         width: 16px;
     }
+}
+
+.smcs,.smcsl {
+    transform: translate(27px, 35px);
+}
+.smdr,.smdrl {
+    transform: translate(24px, 34px);
+}
+.smdn,.smdnl{
+    transform: translate(22px, 36px);
+}
+.smdu,.smdul{
+    transform: translate(22px, 39px);
+}
+.smdg,.smdgl{
+    transform: translate(28px, 38px);
+}
+.smgr_c,.smgrl_c{
+    transform: translate(27px, 39px);
+}
+.smgr,.smgrl{
+    transform: translate(26px, 37px);
+}
+.smhw,.smhwl{
+    transform: translate(24px, 32px);
+}
+.smhm,.smhml{
+    transform: translate(30px, 37px);
+}
+.smkn,.smknl{
+    transform: translate(21.5px, 38px);
+}
+.smlw,.smlwl{
+    transform: translate(23px, 37px);
+}
+.smmw,.smmwl{
+    transform: translate(24px, 38px);
+}
+.smst_c,.smst_cl{
+    transform: translate(26px, 32px);
+}
+.smst,.smstl{
+    transform: translate(26px, 32px);
+}
+.attcs{
+    transform: translate(45px, 525px);
+}
+.attdr{
+    transform: translate(22px, 529px);
+}
+.attdn{
+    transform: translate(17px, 536px);
+}
+.attdu{
+    transform: translate(77px, 518px);
+}
+.attdg{
+    transform: translate(14px, 536px);
+}
+.attgr_c{
+    transform: translate(50px, 539px);
+}
+.attgr{
+    transform: translate(64px, 535.5px);
+}
+.atthw{
+    transform: translate(54px, 533.5px);
+}
+.atthm{
+    display: none;
+}
+.attkn{
+    transform: translate(-17px, 554px);
+}
+.attlw{
+    transform: translate(0px, 529.6px);
+}
+.attls{
+    transform: translate(124px, 529.6px);
+}
+.attmw{
+    transform: translate(23px, 543px);
+}
+.attst_c{
+    transform: translate(26px, 513.2px);
+}
+.attst{
+    transform: translate(20px, 512.4px);
+}
+.namecs{
+    transform: translateY(575px);
+}
+.namedr{
+    transform: translate(65px,586px);
+}
+.namedn{
+    transform: translate(70px,586px);
+}
+.namedu{
+    transform: translateY(580px);
+}
+.namedg{
+    transform: translate(60px,586px);
+}
+.namegr_c{
+    transform: translate(50px,584px);
+}
+.namegr{
+    transform: translate(50px,580px);
+}
+.namehw{
+    transform: translate(60px,586.5px);
 }

@@ -1,6 +1,38 @@
+document.getElementById('montype').addEventListener('change', function () {
+    let montypeValue = this.value;
+
+    if (montypeValue === 'mon') {
+        document.getElementById('Effectline').classList.remove('none');
+        document.getElementById('Effectline2').classList.add('none');
+        
+        document.getElementById('worldMain').addEventListener('change', function () {
+            updateEffectLine();
+        });
+    } else if (montypeValue === 'dualmon') {
+        document.getElementById('Effectline').classList.add('none');
+        document.getElementById('Effectline2').classList.remove('none');
+        
+        document.getElementById('worldL').addEventListener('change', function () {
+            updateEffectLine2();
+        });
+    }
+});
+
+function updateEffectLine() {
+    let worldMain = document.getElementById('worldMain').value;
+    let countline = document.querySelectorAll('#addline').length;
+    document.getElementById('Effectline').src = `assets/textbox/m${worldMain}e${countline}.png`;
+}
+
+function updateEffectLine2() {
+    let countline = document.querySelectorAll('#addline').length;
+    document.getElementById('Effectline2').src = `assets/textbox/mdle${countline}.png`;
+}
+
 document.getElementById('Effect').addEventListener('input', function () {
     let ability = this.value;
 
+    // Replace keywords with images as shown in the original code
     ability = ability.replace(/evil/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Evil Deity.png" alt="Image" class="Iskill"></span>');
     ability = ability.replace(/COST/g, '<span id="spankey" class="image-wrapper-COST"><img src="./assets/keywords/Cost.png" alt="Image" class="Iskill3"></span>');
     ability = ability.replace(/buddygift/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/BuddyGift.png" alt="Image" class="Iskill"></span>');
@@ -36,6 +68,7 @@ document.getElementById('Effect').addEventListener('input', function () {
     ability = ability.replace(/ovk/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overkill.png" alt="Image" class="Iskill2"></span>');
     ability = ability.replace(/ovr/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/OverkillREBØØT.png" alt="Image" class="Iskill2"></span>');
     ability = ability.replace(/ovh/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Overthrow.png" alt="Image" class="Iskill2"></span>');
+    ability = ability.replace(/ovd/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/OverDrive.png" alt="Image" class="Iskill2"></span>');
     ability = ability.replace(/weaponlink/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Weaponry Link.png" alt="Image" class="Iskill"></span>');
 
     ability = ability.replace(/reversal/g, '<span id="spankey" class="image-wrapper"><img src="./assets/keywords/Reversal.png" alt="Image" class="Iskill"></span>');
@@ -49,26 +82,19 @@ document.getElementById('Effect').addEventListener('input', function () {
     ability = ability.replace(/>>/g, '<span class="skk">》</span>');
     ability = ability.replace(/{/g, '<span class="skk2">【</span>');
     ability = ability.replace(/}/g, '<span class="skk">】</span>');
-
     ability = ability.replace('[', '<span class=\'under-line\'>[');
     ability = ability.replace(']', ']</span>');
     ability = ability.replace(/--/g, '<span class="skk-dot">•</span>');
 
-
     let lines = ability.split('\n');
     let outputHtml = lines.map(line => `<p id='addline'>${line}</p>`).join('');
-
     document.getElementById('se').innerHTML = outputHtml;
 
-
-    //Effect Line
-    let worldMain = document.getElementById('worldMain').value;
-    const addlineElements = document.querySelectorAll('#addline');
-    const countline = addlineElements.length;
-
-    document.getElementById('Effectline').src = `assets/textbox/m${worldMain}e${countline}.png`;
-
+    updateEffectLine();
+    updateEffectLine2();
+    
 });
+
 
 let translateYValue = 0;
     const seDiv = document.getElementById('se_');
