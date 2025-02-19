@@ -465,27 +465,25 @@ function removeAllClasses() {
 function removeAllatt(){
     const classesToRemove = [
         'attcs', 'attdr', 'attdn', 'attdu', 'attdg', 'attgr_c', 'attgr', 'atthw',
-        'atthm', 'attkn', 'attlw', 'attls', 'attmw', 'attst_c', 'attst'
+        'atthm', 'attkn', 'attlw', 'attls', 'attmw', 'attst_c', 'attst','attdual'
     ];
     classesToRemove.forEach(cls => att.classList.remove(cls));
 }
 
-// ยังไม่เพิ่ม
 function removeAllname(){
     const classesToRemove = [
         'namecs', 'namedr', 'namedn', 'namedu', 'namedg', 'namegr_c', 'namegr', 'namehw',
-        'namehm', 'namekn', 'namelw', 'namels', 'namemw', 'namest_c', 'namest','nameaw'
+        'namehm', 'namekn', 'namelw', 'namels', 'namemw', 'namest_c', 'namest','nameaw','namedual'
     ];
     classesToRemove.forEach(cls => nn.classList.remove(cls));
 }
 function removeAllnamel(){
     const classesToRemove = [
         'namecsl', 'namedrl', 'namednl', 'namedul', 'namedgl', 'namegrl_c', 'namegrl', 'namehwl',
-        'namehml', 'nameknl', 'namelwl', 'namelsl', 'namemwl', 'namestl_c', 'namestl'
+        'namehml', 'nameknl', 'namelwl', 'namelsl', 'namemwl', 'namestl_c', 'namestl','namedual','nameaw'
     ];
     classesToRemove.forEach(cls => nn.classList.remove(cls));
 }
-// ยังไม่เพิ่ม
 
 
 function removeAllClassesl() {
@@ -498,11 +496,24 @@ function removeAllClassesl() {
 function removeAllattl(){
     const classesToRemove = [
         'attcsl', 'attdrl', 'attdnl', 'attdul', 'attdgl', 'attgrl_c', 'attgrl', 'atthwl',
-        'atthml', 'attknl', 'attlwl', 'attlsl', 'attmwl', 'attstl_c', 'attstl'
+        'atthml', 'attknl', 'attlwl', 'attlsl', 'attmwl', 'attstl_c', 'attstl','attdual'
     ];
     classesToRemove.forEach(cls => att.classList.remove(cls));
 }
 
+const montype = document.getElementById('montype');
+
+montype.addEventListener('change', function () {
+    let montypeValue = this.value;
+    if (montypeValue === 'mon') {
+        worldMain.dispatchEvent(new Event('change'));
+    }
+    else if (montypeValue === 'dualmon'){
+        worldMainl.dispatchEvent(new Event('change'));
+    }
+
+
+});
 
 worldMain.addEventListener('change', function () {
     switch (this.value) {
@@ -582,8 +593,8 @@ worldMainl.addEventListener('change', function () {
             removeAllname()
             removeAllnamel()
             ms.classList.add('smcsl');
-            att.classList.add('attcsl');
-            nn.classList.add('namecsl');
+            att.classList.add('attdual');
+            nn.classList.add('namedual');
             break;
         case 'dnl':
             Effectline.classList.add('z3');
@@ -595,8 +606,8 @@ worldMainl.addEventListener('change', function () {
             removeAllname()
             removeAllnamel()
             ms.classList.add('smdnl');
-            att.classList.add('attdnl');
-            nn.classList.add('namednl');            
+            att.classList.add('attdual');
+            nn.classList.add('namedual');            
             break;
         case 'awl':
         case 'drl':
@@ -621,8 +632,8 @@ worldMainl.addEventListener('change', function () {
             removeAllname()
             removeAllnamel()
             ms.classList.add('sm'+this.value);
-            att.classList.add('att'+this.value);
-            nn.classList.add('name'+this.value);
+            att.classList.add('attdual');
+            nn.classList.add('namedual');
             break;
         default:
             Effectline.classList.add('z3');

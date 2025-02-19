@@ -1,3 +1,4 @@
+@import url(./font.css);
 * {
     margin: 0;
     padding: 0;
@@ -33,7 +34,6 @@
 /********************Font********************/
 /********************************************/
 
-@import url(./font.css);
 
 
 /********************************************/
@@ -951,4 +951,28 @@ p {
 }
 .namehw{
     transform: translate(60px,586.5px);
+}
+.namekn{
+    transform: translate(57px,576.5px);
+}
+.namelw{
+    transform: translateY(589px);
+}
+.namels{
+    transform: translateY(593.5px);
+}
+.namemw{
+    transform: translate(73px,591px);
+}
+.namest_c{
+    transform: translate(0,591px);
+}
+.namest{
+    transform: translate(0,589px);
+}
+.namedual{
+    transform: translateY(589px);
+}
+.attdual{
+    transform: translate(126px, 553.3px);
 }

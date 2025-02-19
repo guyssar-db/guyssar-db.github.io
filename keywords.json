@@ -1,162 +1,162 @@
 [
     {
-        "keywords": "evil",
+        "keywords": "[evil]",
         "keyimg": "./assets/keywords/Evil Deity.png"
     },
     {
-        "keywords": "buddygift",
+        "keywords": "[buddygift]",
         "keyimg": "./assets/keywords/BuddyGift.png"
     },
     {
-        "keywords": "1turn",
+        "keywords": "[1turn]",
         "keyimg": "./assets/keywords/1 per Turn Rag.png"
     },
     {
-        "keywords": "1game",
+        "keywords": "[1game]",
         "keyimg": "./assets/keywords/1 per Game Rag.png"
     },
     {
-        "keywords": "1set",
+        "keywords": "[1set]",
         "keyimg": "./assets/keywords/1 per set.png"
     },
     {
-        "keywords": "anturn",
+        "keywords": "[anturn]",
         "keyimg": "./assets/keywords/Ablility Name.png"
     },
     {
-        "keywords": "cnturn",
+        "keywords": "[cnturn]",
         "keyimg": "./assets/keywords/Card Name.png"
     },
     {
-        "keywords": "callcost",
+        "keywords": "[callcost]",
         "keyimg": "./assets/keywords/Call Cost.png"
     },
     {
-        "keywords": "castcost",
+        "keywords": "[castcost]",
         "keyimg": "./assets/keywords/Cast Cost.png"
     },
     {
-        "keywords": "equipcost",
+        "keywords": "[equipcost]",
         "keyimg": "./assets/keywords/Equip Cost.png"
     },
     {
-        "keywords": "2attack",
+        "keywords": "[2attack]",
         "keyimg": "./assets/keywords/Double Attack.png"
     },
     {
-        "keywords": "3attack",
+        "keywords": "[3attack]",
         "keyimg": "./assets/keywords/TripleAttack.png"
     },
     {
-        "keywords": "4attack",
+        "keywords": "[4attack]",
         "keyimg": "./assets/keywords/Quadruple Attack.png"
     },
     {
-        "keywords": "6attack",
+        "keywords": "[6attack]",
         "keyimg": "./assets/keywords/Hextuple Attack.png"
     },
     {
-        "keywords": "counter",
+        "keywords": "[counter]",
         "keyimg": "./assets/keywords/Counter.png"
     },
     {
-        "keywords": "cattack",
+        "keywords": "[cattack]",
         "keyimg": "./assets/keywords/Counter Attack.png"
     },
     {
-        "keywords": "move",
+        "keywords": "[move]",
         "keyimg": "./assets/keywords/Move.png"
     },
     {
-        "keywords": "soulguard",
+        "keywords": "[soulguard]",
         "keyimg": "./assets/keywords/Soulguard.png"
     },
     {
-        "keywords": "penetrate",
+        "keywords": "[penetrate]",
         "keyimg": "./assets/keywords/Penetrate.png"
     },
     {
-        "keywords": "ambush",
+        "keywords": "[ambush]",
         "keyimg": "./assets/keywords/Ambush.png"
     },
     {
-        "keywords": "life1",
+        "keywords": "[life1]",
         "keyimg": "./assets/keywords/Life Link 1.png"
     },
     {
-        "keywords": "life2",
+        "keywords": "[life2]",
         "keyimg": "./assets/keywords/Life Link 2.png"
     },
     {
-        "keywords": "life3",
+        "keywords": "[life3]",
         "keyimg": "./assets/keywords/Life Link 3.png"
     },
     {
-        "keywords": "life4",
+        "keywords": "[life4]",
         "keyimg": "./assets/keywords/Life Link 4.png"
     },
     {
-        "keywords": "life5",
+        "keywords": "[life5]",
         "keyimg": "./assets/keywords/Life Link 5.png"
     },
     {
-        "keywords": "lifelose",
+        "keywords": "[lifelose]",
         "keyimg": "./assets/keywords/Life Lose.png"
     },
     {
-        "keywords": "omnilord",
+        "keywords": "[omnilord]",
         "keyimg": "./assets/keywords/Omni Lord-1.png"
     },
     {
-        "keywords": "darkomni",
+        "keywords": "[darkomni]",
         "keyimg": "./assets/keywords/Omni Lord-2.png"
     },
     {
-        "keywords": "ovt",
+        "keywords": "[ovt]",
         "keyimg": "./assets/keywords/Overturn.png"
     },
     {
-        "keywords": "ovk",
+        "keywords": "[ovk]",
         "keyimg": "./assets/keywords/Overkill.png"
     },
     {
-        "keywords": "ovr",
+        "keywords": "[ovr]",
         "keyimg": "./assets/keywords/OverkillREBØØT.png"
     },
     {
-        "keywords": "ovh",
+        "keywords": "[ovh]",
         "keyimg": "./assets/keywords/Overthrow.png"
     },
     {
-        "keywords": "ovd",
+        "keywords": "[ovd]",
         "keyimg": "./assets/keywords/OverDrive.png"
     },
     {
-        "keywords": "weaponlink",
+        "keywords": "[weaponlink]",
         "keyimg": "./assets/keywords/Weaponry Link.png"
     },
     {
-        "keywords": "reversal",
+        "keywords": "[reversal]",
         "keyimg": "./assets/keywords/Reversal.png"
     },
     {
-        "keywords": "shadowdive",
+        "keywords": "[shadowdive]",
         "keyimg": "./assets/keywords/Shadow Dive.png"
     },
     {
-        "keywords": "ride",
+        "keywords": "[ride]",
         "keyimg": "./assets/keywords/Ride.png"
     },
     {
-        "keywords": "transform",
+        "keywords": "[transform]",
         "keyimg": "./assets/keywords/Transform.png"
     },
     {
-        "keywords": "imform",
+        "keywords": "[imform]",
         "keyimg": "./assets/keywords/Impact Transform.png"
     },
     {
-        "keywords": "purge",
+        "keywords": "[purge]",
         "keyimg": "./assets/keywords/Purge.png"
     }
 ]
