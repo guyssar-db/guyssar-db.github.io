@@ -458,7 +458,7 @@ const tn2 = document.getElementById('textname2');
 function removeAllClasses() {
     const classesToRemove = [
         'smcs', 'smdr', 'smdn', 'smdu', 'smdg', 'smgr_c', 'smgr', 'smhw', 
-        'smhm', 'smkn', 'smlw', 'smls', 'smmw', 'smst_c', 'smst'
+        'smhm', 'smkn', 'smlw', 'smls', 'smmw', 'smst_c', 'smst','smaw'
     ];
     classesToRemove.forEach(cls => ms.classList.remove(cls));
 }
@@ -489,7 +489,7 @@ function removeAllnamel(){
 function removeAllClassesl() {
     const classesToRemove = [
         'smcsl', 'smdrl', 'smdnl', 'smdul', 'smdgl', 'smgrl_c', 'smgrl', 'smhwl', 
-        'smhml', 'smknl', 'smlwl', 'smlsl', 'smmwl', 'smst_cl', 'smstl'
+        'smhml', 'smknl', 'smlwl', 'smlsl', 'smmwl', 'smst_cl', 'smstl','smawl'
     ];
     classesToRemove.forEach(cls => ms.classList.remove(cls));
 }
@@ -502,7 +502,6 @@ function removeAllattl(){
 }
 
 const montype = document.getElementById('montype');
-
 montype.addEventListener('change', function () {
     let montypeValue = this.value;
     if (montypeValue === 'mon') {
